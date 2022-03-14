@@ -2,22 +2,21 @@ import styled from 'styled-components';
 import { device, size } from '../../constants/mediaSize';
 
 export const Container = styled.div`
-  padding: 0px 15px;
+  padding: 0px 24px;
   margin: 0 auto;
   width: 100%;
-  outline: 2px solid red;
 
   ${device.mobile} {
     width: ${size.mobile};
   }
 
-  @media screen and (${device.tablet}) {
+  ${device.tablet} {
     width: ${size.tablet};
   }
 
-  @media screen and (${device.desktop}) {
+  ${device.desktop}{
     width: ${size.desktop};
   }
 
-  background: ${({ theme }) => theme.colors.olive};
+  background: ${({ theme }) => theme.colors.body_bg};
 `;
