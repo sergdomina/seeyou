@@ -1,8 +1,8 @@
-// import { } from "./Download.styled";
-export const Hero = () => {
+import { DownloadLink, DownloadLinkBox} from "./Download.styled";
+export const Download = () => {
     return (
-      <div>
-          
-      </div>
+      <DownloadLinkBox>
+      <DownloadLink>Download</DownloadLink>
+      </DownloadLinkBox>
     );
   };

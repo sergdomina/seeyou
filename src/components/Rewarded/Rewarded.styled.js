@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
-
-export const HeroSection = styled.section`
-padding-top: 21px;
-padding-bottom: 28px;
-`
-export const HeroTitle = styled.h1`
+export const RewardedTitle = styled.h1`
 font-weight: 600;
 font-size: 30px;
 line-height: 1,5px;
@@ -14,7 +9,7 @@ margin-bottom: 16px;
 color: ${({ theme }) => theme.colors.black};
 `;
 
-export const HeroThumb = styled.div`
+export const RewardedThumb = styled.div`
 width: 271px;
 height: 238px;
 border-radius: 13px;
@@ -22,7 +17,7 @@ margin: 0 auto;
 margin-bottom: 40px;
 background: ${({ theme }) => theme.colors.blue};
 `;
-export const HeroDiscription = styled.p`
+export const RewardedDiscription= styled.p`
 font-family: 'Lato';
 font-style: normal;
 font-weight: 400;

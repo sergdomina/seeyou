@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  body{
+    padding-bottom: 90px;
+  }
 
   img {
     display: block;
