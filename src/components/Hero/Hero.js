@@ -1,11 +1,34 @@
-import { HeroSection, HeroTitle,HeroThumb, HeroDiscription } from "./Hero.styled";
+import {
+  HeroSection,
+  HeroTitle,
+  HeroThumb,
+  HeroDiscription,
+  HeroContainer,
+  HeroBox,
+  HeroLink,
+} from './Hero.styled';
+import { MediaQuery } from '../MediaQuery/MediaQuery';
+
 export const Hero = () => {
-    return (
-      <HeroSection>
-          
-         <HeroThumb/> 
-        <HeroTitle>Equitable<br/>Communication</HeroTitle> 
-        <HeroDiscription>SEEYOU helps to streamline the conferencing communication and gives it’s users the opportunity to co-own for usage and sharing</HeroDiscription>
-      </HeroSection>
-    );
-  };
+  return (
+    <HeroSection>
+      <HeroContainer>
+        <HeroThumb />
+        <HeroBox>
+          <HeroTitle>
+            Equitable
+            <br />
+            Communication
+          </HeroTitle>
+          <HeroDiscription>
+            SEEYOU helps to streamline the conferencing communication and gives
+            it’s users the opportunity to co-own for usage and sharing
+          </HeroDiscription>
+          <MediaQuery device={'desktop'}>
+            <HeroLink>Download for Free</HeroLink>
+          </MediaQuery>
+        </HeroBox>
+      </HeroContainer>
+    </HeroSection>
+  );
+};

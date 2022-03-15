@@ -1,34 +1,61 @@
-import styled from "styled-components";
-
-
+import styled from 'styled-components';
+import { Container } from '../Container/Container.styled';
+import { DownloadLink } from '../Dowmload/Download.styled';
 export const HeroSection = styled.section`
-padding-top: 21px;
-padding-bottom: 28px;
-`
+  padding-top: 21px;
+  padding-bottom: 28px;
+  background: ${({ theme }) => theme.colors.body_bg};
+`;
 export const HeroTitle = styled.h1`
-font-weight: 600;
-font-size: 30px;
-line-height: 1,5px;
-text-align: center;
-margin-bottom: 16px;
-color: ${({ theme }) => theme.colors.black};
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 export const HeroThumb = styled.div`
-width: 271px;
-height: 238px;
-border-radius: 13px;
-margin: 0 auto;
-margin-bottom: 40px;
-background: ${({ theme }) => theme.colors.blue};
+  width: 271px;
+  height: 238px;
+  border-radius: 13px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: ${({ theme }) => theme.colors.blue};
+  ${({ theme }) => theme.device.desktop} {
+    width: 600px;
+    height: 427px;
+    margin: 0;
+  }
 `;
 export const HeroDiscription = styled.p`
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 150%;
-text-align: center;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
 
-color: ${({ theme }) => theme.colors.primaryText};
+  color: ${({ theme }) => theme.colors.primaryText};
+  ${({ theme }) => theme.device.desktop} {
+    margin-bottom: 32px;
+  }
+`;
+
+export const HeroContainer = styled(Container)`
+  ${({ theme }) => theme.device.desktop} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+`;
+export const HeroBox = styled.div`
+  text-align: center;
+  ${({ theme }) => theme.device.desktop} {
+    width: 376px;
+    text-align: left;
+  }
+`;
+export const HeroLink = styled(DownloadLink)`
+  display: block;
+  max-width: 245px;
 `;

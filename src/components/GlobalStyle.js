@@ -1,13 +1,17 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body{
     padding-bottom: 90px;
+     ${({ theme }) => theme.device.tablet} {
+    padding-bottom: 0;
+  }
   }
 
   img {
     display: block;
     max-width: 100%;
+    height: auto;
   }
   ul {
     padding: 0;

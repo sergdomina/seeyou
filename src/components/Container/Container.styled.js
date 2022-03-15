@@ -14,9 +14,7 @@ export const Container = styled.div`
     width: ${size.tablet};
   }
 
-  ${device.desktop}{
+  ${device.desktop} {
     width: ${size.desktop};
   }
-
-  background: ${({ theme }) => theme.colors.body_bg};
 `;
