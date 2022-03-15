@@ -1,9 +1,11 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 
-import { Layout } from "../../components/Layout/Layout";
-import { About } from "../../pages/About";
-import { Products } from "../../pages/Products";
-import { Home } from "../../pages/Home";
+import { Layout } from '../../components/Layout/Layout';
+import { About } from '../../pages/About';
+import { Products } from '../../pages/Products';
+import { Home } from '../../pages/Home';
+import { Ownership } from '../../pages/Ownership';
+import { Help } from '../../pages/Help';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="products" element={<Products />} />
+        <Route path="ownership" element={<Ownership />} />
         <Route path="about" element={<About />} />
+        <Route path="help" element={<Help />} />
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
     </Routes>
