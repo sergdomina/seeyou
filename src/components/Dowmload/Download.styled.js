@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const DownloadLink = styled.a`
+  font-family: 'Poppins_SemiBold';
   padding: 15px 84px;
   border-radius: 4px;
   color: ${({ theme }) => theme.colors.white};
