@@ -11,3 +11,12 @@ export const Link = styled(NavLink)`
     color: tomato;
   }
 `;
+export const Header = styled.header`
+  position: 'relative';
+  padding-top: 12px;
+  padding-bottom: 12px;
+  ${({ theme }) => theme.device.desktop} {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+`;
