@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import { Container } from '../Container/Container.styled';
 import { DownloadLink } from '../Dowmload/Download.styled';
+
 export const HeroSection = styled.section`
   padding-top: 21px;
   padding-bottom: 28px;
   background: ${({ theme }) => theme.colors.body_bg};
 `;
 export const HeroTitle = styled.h1`
-  font-weight: 600;
+  font-family: 'Poppins_SemiBold';
   font-size: 30px;
   line-height: 1.5;
   margin-bottom: 16px;
@@ -28,9 +29,7 @@ export const HeroThumb = styled.div`
   }
 `;
 export const HeroDiscription = styled.p`
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Lato_Regular';
   font-size: 14px;
   line-height: 150%;
 
@@ -56,6 +55,5 @@ export const HeroBox = styled.div`
   }
 `;
 export const HeroLink = styled(DownloadLink)`
-  display: block;
-  max-width: 245px;
+  padding: 14px 54px;
 `;

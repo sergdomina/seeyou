@@ -3,6 +3,7 @@ import { GlobalStyle } from '../GlobalStyle';
 import { AppBar } from '../AppBar/AppBar';
 import { Download } from '../../components/Dowmload/Download';
 import { MediaQuery } from '../MediaQuery/MediaQuery';
+
 export const Layout = () => {
   return (
     <>
