@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device, size } from '../../constants/mediaSize';
 
-export const Container = styled.div`
+const Container = styled.div`
   padding: 0px 24px;
   margin: 0 auto;
   width: 100%;
