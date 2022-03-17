@@ -8,7 +8,7 @@ export const HeroSection = styled.section`
   background: ${({ theme }) => theme.colors.body_bg};
 `;
 export const HeroTitle = styled.h1`
-  font-family: 'Poppins_SemiBold';
+  font-family: 'Jost';
   font-size: 30px;
   line-height: 1.5;
   margin-bottom: 16px;
@@ -21,6 +21,7 @@ export const HeroThumb = styled.div`
   border-radius: 13px;
   margin: 0 auto;
   overflow: hidden;
+  margin-bottom: 40px;
   background: ${({ theme }) => theme.colors.blue};
   ${({ theme }) => theme.device.desktop} {
     width: 600px;
@@ -29,7 +30,7 @@ export const HeroThumb = styled.div`
   }
 `;
 export const HeroDiscription = styled.p`
-  font-family: 'Lato_Regular';
+  font-family: 'Open Sans';
   font-size: 14px;
   line-height: 150%;
 
