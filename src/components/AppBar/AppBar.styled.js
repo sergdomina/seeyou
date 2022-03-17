@@ -61,6 +61,8 @@ export const Link = styled(NavLink)`
   &.active {
     color: ${({ theme }) => theme.colors.tomato};
   }
+   ${({ theme }) => theme.device.tablet} {
+   font-size: 18px;
 `;
 
 export const LogoLink = styled(NavLink)`
