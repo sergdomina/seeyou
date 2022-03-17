@@ -1,11 +1,12 @@
-import { Hero } from '../components/Hero/Hero';
-// import { Download } from '../components/Dowmload/Download';
-import { Rewarded } from '../components/Rewarded/Rewarded';
+import Hero from 'components/Hero';
+import Rewarded from 'components/Rewarded';
 import { Conference } from '../components/Conference/Conference';
 import { Support } from '../components/Support/Support';
-export const Home = () => {
+const Home = () => {
   return (
     <>
+      <Hero />
+      <Rewarded />
       <Hero />
       <Rewarded />
       <Conference />
@@ -13,3 +14,4 @@ export const Home = () => {
     </>
   );
 };
+export default Home;

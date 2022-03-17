@@ -7,9 +7,9 @@ import {
   HeroBox,
   HeroLink,
 } from './Hero.styled';
-import { MediaQuery } from '../MediaQuery/MediaQuery';
+import MediaQuery from '../MediaQuery';
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <HeroSection>
       <HeroContainer>
@@ -32,3 +32,5 @@ export const Hero = () => {
     </HeroSection>
   );
 };
+
+export default Hero;
