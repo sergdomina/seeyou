@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SupportRewardedTitle = styled.h1`
+export const SupportTitle = styled.h1`
 font-family: 'Jost';
 font-weight: 600;
 font-size: 30px;
