@@ -14,10 +14,10 @@ import {
 import Burger from '../Burger';
 import LogoSeeYou from '../../image/LogoSeeYou.svg';
 import { useOnClickOutside } from '../../hooks/OnClickOutside';
-import { MediaQuery } from '../MediaQuery/MediaQuery';
-import { DownloadLink } from '../../components/Dowmload/Download.styled';
+import MediaQuery from '../MediaQuery';
+import DownloadLink from '../DownloadLink';
 
-export const AppBar = () => {
+const AppBar = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
   const ToggleMenu = () => {
     setIsOpenMobileMenu(!isOpenMobileMenu);
@@ -74,3 +74,4 @@ export const AppBar = () => {
     </Header>
   );
 };
+export default AppBar;

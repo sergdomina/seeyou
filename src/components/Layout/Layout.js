@@ -1,18 +1,20 @@
 import { Outlet } from 'react-router-dom';
 import { GlobalStyle } from '../GlobalStyle';
-import { AppBar } from '../AppBar/AppBar';
-import { Download } from '../../components/Dowmload/Download';
-import { MediaQuery } from '../MediaQuery/MediaQuery';
+import AppBar from '../AppBar';
+import DownloadMobileFooter from '../../components/DownloadMobileFooter';
+import MediaQuery from '../MediaQuery';
 
-export const Layout = () => {
+const Layout = () => {
   return (
     <>
       <GlobalStyle />
       <AppBar />
       <Outlet />
       <MediaQuery device={'mobile'}>
-        <Download />
+        <DownloadMobileFooter />
       </MediaQuery>
     </>
   );
 };
+
+export default Layout;

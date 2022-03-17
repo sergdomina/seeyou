@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Container } from '../Container/Container.styled';
-import { DownloadLink } from '../Dowmload/Download.styled';
+import DownloadLink from '../DownloadLink';
 
 export const HeroSection = styled.section`
   padding-top: 21px;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { Container } from '../Container/Container.styled';
+import Container from '../Container';
+
 export const Nav = styled.nav`
   font-family: 'Lato_Regular';
   font-size: 18px;

@@ -18,3 +18,4 @@ export const Container = styled.div`
     width: ${size.desktop};
   }
 `;
+export default Container;

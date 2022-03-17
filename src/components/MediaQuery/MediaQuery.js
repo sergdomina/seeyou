@@ -1,6 +1,6 @@
 import Media from 'react-media';
 import { size } from '../../constants/mediaSize';
-export const MediaQuery = ({ device, children }) => {
+const MediaQuery = ({ device, children }) => {
   return (
     <Media
       queries={{
@@ -13,3 +13,4 @@ export const MediaQuery = ({ device, children }) => {
     </Media>
   );
 };
+export default MediaQuery;
