@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Container } from '../Container/Container.styled';
+import Container from '../Container';
 import DownloadLink from '../DownloadLink';
 
 export const HeroSection = styled.section`
