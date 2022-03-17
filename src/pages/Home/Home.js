@@ -1,7 +1,7 @@
 import Hero from 'components/Hero';
 import Rewarded from 'components/Rewarded';
-import { Conference } from '../components/Conference/Conference';
-import { Support } from '../components/Support/Support';
+import Conference from 'components/Conference';
+import Support from 'components/Support';
 const Home = () => {
   return (
     <>
