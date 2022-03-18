@@ -1,6 +1,7 @@
 import Hero from 'components/Hero';
 import Rewarded from 'components/Rewarded';
-import FeaturesMobile from 'components/FeaturesMobile';
+import FeaturesAccordion from 'components/FeaturesAccordion';
+import FeaturesTabs from '../../components/FeatherTabs';
 import Conference from 'components/Conference';
 import Support from 'components/Support';
 import MediaQuery from '../../components/MediaQuery';
@@ -11,7 +12,10 @@ const Home = () => {
       <Hero />
       <Rewarded />
       <MediaQuery device={'mobile'}>
-        <FeaturesMobile />
+        <FeaturesAccordion />
+      </MediaQuery>
+      <MediaQuery device={'tablet'}>
+        <FeaturesTabs />
       </MediaQuery>
 
       <Conference />
