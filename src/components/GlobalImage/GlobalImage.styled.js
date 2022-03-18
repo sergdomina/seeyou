@@ -7,9 +7,10 @@ export const ImageThumb = styled.div`
   border-radius: 13px;
   overflow: hidden;
   margin: 0 auto;
-  margin-bottom: ${props => props.mb}px;
+  margin-bottom: 40px;
   ${({ theme }) => theme.device.desktop} {
     width: 570px;
     height: 500px;
+    margin: 0;
   }
 `;
