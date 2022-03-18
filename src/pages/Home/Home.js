@@ -4,6 +4,7 @@ import FeaturesAccordion from 'components/FeaturesAccordion';
 import FeaturesTabs from '../../components/FeatherTabs';
 import Conference from 'components/Conference';
 import Support from 'components/Support';
+import FAQ from 'components/FAQ';
 import MediaQuery from '../../components/MediaQuery';
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
 
       <Conference />
       <Support />
+      <FAQ />
     </>
   );
 };
