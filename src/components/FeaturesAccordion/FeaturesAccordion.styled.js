@@ -23,7 +23,3 @@ export const FeaturesAccordionItem = styled(AccordionItem)`
 export const FeaturesContainer = styled(Container)`
   padding: 0;
 `;
-
-export const FeaturesIconThumb = styled.div`
-  margin-right: 29px;
-`;
