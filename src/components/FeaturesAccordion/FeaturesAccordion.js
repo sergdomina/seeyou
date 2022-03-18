@@ -3,7 +3,6 @@ import {
   FeaturesTitle,
   FeaturesAccordionItem,
   FeaturesContainer,
-  FeaturesIconThumb,
 } from './FeaturesAccordion.styled';
 import {
   Accordion,
@@ -13,12 +12,14 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import GlobalImage from '../GlobalImage';
-import { ReactComponent as RewindIcon } from 'image/feathers/rewind.svg';
-import { ReactComponent as LibraryIcon } from 'image/feathers/library.svg';
-import { ReactComponent as LoopIcon } from '../../image/feathers/loop.svg';
-import { ReactComponent as CallIcon } from '../../image/feathers/call.svg';
-import { ReactComponent as MessageIcon } from '../../image/feathers/message.svg';
-import { ReactComponent as NoteIcon } from '../../image/feathers/note.svg';
+import {
+  RewindThumb,
+  LibraryThumb,
+  LoopIconThumb,
+  CallIconThumb,
+  MessageIconThumb,
+  NoteIconThumb,
+} from '../FeathersThumbIcon/FeathersThumbIcon';
 
 const FeaturesAccordion = () => {
   return (
@@ -35,9 +36,7 @@ const FeaturesAccordion = () => {
                 _hover={{ boxShadow: 'none' }}
               >
                 <Flex align={'center'} flex="1" textAlign="left">
-                  <FeaturesIconThumb>
-                    <RewindIcon />
-                  </FeaturesIconThumb>
+                  <RewindThumb />
                   Live conference rewind
                 </Flex>
                 <AccordionIcon />
@@ -60,10 +59,8 @@ const FeaturesAccordion = () => {
                 _hover={{ boxShadow: 'none' }}
               >
                 <Flex align={'center'} flex="1" textAlign="left">
-                  <FeaturesIconThumb>
-                    <LibraryIcon />
-                  </FeaturesIconThumb>
-                  Live conference rewind
+                  <LibraryThumb />
+                  User-centered library
                 </Flex>
                 <AccordionIcon />
               </AccordionButton>
@@ -86,10 +83,8 @@ const FeaturesAccordion = () => {
                 _hover={{ boxShadow: 'none' }}
               >
                 <Flex align={'center'} flex="1" textAlign="left">
-                  <FeaturesIconThumb>
-                    <LoopIcon />
-                  </FeaturesIconThumb>
-                  User-centered library
+                  <LoopIconThumb />
+                  60 second loop
                 </Flex>
                 <AccordionIcon />
               </AccordionButton>
@@ -111,9 +106,7 @@ const FeaturesAccordion = () => {
                 _hover={{ boxShadow: 'none' }}
               >
                 <Flex align={'center'} flex="1" textAlign="left">
-                  <FeaturesIconThumb>
-                    <CallIcon />
-                  </FeaturesIconThumb>
+                  <CallIconThumb />
                   Calls during conference
                 </Flex>
                 <AccordionIcon />
@@ -136,9 +129,7 @@ const FeaturesAccordion = () => {
                 _hover={{ boxShadow: 'none' }}
               >
                 <Flex align={'center'} flex="1" textAlign="left">
-                  <FeaturesIconThumb>
-                    <MessageIcon />
-                  </FeaturesIconThumb>
+                  <MessageIconThumb />
                   30 second video messages
                 </Flex>
                 <AccordionIcon />
@@ -161,9 +152,7 @@ const FeaturesAccordion = () => {
                 _hover={{ boxShadow: 'none' }}
               >
                 <Flex align={'center'} flex="1" textAlign="left">
-                  <FeaturesIconThumb>
-                    <NoteIcon />
-                  </FeaturesIconThumb>
+                  <NoteIconThumb />
                   Timecoded sticky notes
                 </Flex>
                 <AccordionIcon />
