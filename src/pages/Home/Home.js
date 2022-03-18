@@ -5,23 +5,28 @@ import FeaturesTabs from '../../components/FeatherTabs';
 import Conference from 'components/Conference';
 import Support from 'components/Support';
 import FAQ from 'components/FAQ';
+import Footer from 'components/Footer';
 import MediaQuery from '../../components/MediaQuery';
 
 const Home = () => {
   return (
     <>
-      <Hero />
-      <Rewarded />
-      <MediaQuery device={'mobile'}>
-        <FeaturesAccordion />
-      </MediaQuery>
-      <MediaQuery device={'tablet'}>
-        <FeaturesTabs />
-      </MediaQuery>
+      <main>
+        <Hero />
+        <Rewarded />
+        <MediaQuery device={'mobile'}>
+          <FeaturesAccordion />
+        </MediaQuery>
+        <MediaQuery device={'tablet'}>
+          <FeaturesTabs />
+        </MediaQuery>
 
-      <Conference />
-      <Support />
-      <FAQ />
+        <Conference />
+        <Support />
+        <FAQ />
+      </main>
+
+      <Footer />
     </>
   );
 };

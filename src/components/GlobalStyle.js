@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    padding-bottom: 90px;
+    padding-bottom: 97px;
      ${({ theme }) => theme.device.tablet} {
     padding-bottom: 0;
   }

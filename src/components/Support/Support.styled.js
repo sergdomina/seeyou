@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SupportSection = styled.h2`
+export const SupportSection = styled.section`
   padding-top: 101px;
   padding-bottom: 88px;
   background: ${({ theme }) => theme.colors.blue};

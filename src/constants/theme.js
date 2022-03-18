@@ -10,6 +10,7 @@ export const theme = Object.freeze({
     secondaryText: '#757575',
     body_bg: '#FAFAFA',
     tomato: 'tomato',
+    footer_bg: '#464648',
   },
   size: {
     mobile: '375px',

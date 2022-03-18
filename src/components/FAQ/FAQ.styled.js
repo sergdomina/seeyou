@@ -25,6 +25,9 @@ export const FAQItem = styled.li`
       margin-bottom: 16px;
     }
   }
+  font-size: 20px;
+  line-height: 1.5;
+  color: ${({ theme }) => theme.colors.primaryText};
 `;
 
 export const FAQList = styled.ul`
