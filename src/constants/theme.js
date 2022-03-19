@@ -11,6 +11,7 @@ export const theme = Object.freeze({
     body_bg: '#FAFAFA',
     tomato: 'tomato',
     footer_bg: '#464648',
+    link: 'blue',
   },
   size: {
     mobile: '375px',

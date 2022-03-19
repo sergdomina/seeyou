@@ -51,13 +51,13 @@ const AppBar = () => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/about" onClick={ToggleMenu}>
-                About
+              <Link to="/ownership" onClick={ToggleMenu}>
+                Co-ownership
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/ownership" onClick={ToggleMenu}>
-                Co-ownership
+              <Link to="/about" onClick={ToggleMenu}>
+                About
               </Link>
             </NavItem>
             <NavItem>
