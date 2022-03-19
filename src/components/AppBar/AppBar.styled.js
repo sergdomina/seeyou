@@ -60,7 +60,27 @@ export const Link = styled(NavLink)`
   font-size: 14px;
   line-height: 1.5;
   &.active {
-    color: ${({ theme }) => theme.colors.tomato};
+    font-weight: 900;
+    /* color: ${({ theme }) => theme.colors.dark}; */
+
+    position: relative;
+    /* border: 3px solid #303030; */
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 3px;
+      background-color: ${({ theme }) => theme.colors.black_btn};
+      opacity: 1;
+      transform: translateY(1px);
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      ${({ theme }) => theme.device.desktop} {
+        bottom: -10px;
+      }
+    }
   }
   ${({ theme }) => theme.device.tablet} {
     font-size: 18px;
