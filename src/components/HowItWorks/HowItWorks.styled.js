@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 // import Container from '../Container';
 // import DownloadLink from '../DownloadLink';
+import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
 export const HeroTitle = styled.h2`
   font-family: 'Jost';
