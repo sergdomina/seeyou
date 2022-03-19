@@ -1,9 +1,12 @@
 // Help;
+import Footer from 'components/Footer';
+import HelpCenter from 'components/HelpCenter';
 const Help = () => {
   return (
-    <div>
-      <h2>Help</h2>
-    </div>
+    <>
+      <HelpCenter />
+      <Footer />
+    </>
   );
 };
 
