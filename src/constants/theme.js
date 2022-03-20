@@ -26,5 +26,16 @@ export const theme = Object.freeze({
     tablet: `@media screen and (min-width: 768px)`,
     desktop: `@media screen and (min-width: 1188px)`,
   },
+  fonts: {
+    title: {
+      semiBold: 'Jost_SemiBold',
+      bold: 'Jost_Bold',
+    },
+    descr: {
+      regular: 'OpenSans_Regular',
+      semiBold: 'OpenSans_SemiBold',
+      bold: 'OpenSans_Bold',
+    },
+  },
   spacing: value => `${4 * value}px`,
 });

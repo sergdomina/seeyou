@@ -8,7 +8,7 @@ export const HeroSection = styled.section`
   background: ${({ theme }) => theme.colors.body_bg};
 `;
 export const HeroTitle = styled.h1`
-  font-family: 'Jost';
+  font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 30px;
   line-height: 1.5;
   margin-bottom: 16px;
@@ -30,7 +30,7 @@ export const HeroThumb = styled.div`
   }
 `;
 export const HeroDiscription = styled.p`
-  font-family: 'Open Sans';
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
   font-size: 14px;
   line-height: 150%;
 
