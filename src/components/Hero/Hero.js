@@ -25,7 +25,7 @@ const Hero = () => {
             it’s users the opportunity to co-own for usage and sharing
           </HeroDiscription>
           <MediaQuery device={'desktop'}>
-            <HeroLink>Download for Free</HeroLink>
+            <HeroLink to="/download">Download for Free</HeroLink>
           </MediaQuery>
         </HeroBox>
       </HeroContainer>
