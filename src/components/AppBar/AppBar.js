@@ -25,7 +25,7 @@ const AppBar = () => {
   const node = useRef();
   // const menuId = 'main-menu';
 
-  useOnClickOutside(node, () => ToggleMenu(false));
+  useOnClickOutside(node, () => ToggleMenu(false), isOpenMobileMenu);
   return (
     <Header ref={node}>
       <HeaderContainer>
@@ -44,7 +44,7 @@ const AppBar = () => {
           </LogoLink>
         </HeaderBox>
         <Nav className={isOpenMobileMenu && 'active'}>
-          <NavList className={isOpenMobileMenu && 'active'}>
+          <NavList>
             <NavItem>
               <Link to="/products" onClick={ToggleMenu}>
                 Products

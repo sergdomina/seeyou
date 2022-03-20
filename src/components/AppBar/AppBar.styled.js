@@ -14,7 +14,7 @@ export const Nav = styled.nav`
     left: 0;
     visibility: hidden;
     opacity: 0;
-
+    pointer-events: none;
     transform: translateX(-100%);
     background-color: #d9f0f7;
     transition: transform 0.3s ease-out, opacity 0.3s ease-out,
@@ -23,6 +23,7 @@ export const Nav = styled.nav`
       visibility: visible;
       opacity: 1;
       transform: translateX(0);
+      pointer-events: auto;
     }
   }
   ${({ theme }) => theme.device.tablet} {
@@ -55,13 +56,12 @@ export const NavList = styled.ul`
   } */
 `;
 export const Link = styled(NavLink)`
-  font-family: 'Lato_Regular';
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
   color: ${({ theme }) => theme.colors.dark};
   font-size: 14px;
   line-height: 1.5;
   &.active {
-    font-weight: 900;
-    /* color: ${({ theme }) => theme.colors.dark}; */
+    font-family: ${({ theme }) => theme.fonts.descr.bold};
 
     position: relative;
     /* border: 3px solid #303030; */
