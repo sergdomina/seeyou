@@ -18,14 +18,15 @@ const HeroDownload = () => {
   console.log(platform);
   const userOS = platform.os.family;
   const title = `SEEYOU for ${userOS}`;
-  const device = `Download SEEYOU for your ${platform.product} device`;
+  const device = platform?.product;
+  const descr = `Download SEEYOU for your ${device} device`;
   return (
     <HeroSection>
       <HeroContainer>
         <HeroThumb />
         <HeroBox>
           <HeroTitle> {userOS ? title : defaultTitle}</HeroTitle>
-          <HeroDiscription>{device ? device : defaultDescr}</HeroDiscription>
+          <HeroDiscription>{device ? descr : defaultDescr}</HeroDiscription>
           <MediaQuery device={'desktop'}>
             <HeroLink to="/download">Download for Free</HeroLink>
           </MediaQuery>
