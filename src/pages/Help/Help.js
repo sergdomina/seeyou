@@ -1,10 +1,18 @@
 // Help;
 import Footer from 'components/Footer';
 import HelpCenter from 'components/HelpCenter';
+import DownloadMobileFooter from '../../components/DownloadMobileFooter';
+import MediaQuery from '../../components/MediaQuery';
 const Help = () => {
   return (
     <>
-      <HelpCenter />
+      <main>
+        <HelpCenter />
+        <MediaQuery device={'mobile'}>
+          <DownloadMobileFooter />
+        </MediaQuery>
+      </main>
+
       <Footer />
     </>
   );
