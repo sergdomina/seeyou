@@ -6,21 +6,24 @@ import {
   HeroContainer,
   HeroBox,
   HeroLink,
-} from './HeroOwnership.styled';
+} from './HeroDownload.styled.js';
 import MediaQuery from '../MediaQuery';
+import platform from 'platform';
 
-const HeroOwnership = () => {
+const defaultTitle = 'Colaborate anywhere with SeeYou on all your devices';
+
+const HeroDownload = () => {
+  console.log(platform);
+  const userOS = platform.os.family;
+  const title = `SEEYOU for ${userOS}`;
   return (
     <HeroSection>
       <HeroContainer>
         <HeroThumb />
         <HeroBox>
-          <HeroTitle>
-            Use and share <br /> SEEYOU and get <br /> equity tokens
-          </HeroTitle>
+          <HeroTitle> {userOS ? title : defaultTitle}</HeroTitle>
           <HeroDiscription>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
+            Download SEEYOU for your {platform.product} device
           </HeroDiscription>
           <MediaQuery device={'desktop'}>
             <HeroLink to="/download">Download for Free</HeroLink>
@@ -30,5 +33,4 @@ const HeroOwnership = () => {
     </HeroSection>
   );
 };
-
-export default HeroOwnership;
+export default HeroDownload;

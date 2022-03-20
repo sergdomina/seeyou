@@ -68,7 +68,7 @@ const AppBar = () => {
           </NavList>
         </Nav>
         <MediaQuery device={'desktop'}>
-          <DownloadLink>Download</DownloadLink>
+          <DownloadLink to="/download">Download</DownloadLink>
         </MediaQuery>
       </HeaderContainer>
     </Header>

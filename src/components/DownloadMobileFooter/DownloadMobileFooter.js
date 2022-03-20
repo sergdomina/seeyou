@@ -3,7 +3,7 @@ import DownloadLink from '../DownloadLink';
 const DownloadMobileFooter = () => {
   return (
     <DownloadLinkBox>
-      <DownloadLink>Download</DownloadLink>
+      <DownloadLink to="/download">Download</DownloadLink>
     </DownloadLinkBox>
   );
 };

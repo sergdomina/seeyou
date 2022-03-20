@@ -31,7 +31,7 @@ const HowItWorks = () => {
           className={'vertical-timeline-element--work'}
           contentStyle={style.contentStyle}
           iconStyle={style.iconStyle}
-          icon={'1'}
+          icon={<span>1</span>}
           animate={'false'}
         >
           <h3 className="vertical-timeline-element-title">
@@ -46,7 +46,7 @@ const HowItWorks = () => {
           className="vertical-timeline-element--work"
           contentStyle={style.contentStyle}
           iconStyle={style.iconStyle}
-          icon={'2'}
+          icon={<span>2</span>}
           animate={'false'}
         >
           <h3 className="vertical-timeline-element-title">
@@ -61,7 +61,7 @@ const HowItWorks = () => {
           className="vertical-timeline-element--work"
           contentStyle={style.contentStyle}
           iconStyle={style.iconStyle}
-          icon={'3'}
+          icon={<span>3</span>}
           animate={'false'}
         >
           <h3 className="vertical-timeline-element-title">
@@ -76,7 +76,7 @@ const HowItWorks = () => {
           className="vertical-timeline-element--work"
           contentStyle={style.contentStyle}
           iconStyle={style.iconStyle}
-          icon={'4'}
+          icon={<span>4</span>}
           animate={'false'}
         >
           <h3 className="vertical-timeline-element-title">

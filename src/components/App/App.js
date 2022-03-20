@@ -5,6 +5,7 @@ import Products from '../../pages/Products';
 import Home from '../../pages/Home';
 import Ownership from '../../pages/Ownership';
 import Help from '../../pages/Help';
+import Download from '../../pages/Download';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="ownership" element={<Ownership />} />
         <Route path="about" element={<About />} />
         <Route path="help" element={<Help />} />
+        <Route path="download" element={<Download />} />
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
     </Routes>
