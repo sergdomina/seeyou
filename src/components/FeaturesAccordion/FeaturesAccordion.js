@@ -1,17 +1,7 @@
 import Section from '../Section';
-import {
-  FeaturesTitle,
-  FeaturesAccordionItem,
-  FeaturesContainer,
-} from './FeaturesAccordion.styled';
-import {
-  Accordion,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Flex,
-} from '@chakra-ui/react';
-import GlobalImage from '../GlobalImage';
+import { FeaturesTitle, FeaturesContainer } from './FeaturesAccordion.styled';
+import { Accordion } from '@chakra-ui/react';
+
 import {
   RewindThumb,
   LibraryThumb,
@@ -21,151 +11,40 @@ import {
   NoteIconThumb,
 } from '../FeathersThumbIcon/FeathersThumbIcon';
 
+import AcordionElement from './AcordionElement';
+
+const message =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat';
+
 const FeaturesAccordion = () => {
   return (
     <Section>
       <FeaturesContainer>
         <FeaturesTitle>Features</FeaturesTitle>
         <Accordion allowToggle>
-          <FeaturesAccordionItem>
-            <h2>
-              <AccordionButton
-                padding={'24px 32px'}
-                fontSize={'18px'}
-                boxShadow={'none'}
-                _hover={{ boxShadow: 'none' }}
-              >
-                <Flex align={'center'} flex="1" textAlign="left">
-                  <RewindThumb />
-                  Live conference rewind
-                </Flex>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <GlobalImage mb={'40'} />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </AccordionPanel>
-          </FeaturesAccordionItem>
-          <FeaturesAccordionItem>
-            <h2>
-              <AccordionButton
-                padding={'24px 32px'}
-                fontSize={'18px'}
-                boxShadow={'none'}
-                _hover={{ boxShadow: 'none' }}
-              >
-                <Flex align={'center'} flex="1" textAlign="left">
-                  <LibraryThumb />
-                  User-centered library
-                </Flex>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <GlobalImage mb={'40'} />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </AccordionPanel>
-          </FeaturesAccordionItem>
+          <AcordionElement title={'Live conference rewind'} text={message}>
+            <RewindThumb />
+          </AcordionElement>
 
-          <FeaturesAccordionItem>
-            <h2>
-              <AccordionButton
-                padding={'24px 32px'}
-                fontSize={'18px'}
-                boxShadow={'none'}
-                _hover={{ boxShadow: 'none' }}
-              >
-                <Flex align={'center'} flex="1" textAlign="left">
-                  <LoopIconThumb />
-                  60 second loop
-                </Flex>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <GlobalImage mb={'40'} />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </AccordionPanel>
-          </FeaturesAccordionItem>
-          <FeaturesAccordionItem>
-            <h2>
-              <AccordionButton
-                padding={'24px 32px'}
-                fontSize={'18px'}
-                boxShadow={'none'}
-                _hover={{ boxShadow: 'none' }}
-              >
-                <Flex align={'center'} flex="1" textAlign="left">
-                  <CallIconThumb />
-                  Calls during conference
-                </Flex>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <GlobalImage mb={'40'} />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </AccordionPanel>
-          </FeaturesAccordionItem>
-          <FeaturesAccordionItem>
-            <h2>
-              <AccordionButton
-                padding={'24px 32px'}
-                fontSize={'18px'}
-                boxShadow={'none'}
-                _hover={{ boxShadow: 'none' }}
-              >
-                <Flex align={'center'} flex="1" textAlign="left">
-                  <MessageIconThumb />
-                  30 second video messages
-                </Flex>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <GlobalImage mb={'40'} />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </AccordionPanel>
-          </FeaturesAccordionItem>
-          <FeaturesAccordionItem>
-            <h2>
-              <AccordionButton
-                padding={'24px 32px'}
-                fontSize={'18px'}
-                boxShadow={'none'}
-                _hover={{ boxShadow: 'none' }}
-              >
-                <Flex align={'center'} flex="1" textAlign="left">
-                  <NoteIconThumb />
-                  Timecoded sticky notes
-                </Flex>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <GlobalImage mb={'40'} />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </AccordionPanel>
-          </FeaturesAccordionItem>
+          <AcordionElement title={'User-centered library'} text={message}>
+            <LibraryThumb />
+          </AcordionElement>
+
+          <AcordionElement title={'60 second loop'} text={message}>
+            <LoopIconThumb />
+          </AcordionElement>
+
+          <AcordionElement title={'Calls during conference'} text={message}>
+            <CallIconThumb />
+          </AcordionElement>
+
+          <AcordionElement title={'30 second video messages'} text={message}>
+            <MessageIconThumb />
+          </AcordionElement>
+
+          <AcordionElement title={'Timecoded sticky notes'} text={message}>
+            <NoteIconThumb />
+          </AcordionElement>
         </Accordion>
       </FeaturesContainer>
     </Section>

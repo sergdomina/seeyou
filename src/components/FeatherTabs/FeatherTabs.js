@@ -201,3 +201,22 @@ const FeatherTabs = () => {
   );
 };
 export default FeatherTabs;
+
+// const TabElement = ({ text, url, link }) => {
+//   return (
+//     <TabPanel padding={'0'}>
+//       <Image
+//         boxSize="427px"
+//         width="666px"
+//         src={url}
+//         alt="slide 1 image"
+//         marginBottom={'32px'}
+//       />
+//       <p>
+//         {text}&nbsp;
+//         <a href={link}>Learn More</a>
+//       </p>
+//     </TabPanel>
+//   );
+// };
+// // export default AcordionElement;

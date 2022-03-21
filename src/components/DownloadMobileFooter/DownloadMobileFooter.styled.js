@@ -11,4 +11,5 @@ export const DownloadLinkBox = styled.div`
   position: fixed;
   bottom: 0;
   background: ${({ theme }) => theme.colors.white};
+  z-index: 1;
 `;
