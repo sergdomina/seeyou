@@ -1,12 +1,16 @@
-import { HelpSection, SectionTitle, HelpContainer } from './HeroRelease.styled';
+import React from 'react';
+import { HelpSection, SectionTitle } from './HeroRelease.styled';
+import Container from '../Container';
 
 const HelpCenter = () => {
   return (
-    <HelpSection>
-      <HelpContainer>
-        <SectionTitle>SEEYOU iOS release notes</SectionTitle>
-      </HelpContainer>
-    </HelpSection>
+    <section>
+      <HelpSection>
+        <Container>
+          <SectionTitle>SEEYOU iOS release notes</SectionTitle>
+        </Container>
+      </HelpSection>
+    </section>
   );
 };
 export default HelpCenter;
