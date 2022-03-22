@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import Container from '../Container';
-export const HelpSection = styled.div`
+export const HelpSection = styled.section`
   padding-top: 62px;
-  padding-bottom: 52px;
+  padding-bottom: 67px;
   background: ${({ theme }) => theme.colors.blue};
   ${({ theme }) => theme.device.desktop} {
-    padding-top: 94px;
-    padding-bottom: 95px;
+    padding-top: 90px;
+    padding-bottom: 84px;
   }
 `;
 

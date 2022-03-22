@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import Container from '../Container';
 
 export const HeroSection = styled.section`
@@ -105,6 +106,16 @@ export const AnotherLink = styled.a`
   margin-bottom: 24px;
 `;
 
+export const ReleaserLink = styled(NavLink)`
+  text-decoration: underline;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
+
+  color: ${({ theme }) => theme.colors.link};
+
+  margin-bottom: 24px;
+`;
 export const ReleaseItem = styled.li`
   &:not(:last-child) {
     margin-bottom: 24px;
