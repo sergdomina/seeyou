@@ -1,4 +1,13 @@
 import styled from 'styled-components';
+import Container from '../Container';
+import { AccordionItem } from '@chakra-ui/react';
+
+export const ReleaseSection = styled.div`
+  padding-bottom: 43px;
+  ${({ theme }) => theme.device.desktop} {
+    padding-bottom: 135px;
+  }
+`;
 
 export const HelpSection = styled.div`
   padding-top: 62px;
@@ -20,4 +29,13 @@ export const SectionTitle = styled.h2`
     font-size: 24px;
     line-height: 1.5;
   }
+`;
+export const ReleaseContainer = styled(Container)`
+  padding: 0;
+`;
+
+export const FeaturesAccordionItem = styled(AccordionItem)`
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.06);
 `;
