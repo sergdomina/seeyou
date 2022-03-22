@@ -17,6 +17,7 @@ import {
   AccordionButton,
   Flex,
   AccordionIcon,
+  useAccordionItemState,
   AccordionPanel,
 } from '@chakra-ui/react';
 import Container from '../Container';
@@ -32,8 +33,10 @@ const variant = {
 const HelpCenter = () => {
   const FeaturesTab = React.forwardRef((props, ref) => {
     const tabProps = useTab({ ...props, ref });
+    const acordinProps = useAccordionItemState({ ...props, ref });
+
     const w = {
-      color: '#6E7191',
+      color: '#000000',
       border: 'none',
       _hover: variant,
       _focus: variant,
@@ -42,13 +45,14 @@ const HelpCenter = () => {
       boxShadow: 'none',
     };
     return (
-      <Box __css={w} {...tabProps}>
+      <Box __css={w} {...tabProps} onClick={() => acordinProps.onClose()}>
         {tabProps.children}
       </Box>
     );
   });
   const FeaturesTabPanels = React.forwardRef((props, ref) => {
     const tabProps = useTabPanels({ ...props, ref });
+
     const tp = {
       padding: '0px 24px',
     };
@@ -90,6 +94,7 @@ const HelpCenter = () => {
                 position={'absolute'}
                 width={'100%'}
                 background={'white'}
+                boxShadow={'0px 1px 4px rgba(0, 0, 0, 0.25)'}
               >
                 <TabList
                   gap={4}
@@ -97,17 +102,17 @@ const HelpCenter = () => {
                   border={'none'}
                   padding={'24px 32px'}
                 >
-                  <FeaturesTab>Live conference rewind</FeaturesTab>
+                  <FeaturesTab>iOS release notes</FeaturesTab>
 
-                  <FeaturesTab>User-centered library</FeaturesTab>
+                  <FeaturesTab>Android release notes</FeaturesTab>
 
-                  <FeaturesTab>60 second loop</FeaturesTab>
+                  <FeaturesTab>Mac release notes</FeaturesTab>
 
-                  <FeaturesTab>Calls during conference</FeaturesTab>
+                  <FeaturesTab>Windows release notes</FeaturesTab>
 
-                  <FeaturesTab>30 second video messages</FeaturesTab>
+                  <FeaturesTab>Linux release notes</FeaturesTab>
 
-                  <FeaturesTab>Timecoded sticky notes</FeaturesTab>
+                  <FeaturesTab>Chrome OS release notes</FeaturesTab>
                 </TabList>
               </AccordionPanel>
             </FeaturesAccordionItem>
@@ -123,7 +128,7 @@ const HelpCenter = () => {
                 veniam consequat sunt nostrud amet. 1! Amet minim mollit non
                 deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt nostrud amet.
+                consequat sunt nostrud amet.1
               </p>
             </TabPanel>
             <TabPanel padding={'0'}>
@@ -136,7 +141,7 @@ const HelpCenter = () => {
                 veniam consequat sunt nostrud amet. 1! Amet minim mollit non
                 deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt nostrud amet.
+                consequat sunt nostrud amet.1
               </p>
             </TabPanel>
             <TabPanel padding={'0'}>
@@ -149,7 +154,7 @@ const HelpCenter = () => {
                 veniam consequat sunt nostrud amet. 2! Amet minim mollit non
                 deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt nostrud amet.
+                consequat sunt nostrud amet.2
               </p>
             </TabPanel>
             <TabPanel padding={'0'}>
@@ -162,7 +167,7 @@ const HelpCenter = () => {
                 veniam consequat sunt nostrud amet. 3! Amet minim mollit non
                 deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt nostrud amet.
+                consequat sunt nostrud amet.3
               </p>
             </TabPanel>
             <TabPanel padding={'0'}>
@@ -175,7 +180,7 @@ const HelpCenter = () => {
                 veniam consequat sunt nostrud amet. 4! Amet minim mollit non
                 deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt nostrud amet.
+                consequat sunt nostrud amet.4
               </p>
             </TabPanel>
             <TabPanel padding={'0'}>
@@ -188,7 +193,7 @@ const HelpCenter = () => {
                 veniam consequat sunt nostrud amet. 5! Amet minim mollit non
                 deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt nostrud amet.
+                consequat sunt nostrud amet.5
               </p>
             </TabPanel>
             <TabPanel padding={'0'}>
@@ -201,7 +206,7 @@ const HelpCenter = () => {
                 veniam consequat sunt nostrud amet. 6! Amet minim mollit non
                 deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim velit mollit. Exercitation veniam
-                consequat sunt nostrud amet.
+                consequat sunt nostrud amet.6
               </p>
             </TabPanel>
           </FeaturesTabPanels>
