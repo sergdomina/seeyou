@@ -10,11 +10,10 @@ import {
   ReleaseList,
   ReleaseItem,
   HeroMobileLink,
-  Download,
-  DownloadThumb,
   DesctopLink,
   MobileItem,
   MobileList,
+  ReleaserLink,
 } from './HeroDownload.styled.js';
 // import MediaQuery from '../MediaQuery';
 import platform from 'platform';
@@ -61,7 +60,7 @@ const HeroDownload = () => {
             </ReleaseItem>
 
             <ReleaseItem>
-              <AnotherLink href="#">Release Notes</AnotherLink>
+              <ReleaserLink to="/release">Release Notes</ReleaserLink>
             </ReleaseItem>
           </ReleaseList>
         </HeroBox>

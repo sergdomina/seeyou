@@ -11,6 +11,7 @@ export const HelpSection = styled.div`
 `;
 
 export const SectionTitle = styled.h2`
+  font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 30px;
   line-height: 1.4;
   text-align: center;
