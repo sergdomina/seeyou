@@ -7,6 +7,8 @@ import Container from '../Container';
 import Expects from './Expects';
 import BeAwareOf from './BeAwareOf';
 import Collects from './Collects';
+import ShareTheInformation from './ShareTheInformation';
+import ChangeInformation from './ChangeInformation';
 
 const PrivacyDescr = () => {
   return (
@@ -29,6 +31,8 @@ const PrivacyDescr = () => {
         <Expects />
         <BeAwareOf />
         <Collects />
+        <ShareTheInformation />
+        <ChangeInformation />
       </Container>
     </PrivacySection>
   );

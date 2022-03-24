@@ -14,7 +14,7 @@ import {
 } from './Collects.styled';
 import { ReactComponent as Read } from './read.svg';
 
-const PrivacyDescr = () => {
+const Collects = () => {
   return (
     <>
       <CollectsTitle>Information SEEYOU Collects</CollectsTitle>
@@ -188,4 +188,4 @@ const PrivacyDescr = () => {
     </>
   );
 };
-export default PrivacyDescr;
+export default Collects;

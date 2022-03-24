@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const Title = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.title.semiBold};
+  color: ${({ theme }) => theme.colors.primaryText};
+  font-size: 30px;
+  line-height: 1.43;
+
+  margin-bottom: 27px;
+`;
+
 export const Discription = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
   font-size: 20px;
@@ -8,14 +17,11 @@ export const Discription = styled.p`
   color: ${({ theme }) => theme.colors.black_btn};
   margin-bottom: 43px;
 `;
-export const DiscriptionRed = styled(Discription)`
-  color: red;
-  text-transform: uppercase;
-`;
+
 export const DiscriptionList = styled.ul`
   list-style-type: disc;
-  padding-left: 29px;
-  margin-bottom: 27px;
+  padding-left: 35px;
+  margin-bottom: 43px;
 `;
 
 export const DiscriptionItem = styled.li`
@@ -24,6 +30,24 @@ export const DiscriptionItem = styled.li`
   line-height: 1.35;
 
   color: ${({ theme }) => theme.colors.black_btn};
+`;
+
+export const Subtitle = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.descr.bold};
+  font-size: 20px;
+  line-height: 1.35;
+
+  color: ${({ theme }) => theme.colors.black_btn};
+`;
+
+export const SubtitleEffective = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.descr.bold};
+  font-size: 20px;
+  line-height: 1.35;
+
+  color: ${({ theme }) => theme.colors.black_btn};
+
+  margin-bottom: 16px;
 `;
 
 export const EffectiveList = styled.ul`
@@ -45,38 +69,4 @@ export const EffectiveLink = styled.a`
   border-radius: 4px;
 
   padding: 14px 74px;
-`;
-
-export const CollectsTitle = styled.h3`
-  font-family: ${({ theme }) => theme.fonts.title.semiBold};
-  font-size: 30px;
-  line-height: 1.43;
-
-  color: ${({ theme }) => theme.colors.primaryText};
-
-  margin-bottom: 27px;
-`;
-
-export const CollectsBox = styled.div`
-  display: flex;
-  p {
-    flex-basis: 74%;
-    margin-bottom: 0;
-  }
-  margin-bottom: 42px;
-`;
-
-export const CollectsDiscription = styled(Discription)`
-  margin-bottom: 0px;
-`;
-
-export const ProjectsDiscription = styled(Discription)`
-  margin-bottom: 27px;
-`;
-export const FollowingList = styled.ul`
-  margin-bottom: 80px;
-`;
-
-export const FollovingDiscription = styled(Discription)`
-  margin-bottom: 51px;
 `;
