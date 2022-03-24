@@ -7,6 +7,7 @@ import Ownership from '../../pages/Ownership';
 import Help from '../../pages/Help';
 import Download from '../../pages/Download';
 import Release from '../../pages/Release';
+import Privacy from '../../pages/Privacy';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="help" element={<Help />} />
         <Route path="download" element={<Download />} />
         <Route path="release" element={<Release />} />
+        <Route path="privacy" element={<Privacy />} />
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
     </Routes>

@@ -2,6 +2,7 @@ import {
   FooterStyle,
   PolicyBox,
   PolicyItem,
+  PolicyLink,
   Policylist,
   FooterContainer,
   FooterDeskr,
@@ -43,10 +44,20 @@ const Footer = () => {
       <PolicyBox>
         <Container>
           <Policylist>
-            <PolicyItem>Terms & Conditions </PolicyItem>
-            <PolicyItem>Privacy Policy</PolicyItem>
-            <PolicyItem>Cookies Policy</PolicyItem>
-            <PolicyItem>Co-ownership & Rewards Policy</PolicyItem>
+            <PolicyItem>
+              <PolicyLink to="/privacy">Terms & Conditions</PolicyLink>
+            </PolicyItem>
+            <PolicyItem>
+              <PolicyLink to="/privacy">Privacy Policy</PolicyLink>
+            </PolicyItem>
+            <PolicyItem>
+              <PolicyLink to="/privacy">Cookies Policy</PolicyLink>
+            </PolicyItem>
+            <PolicyItem>
+              <PolicyLink to="/privacy">
+                Co-ownership & Rewards Policy
+              </PolicyLink>
+            </PolicyItem>
           </Policylist>
         </Container>
       </PolicyBox>

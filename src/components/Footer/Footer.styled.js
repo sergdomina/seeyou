@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import Container from '../Container';
 import { ReactComponent as LogoSeeYou } from 'image/full.svg';
 
@@ -117,12 +118,8 @@ export const Policylist = styled.ul`
 
 export const PolicyItem = styled.li`
   position: relative;
-  font-size: 20px;
-  line-height: 2;
-  color: ${({ theme }) => theme.colors.white};
+
   ${({ theme }) => theme.device.desktop} {
-    font-size: 20px;
-    line-height: 1.5;
     &:not(:last-child) {
       margin-right: 30px;
       &::after {
@@ -136,5 +133,14 @@ export const PolicyItem = styled.li`
         background-color: white;
       }
     }
+  }
+`;
+export const PolicyLink = styled(NavLink)`
+  font-size: 20px;
+  line-height: 2;
+  color: ${({ theme }) => theme.colors.white};
+  ${({ theme }) => theme.device.desktop} {
+    font-size: 20px;
+    line-height: 1.5;
   }
 `;
