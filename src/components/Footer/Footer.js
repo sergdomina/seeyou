@@ -45,7 +45,7 @@ const Footer = () => {
         <Container>
           <Policylist>
             <PolicyItem>
-              <PolicyLink to="/privacy">Terms & Conditions</PolicyLink>
+              <PolicyLink to="/terms">Terms & Conditions</PolicyLink>
             </PolicyItem>
             <PolicyItem>
               <PolicyLink to="/privacy">Privacy Policy</PolicyLink>

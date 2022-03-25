@@ -1,14 +1,14 @@
-import PrivacyHero from 'components/PrivacyHero';
-import PrivacyDescr from 'components/PrivacyDescr';
+import TermsHero from 'components/TermsHero';
+import TermsDescr from 'components/TermsDescr';
 import Footer from 'components/Footer';
 import DownloadMobileFooter from '../../components/DownloadMobileFooter';
 import MediaQuery from '../../components/MediaQuery';
-const Privacy = () => {
+const Terms = () => {
   return (
     <>
       <main>
-        <PrivacyHero />
-        <PrivacyDescr />
+        <TermsHero />
+        <TermsDescr />
         <MediaQuery device={'mobile'}>
           <DownloadMobileFooter />
         </MediaQuery>
@@ -18,4 +18,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+export default Terms;

@@ -8,6 +8,7 @@ import Help from '../../pages/Help';
 import Download from '../../pages/Download';
 import Release from '../../pages/Release';
 import Privacy from '../../pages/Privacy';
+import Terms from '../../pages/Terms';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="download" element={<Download />} />
         <Route path="release" element={<Release />} />
         <Route path="privacy" element={<Privacy />} />
+        <Route path="terms" element={<Terms />} />
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
     </Routes>

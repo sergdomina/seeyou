@@ -1,10 +1,10 @@
-import { SectionTitle, HeroPrivacySection } from './PrivacyHero.styled';
+import { SectionTitle, HeroSection } from './PrivacyHero.styled';
 
 const PrivacyHero = () => {
   return (
-    <HeroPrivacySection>
+    <HeroSection>
       <SectionTitle>Privacy Policy</SectionTitle>
-    </HeroPrivacySection>
+    </HeroSection>
   );
 };
 export default PrivacyHero;
