@@ -29,14 +29,14 @@ const Footer = () => {
         </Footerbox>
         <FooterList>
           <FooterLinkBox>
-            <FooterItem>Help Center</FooterItem>
-            <FooterItem>Our Team</FooterItem>
-            <FooterItem>Download</FooterItem>
+            <FooterItem></FooterItem>
+            <FooterItem></FooterItem>
+            <FooterItem></FooterItem>
           </FooterLinkBox>
           <FooterLinkBox>
-            <FooterItem>Contact Us</FooterItem>
+            <FooterItem>Help Center</FooterItem>
             <MediaQuery device={'desktop'}>
-              <FooterLink>hello@seeyou.eu</FooterLink>
+              <FooterLink>Download</FooterLink>
             </MediaQuery>
           </FooterLinkBox>
         </FooterList>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Container from '../Container';
 
 export const RewardedTitle = styled.h2`
-  font-family: 'Jost';
+  font-family: ${({ theme }) => theme.fonts.title.bold};
   font-weight: 600;
   font-size: 30px;
   line-height: 1.5;
@@ -19,7 +19,7 @@ export const RewardedThumb = styled.div`
   background: ${({ theme }) => theme.colors.blue};
 `;
 export const RewardedDiscription = styled.p`
-  font-family: 'Open Sans';
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
