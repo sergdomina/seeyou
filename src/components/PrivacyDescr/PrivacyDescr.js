@@ -9,6 +9,7 @@ import BeAwareOf from './BeAwareOf';
 import Collects from './Collects';
 import ShareTheInformation from './ShareTheInformation';
 import ChangeInformation from './ChangeInformation';
+import AboutThisPolicy from './AboutThisPolicy';
 
 const PrivacyDescr = () => {
   return (
@@ -33,6 +34,7 @@ const PrivacyDescr = () => {
         <Collects />
         <ShareTheInformation />
         <ChangeInformation />
+        <AboutThisPolicy />
       </Container>
     </PrivacySection>
   );
