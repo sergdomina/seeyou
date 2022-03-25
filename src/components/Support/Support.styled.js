@@ -8,7 +8,6 @@ export const SupportSection = styled.section`
 
 export const SupportTitle = styled.h2`
   font-family: ${({ theme }) => theme.fonts.title.bold};
-  font-weight: 600;
   font-size: 30px;
   line-height: 1.5;
   margin-bottom: 16px;
@@ -24,8 +23,6 @@ export const SupportContainer = styled.div`
 `;
 export const SupportDiscription = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
 
