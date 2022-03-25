@@ -3,13 +3,13 @@ import {
   ConferenceDiscription,
   SectionTitle,
   ConferenceItem,
-} from './HeroAbout.styled';
+} from './AboutHero.styled';
 import GlobalSection from '../Section';
 import Container from '../Container';
 import GlobalImage from '../GlobalImage';
 import GlobalBox from '../GlobalBox';
 
-const Conference = () => {
+const AboutHero = () => {
   return (
     <GlobalSection>
       <Container>
@@ -54,4 +54,4 @@ const Conference = () => {
     </GlobalSection>
   );
 };
-export default Conference;
+export default AboutHero;

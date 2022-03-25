@@ -1,11 +1,11 @@
-import HeroAbout from 'components/HeroAbout';
+import AboutHero from 'components/AboutHero';
 import OurLeadership from 'components/OurLeadership';
 import DownloadMobileFooter from '../../components/DownloadMobileFooter';
 import MediaQuery from '../../components/MediaQuery';
 const About = () => {
   return (
     <>
-      <HeroAbout />
+      <AboutHero />
       <OurLeadership />
       <MediaQuery device={'mobile'}>
         <DownloadMobileFooter />

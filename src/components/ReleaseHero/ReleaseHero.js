@@ -5,7 +5,7 @@ import {
   SectionTitle,
   ReleaseContainer,
   FeaturesAccordionItem,
-} from './HeroRelease.styled';
+} from './ReleaseHero.styled';
 import {
   Tabs,
   TabList,
@@ -30,7 +30,7 @@ const variant = {
   fontWeight: '800',
 };
 
-const HelpCenter = () => {
+const ReleaseHero = () => {
   const FeaturesTab = React.forwardRef((props, ref) => {
     const tabProps = useTab({ ...props, ref });
     const acordinProps = useAccordionItemState({ ...props, ref });
@@ -215,4 +215,4 @@ const HelpCenter = () => {
     </ReleaseSection>
   );
 };
-export default HelpCenter;
+export default ReleaseHero;

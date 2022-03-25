@@ -1,11 +1,11 @@
 import Footer from 'components/Footer';
-import HeroRelease from 'components/HeroRelease';
+import ReleaseHero from 'components/ReleaseHero';
 
 const ReleaseNotes = () => {
   return (
     <>
       <main>
-        <HeroRelease />
+        <ReleaseHero />
       </main>
 
       <Footer />

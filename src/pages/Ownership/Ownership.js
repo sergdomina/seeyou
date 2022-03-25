@@ -1,4 +1,4 @@
-import HeroOwnership from 'components/HeroOwnership';
+import OwnershipHero from 'components/OwnershipHero';
 import HowItWorks from 'components/HowItWorks';
 import MoreDetails from 'components/MoreDetails';
 import FAQ from 'components/FAQ';
@@ -9,7 +9,7 @@ const Ownership = () => {
   return (
     <>
       <main>
-        <HeroOwnership />
+        <OwnershipHero />
         <HowItWorks />
         <MoreDetails />
         <FAQ />

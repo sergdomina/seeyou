@@ -6,7 +6,7 @@ import {
   HeroContainer,
   HeroBox,
   HeroLink,
-} from './HeroOwnership.styled';
+} from './OwnershipHero.styled';
 import MediaQuery from '../MediaQuery';
 
 const HeroOwnership = () => {

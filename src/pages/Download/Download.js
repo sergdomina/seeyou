@@ -1,11 +1,11 @@
-import HeroDownload from 'components/HeroDownload';
+import DownloadHero from 'components/DownloadHero';
 import Footer from 'components/Footer';
 
 const Download = () => {
   return (
     <>
       <main>
-        <HeroDownload />
+        <DownloadHero />
       </main>
       <Footer />
     </>

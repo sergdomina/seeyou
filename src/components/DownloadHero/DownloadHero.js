@@ -14,7 +14,7 @@ import {
   MobileItem,
   MobileList,
   ReleaserLink,
-} from './HeroDownload.styled.js';
+} from './DownloadHero.styled.js';
 // import MediaQuery from '../MediaQuery';
 import platform from 'platform';
 import { isDesktop, isMobile, isAndroid } from 'react-device-detect';
@@ -28,7 +28,7 @@ const defaultTitle = 'Colaborate anywhere with SeeYou on all your devices';
 const defaultDescr =
   'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ';
 //Androin//Windows
-const HeroDownload = () => {
+const DownloadHero = () => {
   const userOS = platform.os.family;
   const title = `SEEYOU for ${userOS}`;
   const device = platform?.product;
@@ -106,4 +106,4 @@ const HeroDownload = () => {
     </HeroSection>
   );
 };
-export default HeroDownload;
+export default DownloadHero;
