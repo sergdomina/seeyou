@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const ConferenceTitle = styled.h3`
-  font-family: 'Jost';
-  font-weight: 600;
+  font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 30px;
   line-height: 1.5;
 
@@ -25,9 +24,7 @@ export const SectionTitle = styled.h2`
 `;
 
 export const ConferenceDiscription = styled.p`
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
   font-size: 14px;
   line-height: 1.5;
   color: ${({ theme }) => theme.colors.primaryText};
