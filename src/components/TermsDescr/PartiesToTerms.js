@@ -6,7 +6,7 @@ import {
   EmailLink,
 } from './PartiesToTerms.styled.js';
 
-const AboutThisPolicy = () => {
+const PartiesToTerms = () => {
   return (
     <>
       <Title>Parties to Terms of Services</Title>
@@ -41,4 +41,4 @@ const AboutThisPolicy = () => {
     </>
   );
 };
-export default AboutThisPolicy;
+export default PartiesToTerms;

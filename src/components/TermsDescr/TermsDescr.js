@@ -7,7 +7,12 @@ import {
 } from './TermsDescr.styled';
 import Container from '../Container';
 import PartiesToTerms from './PartiesToTerms';
-const PrivacyDescr = () => {
+import CanExpect from './CanExpect';
+import CommunityPolicies from './CommunityPolicies';
+import Services from './Services';
+import ScopeRightsPurpose from './ScopeRightsPurpose';
+import DurationContentLega from './DurationContentLega';
+const TermsDescription = () => {
   return (
     <PrivacySection>
       <Container>
@@ -50,8 +55,13 @@ const PrivacyDescr = () => {
           </li>
         </DiscriptionList>
         <PartiesToTerms />
+        <CanExpect />
+        <CommunityPolicies />
+        <Services />
+        <ScopeRightsPurpose />
+        <DurationContentLega />
       </Container>
     </PrivacySection>
   );
 };
-export default PrivacyDescr;
+export default TermsDescription;
