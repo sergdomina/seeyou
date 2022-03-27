@@ -7,7 +7,7 @@ import Support from 'components/Support';
 import FAQ from 'components/FAQ';
 import Footer from 'components/Footer';
 import MediaQuery from '../../components/MediaQuery';
-import DownloadMobileFooter from '../../components/DownloadMobileFooter';
+// import DownloadMobileFooter from '../../components/DownloadMobileFooter';
 const Home = () => {
   return (
     <>
@@ -24,9 +24,9 @@ const Home = () => {
         <Conference />
         <Support />
         <FAQ />
-        <MediaQuery device={'mobile'}>
+        {/* <MediaQuery device={'mobile'}>
           <DownloadMobileFooter />
-        </MediaQuery>
+        </MediaQuery> */}
       </main>
 
       <Footer />

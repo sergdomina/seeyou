@@ -16,16 +16,21 @@ import LogoSeeYou from '../../image/LogoSeeYou.svg';
 import { useOnClickOutside } from '../../hooks/OnClickOutside';
 import MediaQuery from '../MediaQuery';
 import DownloadLink from '../DownloadLink';
-
+import ModalForMail from '../ModalForMail';
+import DownloadMobileFooter from '../DownloadMobileFooter';
 const AppBar = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
-  const ToggleMenu = () => {
+  const toggleMenu = () => {
     setIsOpenMobileMenu(!isOpenMobileMenu);
   };
   const node = useRef();
-  // const menuId = 'main-menu';
 
-  useOnClickOutside(node, () => ToggleMenu(false), isOpenMobileMenu);
+  useOnClickOutside(node, () => toggleMenu(false), isOpenMobileMenu);
+
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => setShowModal(!showModal);
+
   return (
     <Header ref={node}>
       <HeaderContainer>
@@ -33,7 +38,7 @@ const AppBar = () => {
           <MediaQuery device={'mobile'}>
             <Burger
               open={isOpenMobileMenu}
-              setOpen={ToggleMenu}
+              setOpen={toggleMenu}
               aria-expanded={isOpenMobileMenu}
               type="button"
             />
@@ -46,31 +51,41 @@ const AppBar = () => {
         <Nav className={isOpenMobileMenu && 'active'}>
           <NavList>
             <NavItem>
-              <Link to="/products" onClick={ToggleMenu}>
+              <Link to="/products" onClick={toggleMenu}>
                 Products
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/ownership" onClick={ToggleMenu}>
+              <Link to="/ownership" onClick={toggleMenu}>
                 Co-ownership
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/about" onClick={ToggleMenu}>
+              <Link to="/about" onClick={toggleMenu}>
                 About
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/help" onClick={ToggleMenu}>
+              <Link to="/help" onClick={toggleMenu}>
                 Help
               </Link>
             </NavItem>
           </NavList>
         </Nav>
+        <MediaQuery device={'mobile'}>
+          <DownloadMobileFooter>
+            <DownloadLink type="button" onClick={toggleModal}>
+              Download
+            </DownloadLink>
+          </DownloadMobileFooter>
+        </MediaQuery>
         <MediaQuery device={'desktop'}>
-          <DownloadLink to="/download">Download</DownloadLink>
+          <DownloadLink type="button" onClick={toggleModal}>
+            Download
+          </DownloadLink>
         </MediaQuery>
       </HeaderContainer>
+      {showModal && <ModalForMail toggleModal={toggleModal} />}
     </Header>
   );
 };
