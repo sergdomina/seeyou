@@ -109,7 +109,7 @@ export const Header = styled.header`
   position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
-  z-index: 1;
+  /* z-index: 1; */
   border-bottom: 2px solid ${({ theme }) => theme.colors.blue};
   ${({ theme }) => theme.device.desktop} {
     padding-top: 16px;

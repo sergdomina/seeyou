@@ -1,17 +1,17 @@
 import PrivacyHero from 'components/PrivacyHero';
 import PrivacyDescr from 'components/PrivacyDescr';
 import Footer from 'components/Footer';
-import DownloadMobileFooter from '../../components/DownloadMobileFooter';
-import MediaQuery from '../../components/MediaQuery';
+// import DownloadMobileFooter from '../../components/DownloadMobileFooter';
+// import MediaQuery from '../../components/MediaQuery';
 const Privacy = () => {
   return (
     <>
       <main>
         <PrivacyHero />
         <PrivacyDescr />
-        <MediaQuery device={'mobile'}>
+        {/* <MediaQuery device={'mobile'}>
           <DownloadMobileFooter />
-        </MediaQuery>
+        </MediaQuery> */}
       </main>
       <Footer />
     </>
