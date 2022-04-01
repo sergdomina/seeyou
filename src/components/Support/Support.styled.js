@@ -28,3 +28,9 @@ export const SupportDiscription = styled.p`
 
   color: ${({ theme }) => theme.colors.primaryText};
 `;
+export const Play = styled.img`
+
+${({ theme }) => theme.device.desktop} {
+  margin: 0;
+}
+`;

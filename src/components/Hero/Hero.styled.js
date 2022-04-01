@@ -9,33 +9,41 @@ export const HeroSection = styled.section`
 `;
 export const HeroTitle = styled.h1`
   font-family: ${({ theme }) => theme.fonts.title.bold};
-  font-size: 30px;
-  line-height: 1.5;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1.2;
   margin-bottom: 16px;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.black_btn};
 `;
 
-export const HeroThumb = styled.div`
+export const HeroThumb = styled.img`
   width: 271px;
   height: 238px;
   border-radius: 13px;
   margin: 0 auto;
-  overflow: hidden;
   margin-bottom: 40px;
-  background: ${({ theme }) => theme.colors.blue};
   ${({ theme }) => theme.device.desktop} {
-    width: 600px;
-    height: 427px;
+    width: 100%;
+    height: 100%;
     margin: 0;
+    margin-left: 40px;
+    margin-right: -100px;
+    transform: scale(90%);
   }
 `;
 export const HeroDiscription = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-size: 14px;
-  line-height: 150%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
 
   color: ${({ theme }) => theme.colors.primaryText};
   ${({ theme }) => theme.device.desktop} {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+    width: 472px;
     margin-bottom: 32px;
   }
 `;
@@ -55,6 +63,8 @@ export const HeroBox = styled.div`
     text-align: left;
   }
 `;
-export const HeroLink = styled(DownloadLink)`
+export const HeroLink = styled.button`
+  border: 2px solid #303030;
+  border-radius: 4px;
   padding: 14px 54px;
 `;

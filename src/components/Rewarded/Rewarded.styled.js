@@ -9,13 +9,22 @@ export const RewardedTitle = styled.h2`
   color: ${({ theme }) => theme.colors.black};
 `;
 
-export const RewardedThumb = styled.div`
-  width: 271px;
-  height: 238px;
-  border-radius: 13px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  background: ${({ theme }) => theme.colors.blue};
+export const RewerdThumb = styled.img`
+width: 271px;
+height: 238px;
+border-radius: 13px;
+margin: 0 auto;
+margin-bottom: 40px;
+${({ theme }) => theme.device.desktop} {
+  margin: 0;
+  margin-left: 40px;
+}
+`;
+export const RewerdThumb2 = styled.img`
+
+${({ theme }) => theme.device.desktop} {
+  margin: 0;
+}
 `;
 export const RewardedDiscription = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};

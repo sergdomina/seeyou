@@ -33,7 +33,12 @@ export const ConferenceDiscription = styled.p`
     margin-bottom: 30px;
   }
 `;
+export const ConfImg = styled.img`
 
+${({ theme }) => theme.device.desktop} {
+  margin: 0;
+}
+`;
 export const ConferenceItem = styled.li`
   &:not(:last-child) {
     margin-bottom: 30px;
