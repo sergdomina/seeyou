@@ -1,28 +1,32 @@
 import {
   RewardedTitle,
-  RewardedThumb,
+  RewerdThumb,
+  RewerdThumb2,
   RewardedDiscription,
   RewardedContainer,
 } from './Rewarded.styled';
 import GlobalSection from '../Section';
 import GlobalBox from '../GlobalBox';
-import GlobalImage from '../GlobalImage';
+import RewerdSeemoji from './rewerd_seemoji.png';
+import RewerdTool from './rewerd_toolbar.png'
 import LearnMore from '../LearnMore';
 const Rewarded = () => {
   return (
     <GlobalSection>
       <RewardedContainer>
-        <GlobalImage />
+        <RewerdThumb src={RewerdSeemoji}/>
         <GlobalBox>
           <RewardedTitle>
-            Get rewarded for using and sharing SEEYOU
+          The Toolbar
           </RewardedTitle>
           <RewardedDiscription>
-            SEEYOU helps to streamline the conferencing communication and gives
-            it’s users the opportunity to co-own for usage and sharing
+          You get an extra video conference toolbar providing a uniform set of tools for video conference providers. Meaning you can quickly master most platforms while still benefitting from their native functionality
           </RewardedDiscription>
           <LearnMore />
         </GlobalBox>
+      </RewardedContainer>
+      <RewardedContainer>
+        <RewerdThumb2 src={RewerdTool}/>
       </RewardedContainer>
     </GlobalSection>
   );

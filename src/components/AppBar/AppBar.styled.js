@@ -110,7 +110,7 @@ export const Header = styled.header`
   padding-top: 12px;
   padding-bottom: 12px;
   /* z-index: 1; */
-  border-bottom: 2px solid ${({ theme }) => theme.colors.blue};
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   ${({ theme }) => theme.device.desktop} {
     padding-top: 16px;
     padding-bottom: 16px;
