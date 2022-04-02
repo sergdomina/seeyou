@@ -1,114 +1,158 @@
 import {
-  ConferenceTitle,
-  ConferenceDiscription,
-  ConfImg,
-  SectionTitle,
+  Section,
+  HiddenTitle,
+  SubTitle,
+  Discription,
+  DiscriptionWithMargin,
   ConferenceItem,
+  DiscriptionList,
+  BoxBeforEnd,
 } from './Conference.styled';
-import GlobalSection from '../Section';
+
+import { Image } from '@chakra-ui/react';
+
 import Container from '../Container';
-import GlobalImage from '../GlobalImage';
-import SelfieImg from './Selfie_Loop_tm.png';
-import StickyImg from './Sticky_Note.png';
-import LibraryImg from './Library.png';
-import RewindImg from './rewind.png';
-import TrulyImg from './Truly.png';
-import HomeImg from './Home_Screen.png';
-import BrandImg from './Brands.png';
-import OwnerImg from './co-ownership.png';
 import GlobalBox from '../GlobalBox';
+
+import SelfieImg from '../../image/conference/selfieLoopTm.png';
+import StickyImg from '../../image/conference/stickyNote.png';
+import Library from '../../image/conference/library.png';
+import Rewind from '../../image/conference/rewind.png';
+import Calls from '../../image/conference/calls.png';
+import HomeScreen from '../../image/conference/homeScreen.png';
+import BrandsLogo from '../../image/conference/brandsLogo.png';
+import coOwnership from '../../image/conference/coOwnership.png';
 import LearnMore from '../LearnMore';
 const Conference = () => {
   return (
-    <GlobalSection>
+    <Section>
       <Container>
-        <SectionTitle />
+        <HiddenTitle>Conference </HiddenTitle>
         <ul>
           <ConferenceItem>
-            <ConfImg src={SelfieImg}/>
+            <Image src={SelfieImg} htmlWidth="521px" alt="selfie in seeyou" />
 
             <GlobalBox>
-              <ConferenceTitle>
-              The Selfie Loop ™
-              </ConferenceTitle>
+              <SubTitle>The Selfie Loop ™</SubTitle>
 
-              <ConferenceDiscription>
-              SEEYOU provides a real-time virtual camera Selfie Loop, substituting your camera feed with a selfie video recording when getting a coffee, making a call, or stepping away for a second
-              </ConferenceDiscription>
+              <Discription>
+                SEEYOU provides a real-time virtual camera Selfie Loop,
+                substituting your camera feed with a selfie video recording when
+                getting a coffee, making a call, or stepping away for a second
+              </Discription>
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <ConfImg src={StickyImg}/>
+            <Image src={StickyImg} htmlWidth="468px" alt="selfie in seeyou" />
             <GlobalBox>
-              <ConferenceTitle>The Notes</ConferenceTitle>
-              <ConferenceDiscription>
-              On Mac and Windows, SEEYOU provides fully encrypted hyperlinked sticky notes. Later, clicking on the link will automatically open the conference where you made the note if you have stored the conference in your private library.
-              </ConferenceDiscription>
-              <ConferenceDiscription>
-              Recording and storage are only possible on desktop devices. On Android and iPhone, the sticky notes are instead time-stamped to the conference timeline
-              </ConferenceDiscription>
+              <SubTitle>Linked Notes</SubTitle>
+              <DiscriptionWithMargin>
+                On Mac and Windows, SEEYOU provides fully encrypted hyperlinked
+                sticky notes. Later, clicking on the link will automatically
+                open the conference where you made the note if you have stored
+                the conference in your private library.
+              </DiscriptionWithMargin>
+              <Discription>
+                Recording and storage are only possible on desktop devices. On
+                Android and iPhone, the sticky notes are instead time-stamped to
+                the conference timeline
+              </Discription>
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <ConfImg src={LibraryImg}/>
+            <Image src={Library} htmlWidth="521px" alt="Library" />
+
             <GlobalBox>
-              <ConferenceTitle>The Library</ConferenceTitle>
-              <ConferenceDiscription>
-              SEEYOU allows you to store your recordings. These are kept in your private YouTube Studio® library. The sticky notes are hyperlinked to the recordings. Clicking on the link will automatically open the conference where you made the note
-              </ConferenceDiscription>
+              <SubTitle>
+                Free Conference <br /> Recordings Library
+              </SubTitle>
+              <Discription>
+                SEEYOU allows you to store your recordings. These are kept in
+                your private YouTube Studio® library. The sticky notes are
+                hyperlinked to the recordings. Clicking on the link will
+                automatically open the conference where you made the note
+              </Discription>
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <ConfImg src={RewindImg}/>
+            <Image src={Rewind} htmlWidth="541px" alt="Rewind" />
             <GlobalBox>
-              <ConferenceTitle>The Rewind</ConferenceTitle>
-              <ConferenceDiscription>
-              On Mac and Windows, SEEYOU enables real-time-rewind, allowing you to go back and check past parts while still following the live conference
-              </ConferenceDiscription>
+              <SubTitle>Real-Time Rewind</SubTitle>
+              <Discription>
+                On Mac and Windows, SEEYOU enables real-time-rewind, allowing
+                you to go back and check past parts while still following the
+                live conference
+              </Discription>
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <ConfImg src={TrulyImg}/>
+            <Image src={Calls} htmlWidth="568px" alt="Calls" />
             <GlobalBox>
-              <ConferenceTitle>The Truly Private <br/> Communication</ConferenceTitle>
-              <ConferenceDiscription>
-              SEEYOU's chat, video and voice calls are end-to-end encrypted, meaning they’re genuinely private. SEEYOU cannot read the content nor see with whom you are communicating. Nor can anyone else. Unlike many other providers, this holds for group chats too.
-              </ConferenceDiscription>
-              <ConferenceDiscription>
-              The chat, video, and voice calls work equally well outside video conferences. The encryption key is personal and managed by your mobile phone, and logs are not centrally stored by SEEYOU but are yours alone.
-              </ConferenceDiscription>
+              <SubTitle>
+                The Truly Private <br /> Communication
+              </SubTitle>
+              <DiscriptionWithMargin>
+                SEEYOU's chat, video and voice calls are end-to-end encrypted,
+                meaning they’re genuinely private. SEEYOU cannot read the
+                content nor see with whom you are communicating. Nor can anyone
+                else. Unlike many other providers, this holds for group chats
+                too.
+              </DiscriptionWithMargin>
+              <Discription>
+                The chat, video, and voice calls work equally well outside video
+                conferences. The encryption key is personal and managed by your
+                mobile phone, and logs are not centrally stored by SEEYOU but
+                are yours alone.
+              </Discription>
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <ConfImg src={HomeImg}/>
-            <GlobalBox>
-              <ConferenceTitle>The Single View <br /> Homepage</ConferenceTitle>
-              <ConferenceDiscription>
-              <ul>
-                <li>With your unread message</li>
-                <li>All your virtual meetings in one place</li>
-                <li>The one-stop-shop for creating conferences</li>
-              </ul>
-              </ConferenceDiscription>
-              <ConfImg src={BrandImg}/>
-            </GlobalBox>
+            <Image src={HomeScreen} htmlWidth="331px" />
+            <div>
+              <BoxBeforEnd>
+                <SubTitle>One-Stop-Shop Homepage</SubTitle>
+
+                <DiscriptionList>
+                  <li>
+                    <Discription>With your unread message</Discription>
+                  </li>
+                  <li>
+                    <Discription>
+                      All your virtual meetings in one place
+                    </Discription>
+                  </li>
+                  <li>
+                    <Discription>
+                      The one-stop-shop for creating conferences
+                    </Discription>
+                  </li>
+                </DiscriptionList>
+              </BoxBeforEnd>
+              <Image src={BrandsLogo} htmlWidth="570px" />
+            </div>
           </ConferenceItem>
           <ConferenceItem>
-            <ConfImg src={OwnerImg}/>
+            <Image src={coOwnership} htmlWidth="331px" />
             <GlobalBox>
-              <ConferenceTitle>The User Co-Ownership Program<br/> Program</ConferenceTitle>
-              <ConferenceDiscription>
-              SEEYOU will be partly user-owned. An equivalent of 10% of the original 2.5 million shares is gifted* without cost to our users during the first 25 months after Open Release on August 1st, 2022.
-              </ConferenceDiscription>
-              <ConferenceDiscription>
-              (*Terms to be announced)
-              </ConferenceDiscription>
+              <SubTitle>
+                The User Co-Ownership Program
+                <br /> Program
+              </SubTitle>
+              <DiscriptionWithMargin>
+                SEEYOU will be partly user-owned. An equivalent of 10% of the
+                original 2.5 million shares is gifted* without cost to our users
+                during the first 25 months after Open Release on August 1st,
+                2022.
+              </DiscriptionWithMargin>
+              <DiscriptionWithMargin>
+                (*Terms to be announced)
+              </DiscriptionWithMargin>
               <LearnMore />
             </GlobalBox>
           </ConferenceItem>
         </ul>
       </Container>
-    </GlobalSection>
+    </Section>
   );
 };
 export default Conference;

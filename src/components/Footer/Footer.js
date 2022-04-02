@@ -29,15 +29,9 @@ const Footer = () => {
         </Footerbox>
         <FooterList>
           <FooterLinkBox>
-            <FooterItem></FooterItem>
-            <FooterItem></FooterItem>
-            <FooterLink></FooterLink>
-            
-          </FooterLinkBox>
-          <FooterLinkBox>
             <FooterItem>FAQ</FooterItem>
             <MediaQuery device={'desktop'}>
-            <FooterItem>Download</FooterItem>
+              <FooterItem>Download</FooterItem>
             </MediaQuery>
           </FooterLinkBox>
         </FooterList>
@@ -50,9 +44,6 @@ const Footer = () => {
             </PolicyItem>
             <PolicyItem>
               <PolicyLink to="/privacy">Privacy Policy</PolicyLink>
-            </PolicyItem>
-            <PolicyItem>
-              <PolicyLink to="/privacy">Cookies Policy</PolicyLink>
             </PolicyItem>
             <PolicyItem>
               <PolicyLink to="/privacy">

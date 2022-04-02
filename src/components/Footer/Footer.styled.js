@@ -72,12 +72,14 @@ export const FooterLinkBox = styled.div`
   }
   ${({ theme }) => theme.device.desktop} {
     align-items: flex-start;
+    justify-content: flex-end;
   }
 `;
 
 export const FooterItem = styled.a`
-  font-size: 24px;
-  line-height: 1.5;
+  font-family: ${({ theme }) => theme.fonts.descr.bold};
+  font-size: 20px;
+  line-height: 1.35;
 
   color: ${({ theme }) => theme.colors.white};
 

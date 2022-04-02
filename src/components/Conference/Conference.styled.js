@@ -1,15 +1,11 @@
 import styled from 'styled-components';
+import GlobalBox from '../GlobalBox';
 
-export const ConferenceTitle = styled.h3`
-  font-family: ${({ theme }) => theme.fonts.title.bold};
-  font-size: 30px;
-  line-height: 1.5;
-
-  margin-bottom: 16px;
-  color: ${({ theme }) => theme.colors.black};
+export const Section = styled.section`
+  padding: 80px 0px 100px;
 `;
 
-export const SectionTitle = styled.h2`
+export const HiddenTitle = styled.h2`
   position: absolute;
   width: 1px;
   height: 1px;
@@ -23,22 +19,29 @@ export const SectionTitle = styled.h2`
   overflow: hidden;
 `;
 
-export const ConferenceDiscription = styled.p`
+export const SubTitle = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.title.semiBold};
+  font-size: 45px;
+  line-height: 1.22;
+
+  margin-bottom: 16px;
+  color: ${({ theme }) => theme.colors.black_btn};
+`;
+
+export const Discription = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-size: 14px;
-  line-height: 1.5;
-  color: ${({ theme }) => theme.colors.primaryText};
-  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.35;
+  color: ${({ theme }) => theme.colors.black_btn};
+
   ${({ theme }) => theme.device.desktop} {
-    margin-bottom: 30px;
   }
 `;
-export const ConfImg = styled.img`
 
-${({ theme }) => theme.device.desktop} {
-  margin: 0;
-}
+export const DiscriptionWithMargin = styled(Discription)`
+  margin-bottom: 27px;
 `;
+
 export const ConferenceItem = styled.li`
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -46,15 +49,26 @@ export const ConferenceItem = styled.li`
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 150px;
+      margin-bottom: 208px;
     }
   }
   ${({ theme }) => theme.device.desktop} {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &:nth-child(2n) {
+    &:nth-child(2n + 1) {
       flex-direction: row-reverse;
     }
   }
+`;
+
+export const DiscriptionList = styled.ul`
+  list-style-type: disc;
+  padding-left: 27px;
+`;
+
+export const BoxBeforEnd = styled.div`
+  width: 476px;
+  margin: 0 auto;
+  margin-bottom: 102px;
 `;
