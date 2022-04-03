@@ -94,6 +94,14 @@ export const FooterItem = styled.a`
     }
   }
 `;
+
+export const FooterDownload = styled.button`
+  font-family: ${({ theme }) => theme.fonts.descr.bold};
+  font-size: 20px;
+  line-height: 1.35;
+
+  color: ${({ theme }) => theme.colors.white};
+`;
 export const FooterLink = styled.a`
   font-size: 20px;
   line-height: 1.5;

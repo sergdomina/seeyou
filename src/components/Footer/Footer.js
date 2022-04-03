@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   FooterStyle,
   PolicyBox,
@@ -9,13 +10,17 @@ import {
   FooterList,
   FooterLogo,
   FooterItem,
+  FooterDownload,
   Footerbox,
   FooterLinkBox,
 } from './Footer.styled';
+import ModalForMail from '../ModalForMail';
 import MediaQuery from '../MediaQuery';
 import Container from '../Container';
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => setShowModal(!showModal);
   return (
     <FooterStyle>
       <FooterContainer>
@@ -30,7 +35,9 @@ const Footer = () => {
           <FooterLinkBox>
             <FooterItem>FAQ</FooterItem>
             <MediaQuery device={'desktop'}>
-              <FooterItem>Download</FooterItem>
+              <FooterDownload type="button" onClick={toggleModal}>
+                Download
+              </FooterDownload>
             </MediaQuery>
           </FooterLinkBox>
         </FooterList>
@@ -52,6 +59,7 @@ const Footer = () => {
           </Policylist>
         </Container>
       </PolicyBox>
+      {showModal && <ModalForMail toggleModal={toggleModal} />}
     </FooterStyle>
   );
 };

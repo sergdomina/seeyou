@@ -28,7 +28,6 @@ const AppBar = () => {
   useOnClickOutside(node, () => toggleMenu(false), isOpenMobileMenu);
 
   const [showModal, setShowModal] = useState(false);
-
   const toggleModal = () => setShowModal(!showModal);
 
   return (
