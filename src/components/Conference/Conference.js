@@ -7,6 +7,7 @@ import {
   ConferenceItem,
   DiscriptionList,
   BoxBeforEnd,
+  DiscriptionSub,
 } from './Conference.styled';
 
 import { Image } from '@chakra-ui/react';
@@ -135,8 +136,7 @@ const Conference = () => {
             <Image src={coOwnership} htmlWidth="331px" />
             <GlobalBox>
               <SubTitle>
-                The User Co-Ownership Program
-                <br /> Program
+                The User Co-Ownership<br /> Program
               </SubTitle>
               <DiscriptionWithMargin>
                 SEEYOU will be partly user-owned. An equivalent of 10% of the
@@ -144,9 +144,9 @@ const Conference = () => {
                 during the first 25 months after Open Release on August 1st,
                 2022.
               </DiscriptionWithMargin>
-              <DiscriptionWithMargin>
+              <DiscriptionSub>
                 (*Terms to be announced)
-              </DiscriptionWithMargin>
+              </DiscriptionSub>
               <LearnMore />
             </GlobalBox>
           </ConferenceItem>

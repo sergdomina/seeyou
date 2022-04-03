@@ -19,6 +19,14 @@ export const HiddenTitle = styled.h2`
   overflow: hidden;
 `;
 
+export const DiscriptionSub = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
+  font-size: 12px;
+  line-height: 1.22;
+
+  margin-bottom: 16px;
+  color: ${({ theme }) => theme.colors.black_btn};
+`;
 export const SubTitle = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.semiBold};
   font-size: 45px;
