@@ -1,7 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
+import heroBcg from '../../src/image/hero/hero_bg.svg';
+
 
 export const GlobalStyle = createGlobalStyle`
   body{
+    padding: 0px 0px;
+    background-image: url(${heroBcg});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     padding-bottom: 97px;
      ${({ theme }) => theme.device.tablet} {
     padding-bottom: 0;
