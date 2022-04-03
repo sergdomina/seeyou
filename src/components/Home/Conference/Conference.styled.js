@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import GlobalBox from '../GlobalBox';
 
 export const Section = styled.section`
   padding: 80px 0px 100px;

@@ -10,7 +10,6 @@ import {
   FooterLogo,
   FooterItem,
   Footerbox,
-  FooterLink,
   FooterLinkBox,
 } from './Footer.styled';
 import MediaQuery from '../MediaQuery';

@@ -12,18 +12,18 @@ import {
 
 import { Image } from '@chakra-ui/react';
 
-import Container from '../Container';
-import GlobalBox from '../GlobalBox';
+import Container from '../../Container';
+import GlobalBox from '../../GlobalBox';
 
-import SelfieImg from '../../image/conference/selfieLoopTm.png';
-import StickyImg from '../../image/conference/stickyNote.png';
-import Library from '../../image/conference/library.png';
-import Rewind from '../../image/conference/rewind.png';
-import Calls from '../../image/conference/calls.png';
-import HomeScreen from '../../image/conference/homeScreen.png';
-import BrandsLogo from '../../image/conference/brandsLogo.png';
-import coOwnership from '../../image/conference/coOwnership.png';
-import LearnMore from '../LearnMore';
+import SelfieImg from 'image/conference/selfieLoopTm.png';
+import StickyImg from 'image/conference/stickyNote.png';
+import Library from 'image/conference/library.png';
+import Rewind from 'image/conference/rewind.png';
+import Calls from 'image/conference/calls.png';
+import HomeScreen from 'image/conference/homeScreen.png';
+import BrandsLogo from 'image/conference/brandsLogo.png';
+import coOwnership from 'image/conference/coOwnership.png';
+import LearnMore from '../../LearnMore';
 const Conference = () => {
   return (
     <Section>
@@ -136,7 +136,8 @@ const Conference = () => {
             <Image src={coOwnership} htmlWidth="331px" />
             <GlobalBox>
               <SubTitle>
-                The User Co-Ownership<br /> Program
+                The User Co-Ownership
+                <br /> Program
               </SubTitle>
               <DiscriptionWithMargin>
                 SEEYOU will be partly user-owned. An equivalent of 10% of the
@@ -144,9 +145,7 @@ const Conference = () => {
                 during the first 25 months after Open Release on August 1st,
                 2022.
               </DiscriptionWithMargin>
-              <DiscriptionSub>
-                (*Terms to be announced)
-              </DiscriptionSub>
+              <DiscriptionSub>(*Terms to be announced)</DiscriptionSub>
               <LearnMore />
             </GlobalBox>
           </ConferenceItem>

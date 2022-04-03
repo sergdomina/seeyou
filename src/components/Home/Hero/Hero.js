@@ -7,8 +7,8 @@ import {
   HeroLink,
   HeroThumb,
 } from './Hero.styled';
-import MediaQuery from '../MediaQuery';
-import HeroIllustration from '../../image/hero/hero_illustration.png';
+import MediaQuery from '../../MediaQuery';
+import HeroIllustration from 'image/hero/hero_illustration.png';
 
 const Hero = () => {
   return (

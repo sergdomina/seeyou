@@ -1,10 +1,9 @@
-import Hero from 'components/Hero';
-import Toolbar from 'components/Toolbar';
+import Hero from 'components/Home/Hero';
+import Toolbar from 'components/Home/Toolbar';
 // import FeaturesAccordion from 'components/FeaturesAccordion';
 // import FeaturesTabs from '../../components/FeatherTabs';
-import Conference from 'components/Conference';
-import Support from 'components/Support';
-import FAQ from 'components/FAQ';
+import Conference from 'components/Home/Conference';
+import Support from 'components/Home/Support';
 import Footer from 'components/Footer';
 // import MediaQuery from '../../components/MediaQuery';
 // import DownloadMobileFooter from '../../components/DownloadMobileFooter';
@@ -23,7 +22,7 @@ const Home = () => {
 
         <Conference />
         <Support />
-        
+
         {/* <MediaQuery device={'mobile'}>
           <DownloadMobileFooter />
         </MediaQuery> */}

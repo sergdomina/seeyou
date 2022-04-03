@@ -1,13 +1,14 @@
 import styled from 'styled-components';
-import Container from '../Container';
+import Container from '../../Container';
+import bcg from 'image/hero/hero_bg.svg';
 // import DownloadLink from '../DownloadLink';
-
 
 export const HeroSection = styled.section`
   padding: 151px 0px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-image: url(${bcg});
 `;
 
 export const HeroContainer = styled(Container)`

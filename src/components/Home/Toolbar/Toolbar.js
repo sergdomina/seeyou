@@ -8,8 +8,8 @@ import {
   ToolbarThumb,
 } from './Toolbar.styled';
 
-import seemoji from '../../image/seemoji.svg';
-import toolbar from '../../image/toolbar/toolbar.png';
+import seemoji from 'image/seemoji.svg';
+import toolbar from 'image/toolbar/toolbar.png';
 
 const Toolbar = () => {
   return (
