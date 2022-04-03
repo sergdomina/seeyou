@@ -52,7 +52,7 @@ const AppBar = () => {
           <NavList>
             <NavItem>
               <Link to="/products" onClick={toggleMenu}>
-                Products
+                Home
               </Link>
             </NavItem>
             <NavItem>
@@ -67,7 +67,7 @@ const AppBar = () => {
             </NavItem>
             <NavItem>
               <Link to="/help" onClick={toggleMenu}>
-                Help
+                FAQ
               </Link>
             </NavItem>
           </NavList>
