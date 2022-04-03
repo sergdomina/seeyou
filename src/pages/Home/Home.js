@@ -23,7 +23,7 @@ const Home = () => {
 
         <Conference />
         <Support />
-        <FAQ />
+        
         {/* <MediaQuery device={'mobile'}>
           <DownloadMobileFooter />
         </MediaQuery> */}

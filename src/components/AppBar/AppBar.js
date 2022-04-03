@@ -51,7 +51,7 @@ const AppBar = () => {
         <Nav className={isOpenMobileMenu && 'active'}>
           <NavList>
             <NavItem>
-              <Link to="/products" onClick={toggleMenu}>
+              <Link to="/src/pages/Home/Home.js" onClick={toggleMenu}>
                 Home
               </Link>
             </NavItem>
