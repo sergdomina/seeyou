@@ -114,6 +114,10 @@ export const Header = styled.header`
   ${({ theme }) => theme.device.desktop} {
     padding-top: 16px;
     padding-bottom: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: wheat;
   }
 `;
 
