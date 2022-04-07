@@ -133,6 +133,7 @@ export const HeaderContainer = styled(Container)`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
+    width: 1354px;
   }
 `;
 
@@ -143,6 +144,6 @@ export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
-    margin-right: 151px;
+    margin-right: 126px;
   }
 `;
