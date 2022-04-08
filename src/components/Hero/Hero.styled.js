@@ -1,15 +1,14 @@
 import styled from 'styled-components';
-import Container from '../../Container';
-import bcg from 'image/hero/hero_bg.svg';
+import Container from '../Container';
 // import DownloadLink from '../DownloadLink';
+import heroBcg from '../../image/hero/hero_bg.svg';
 
 export const HeroSection = styled.section`
-  padding-top: 151px;
-  padding-bottom: 250px;
+  padding: 151px 0px;
+  background-image: url(${heroBcg});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  background-image: url(${bcg});
+  background-size: contain;
 `;
 
 export const HeroContainer = styled(Container)`
@@ -42,8 +41,7 @@ export const HeroTitle = styled.h1`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 45px;
   line-height: 1.2;
-  margin-bottom: 32px;
-  margin-top: 163px;
+  margin-bottom: 16px;
   color: ${({ theme }) => theme.colors.black_btn};
 `;
 

@@ -9,6 +9,7 @@ import {
   HeaderBox,
   LogoLink,
   HeaderContainer,
+  DownHeadDiv,
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
 import Burger from '../Burger';
@@ -55,18 +56,23 @@ const AppBar = () => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/ownership" onClick={toggleMenu}>
-                Co-ownership
-              </Link>
-            </NavItem>
-            <NavItem>
               <Link to="/about" onClick={toggleMenu}>
                 About
               </Link>
             </NavItem>
             <NavItem>
+              <Link to="/ownership" onClick={toggleMenu}>
+                Co-ownership
+              </Link>
+            </NavItem>
+            <NavItem>
               <Link to="/help" onClick={toggleMenu}>
                 FAQ
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/terms" onClick={toggleMenu}>
+                Terms and Conditions
               </Link>
             </NavItem>
           </NavList>
@@ -78,11 +84,13 @@ const AppBar = () => {
             </DownloadLink>
           </DownloadMobileFooter>
         </MediaQuery>
-        <MediaQuery device={'desktop'}>
+        <DownHeadDiv>
+          <MediaQuery device={'desktop'}>
           <DownloadLink type="button" onClick={toggleModal}>
             Download
           </DownloadLink>
-        </MediaQuery>
+          </MediaQuery>
+        </DownHeadDiv>
       </HeaderContainer>
       {showModal && <ModalForMail toggleModal={toggleModal} />}
     </Header>
