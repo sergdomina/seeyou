@@ -6,6 +6,9 @@ export const GlobalStyle = createGlobalStyle`
      ${({ theme }) => theme.device.tablet} {
     padding-bottom: 0;
   }
+   ${({ theme }) => theme.device.desktop} {
+   padding-top: 86px;
+  }
   }
 
   img {

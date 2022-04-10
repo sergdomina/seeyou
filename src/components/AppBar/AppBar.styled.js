@@ -116,6 +116,10 @@ export const Header = styled.header`
     background: white;
     padding-top: 16px;
     padding-bottom: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: wheat;
   }
 `;
 
@@ -132,6 +136,7 @@ export const HeaderContainer = styled(ContainerHeader)`
     width: 1400px;
     display: flex;
     align-items: center;
+    width: 1354px;
   }
 `;
 export const DownHeadDiv = styled.div `
@@ -145,6 +150,6 @@ export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
-    margin-right: 151px;
+    margin-right: 126px;
   }
 `;

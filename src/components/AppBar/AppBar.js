@@ -55,6 +55,7 @@ const AppBar = () => {
                 Home
               </Link>
             </NavItem>
+
             <NavItem>
               <Link to="/about" onClick={toggleMenu}>
                 About
@@ -72,7 +73,7 @@ const AppBar = () => {
             </NavItem>
             <NavItem>
               <Link to="/terms" onClick={toggleMenu}>
-                Terms and Conditions
+                Terms & Conditions
               </Link>
             </NavItem>
           </NavList>
