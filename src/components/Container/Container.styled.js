@@ -18,4 +18,12 @@ const Container = styled.div`
     width: ${size.desktop};
   }
 `;
+const ContainerHeader = styled.div`{
+  padding: 0px 24px;
+  margin: 0 auto;
+  width: 100%;
+  ${device.desktop} {
+    width: 1306px;
+  }
+}`
 export default Container;

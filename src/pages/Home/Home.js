@@ -28,7 +28,6 @@ const Home = () => {
         </MediaQuery> */}
       </main>
 
-      <Footer />
     </>
   );
 };

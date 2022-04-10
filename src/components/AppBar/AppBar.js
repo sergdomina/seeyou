@@ -9,6 +9,7 @@ import {
   HeaderBox,
   LogoLink,
   HeaderContainer,
+  DownHeadDiv,
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
 import Burger from '../Burger';
@@ -84,11 +85,13 @@ const AppBar = () => {
             </DownloadLink>
           </DownloadMobileFooter>
         </MediaQuery>
-        <MediaQuery device={'desktop'}>
+        <DownHeadDiv>
+          <MediaQuery device={'desktop'}>
           <DownloadLink type="button" onClick={toggleModal}>
             Download
           </DownloadLink>
-        </MediaQuery>
+          </MediaQuery>
+        </DownHeadDiv>
       </HeaderContainer>
       {showModal && <ModalForMail toggleModal={toggleModal} />}
     </Header>

@@ -34,12 +34,12 @@ const Conference = () => {
             <Image src={SelfieImg} htmlWidth="521px" alt="selfie in seeyou" />
 
             <GlobalBox>
-              <SubTitle>The Selfie Loop ™</SubTitle>
+              <SubTitle>Selfie Loop ™</SubTitle>
 
               <Discription>
-                SEEYOU provides a real-time virtual camera Selfie Loop,
-                substituting your camera feed with a selfie video recording when
-                getting a coffee, making a call, or stepping away for a second
+              SEEYOU provides a real-time virtual camera
+Selfie Loop™. Substituting your camera feed with a selfie video when getting a coffee, making a call, 
+or stepping away for a second
               </Discription>
             </GlobalBox>
           </ConferenceItem>
@@ -48,15 +48,11 @@ const Conference = () => {
             <GlobalBox>
               <SubTitle>Linked Notes</SubTitle>
               <DiscriptionWithMargin>
-                On Mac and Windows, SEEYOU provides fully encrypted hyperlinked
-                sticky notes. Later, clicking on the link will automatically
-                open the conference where you made the note if you have stored
-                the conference in your private library.
+              On Mac and Windows, SEEYOU provides fully encrypted hyperlinked sticky notes. Clicking on the link will automatically open the conference where you made the note if you have stored the conference in your private library
               </DiscriptionWithMargin>
               <Discription>
-                Recording and storage are only possible on desktop devices. On
-                Android and iPhone, the sticky notes are instead time-stamped to
-                the conference timeline
+              Recording and storage are only possible on desktop devices. On Android and iPhone, the sticky notes are instead 
+time-stamped to the conference timeline
               </Discription>
             </GlobalBox>
           </ConferenceItem>
@@ -69,7 +65,7 @@ const Conference = () => {
               </SubTitle>
               <Discription>
                 SEEYOU allows you to store your recordings. These are kept in
-                your private YouTube Studio® library. The sticky notes are
+                your private YouTube Studio®  library.<br /> The sticky notes are
                 hyperlinked to the recordings. Clicking on the link will
                 automatically open the conference where you made the note
               </Discription>
@@ -90,7 +86,7 @@ const Conference = () => {
             <Image src={Calls} htmlWidth="568px" alt="Calls" />
             <GlobalBox>
               <SubTitle>
-                The Truly Private <br /> Communication
+                Truly Private <br /> Communication
               </SubTitle>
               <DiscriptionWithMargin>
                 SEEYOU's chat, video and voice calls are end-to-end encrypted,
@@ -100,10 +96,7 @@ const Conference = () => {
                 too.
               </DiscriptionWithMargin>
               <Discription>
-                The chat, video, and voice calls work equally well outside video
-                conferences. The encryption key is personal and managed by your
-                mobile phone, and logs are not centrally stored by SEEYOU but
-                are yours alone.
+              The encryption key is personal and managed by your mobile phone, and logs are not centrally stored by SEEYOU but are yours alone. The chat, video, and voice calls work equally well outside video conferences
               </Discription>
             </GlobalBox>
           </ConferenceItem>
@@ -115,7 +108,7 @@ const Conference = () => {
 
                 <DiscriptionList>
                   <li>
-                    <Discription>With your unread message</Discription>
+                    <Discription>With your unread messages</Discription>
                   </li>
                   <li>
                     <Discription>
@@ -136,17 +129,13 @@ const Conference = () => {
             <Image src={coOwnership} htmlWidth="331px" />
             <GlobalBox>
               <SubTitle>
-                The User Co-Ownership
+                Free Co-Ownership
                 <br /> Program
               </SubTitle>
               <DiscriptionWithMargin>
-                SEEYOU will be partly user-owned. An equivalent of 10% of the
-                original 2.5 million shares is gifted* without cost to our users
-                during the first 25 months after Open Release on August 1st,
-                2022.
+              SEEYOU will be partly user-owned. An equivalent of 10% of the original 2.5 million shares will be gifted to active* users and recruiters during the first 25 months after Open Release on August 1st, 2022
               </DiscriptionWithMargin>
               <DiscriptionSub>(*Terms to be announced)</DiscriptionSub>
-              <LearnMore />
             </GlobalBox>
           </ConferenceItem>
         </ul>

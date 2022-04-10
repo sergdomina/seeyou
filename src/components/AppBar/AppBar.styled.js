@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import Container from '../Container';
+import ContainerHeader from '../Container';
 
 export const Nav = styled.nav`
   font-family: 'Lato_Regular';
@@ -106,12 +106,14 @@ export const NavItem = styled.li`
   }
 `;
 export const Header = styled.header`
-  position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
   /* z-index: 1; */
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   ${({ theme }) => theme.device.desktop} {
+    position: fixed;
+    width: 100%;
+    background: white;
     padding-top: 16px;
     padding-bottom: 16px;
     position: fixed;
@@ -125,17 +127,21 @@ export const LogoImg = styled.img`
   width: 99px;
   height: 20px;
   ${({ theme }) => theme.device.desktop} {
-    width: 164px;
-    height: 35px;
+    width: 171px;
+    height: 56px;
   }
 `;
-export const HeaderContainer = styled(Container)`
+export const HeaderContainer = styled(ContainerHeader)`
   ${({ theme }) => theme.device.tablet} {
+    width: 1400px;
     display: flex;
     align-items: center;
     width: 1354px;
   }
 `;
+export const DownHeadDiv = styled.div `
+  margin-left: 100px;
+`
 
 export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.mobileMax} {
