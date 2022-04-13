@@ -11,9 +11,21 @@ import {
      Questions,
      Answer,
      PartnersDiv,
+     PartnersUl,
+     PartnersLi,
      } from './FAQ.styled';
 import Container from '../Container';
 import GoogleMeet from '../../image/FAQ/googlemeet.png';
+import Microsoft from '../../image/FAQ/microsoft.png';
+import Webex from '../../image/FAQ/webex.png';
+import Zoom from '../../image/FAQ/zoom.png';
+import Avaya from '../../image/FAQ/avaya.png';
+import Bluejeans from '../../image/FAQ/bluejeans.png';
+import Huawei from '../../image/FAQ/huawei.png';
+import StarLeaf from '../../image/FAQ/starleaf.png';
+import LogMe from '../../image/FAQ/logme.png';
+import LifeSize from '../../image/FAQ/lifesize.png';
+
 import { Image } from '@chakra-ui/react';
 
 const FAQ = () => {
@@ -36,7 +48,41 @@ const FAQ = () => {
                 <Questions>Which video conference providers work with SEEYOU?</Questions>
                 <Answer>All these major ones and more are coming</Answer>
                 <PartnersDiv>
-                  <Image src={GoogleMeet} htmlWidth="105px" alt="GoogleMeet" />
+                  <PartnersUl>
+                    <PartnersLi>
+                    <Image src={GoogleMeet} htmlWidth="105px" alt="GoogleMeet" />
+                    </PartnersLi>
+                    <PartnersLi>
+                    <Image src={Microsoft} htmlWidth="106px" alt="Microsoft" />
+                    </PartnersLi>
+                    <PartnersLi>
+                    <Image src={Webex} htmlWidth="87px" alt="Webex" />
+                    </PartnersLi>
+                    <PartnersLi>
+                    <Image src={Zoom} htmlWidth="79px" alt="Zoom" />
+                    </PartnersLi>
+                    </PartnersUl>
+                    <PartnersUl>
+                    <PartnersLi>
+                    <Image src={Avaya} htmlWidth="62px" alt="Avaya" />
+                    </PartnersLi>
+                    <PartnersLi>
+                    <Image src={Bluejeans} htmlWidth="78px" alt="BlueJeans" />
+                    </PartnersLi>
+                    <PartnersLi>
+                    <Image src={Huawei} htmlWidth="93px" alt="Huawei" />
+                    </PartnersLi>
+                    <PartnersLi>
+                    <Image src={StarLeaf} htmlWidth="84px" alt="StarLeaf" />
+                    </PartnersLi>
+                    <PartnersLi>
+                    <Image src={LogMe} htmlWidth="73px" alt="LogMe" />
+                    </PartnersLi>
+                    <PartnersLi>
+                    <Image src={LifeSize} htmlWidth="87px" alt="LifeSize" />
+                    </PartnersLi>
+                    
+                  </PartnersUl>
                 </PartnersDiv>
               </FAQli>
               <FAQli>

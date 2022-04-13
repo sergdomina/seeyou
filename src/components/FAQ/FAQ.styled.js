@@ -60,8 +60,20 @@ export const Answer =styled.p`
   color: ${({ theme }) => theme.colors.placeholder};
 `
 export const PartnersDiv =styled.div`
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
+  padding-top: 40px;
   width: 611px;
-  
+`
+export const PartnersUl=styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+`
+export const PartnersLi=styled.li`
+padding: 0;
+text-align: center;
+margin-bottom: 32px;
+&:not(:last-child) {
+  margin-right: 24px;
+}
 `
