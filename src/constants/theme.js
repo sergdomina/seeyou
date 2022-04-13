@@ -17,6 +17,7 @@ export const theme = Object.freeze({
     privacy_bg: '#E3E3EB',
     primary: '#7058FF',
     body_svg: '#f9f9f9',
+    orange: '#FFAA00',
   },
   size: {
     mobile: '375px',
