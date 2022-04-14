@@ -63,7 +63,7 @@ const AppBar = () => {
             </NavItem>
             <NavItem>
               <Link to="/ownership" onClick={toggleMenu}>
-                Co-ownership
+                Co-Ownership
               </Link>
             </NavItem>
             <NavItem>

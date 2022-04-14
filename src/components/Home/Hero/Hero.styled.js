@@ -4,7 +4,7 @@ import bcg from 'image/hero/hero_bg.svg';
 // import DownloadLink from '../DownloadLink';
 
 export const HeroSection = styled.section`
-  padding-top: 151px;
+  padding-top: 120px;
   padding-bottom: 250px;
   background-repeat: no-repeat;
   background-position: center;
