@@ -13,7 +13,7 @@ import {
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
 import Burger from '../Burger';
-import LogoSeeYou from '../../image/LogoSeeYou.svg';
+import LogoSeeYou from '../../image/seeyou_15_04.svg';
 import { useOnClickOutside } from '../../hooks/OnClickOutside';
 import MediaQuery from '../MediaQuery';
 import DownloadLink from '../DownloadLink';
@@ -62,17 +62,17 @@ const AppBar = () => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/ownership" onClick={toggleMenu}>
+              <Link to="/co-ownership" onClick={toggleMenu}>
                 Co-Ownership
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/help" onClick={toggleMenu}>
+              <Link to="/faq" onClick={toggleMenu}>
                 FAQ
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/terms" onClick={toggleMenu}>
+              <Link to="/feature" onClick={toggleMenu}>
                 Terms & Conditions
               </Link>
             </NavItem>

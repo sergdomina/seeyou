@@ -6,6 +6,7 @@ import {
   ConferenceItem,
   ConferenceDiscriptionSub,
   AboutUl,
+  ContactLink,
 } from './AboutHero.styled';
 import GlobalSection from '../Section';
 import Container from '../Container';
@@ -30,7 +31,7 @@ const AboutHero = () => {
               <ConferenceTitle>Founders</ConferenceTitle>
 
               <ConferenceDiscription>
-              SEEYOU was first envisioned in September 2020 by Bjorn Selleg as a double bottom line social impact project. Soon after, Dr. Lise Flovik and Dr. Jolien Vleeshouwers came onboard as the two other founders
+              SEEYOU was first envisioned in September 2020 by <ContactLink href='https://www.linkedin.com/in/bjorn-selleg-914b355a/'>Bjorn Selleg</ContactLink> as a double bottom line social impact project. Soon after, <ContactLink href='https://www.linkedin.com/in/lise-fl%C3%B8vik-phd-33bbb742/'>Dr. Lise Flovik</ContactLink> and <ContactLink href=' https://www.linkedin.com/in/jolien-vleeshouwers-phd-bb114465/'>Dr. Jolien Vleeshouwers</ContactLink> came onboard as the two other founders
               </ConferenceDiscription>
               <ConferenceDiscription>
               Helped by input from our over 100 pax strong handpicked shareholder community, the three used ten months to scope out the first-ever video conference aggregator and end-to-end encrypted communication platform
@@ -43,7 +44,7 @@ const AboutHero = () => {
             <GlobalBox>
               <ConferenceTitle>Co-Founders and Team</ConferenceTitle>
               <ConferenceDiscription>
-              In the summer and fall of 2021, Sunder Kimatrai, Twana Daniel, and Helen Domina joined as co-founders. In the spring of 2022, Per Kristian Spone completed the management group as CFO and Head of Risk Control
+              In the summer and fall of 2021, <ContactLink href='https://www.linkedin.com/in/sunderkimatrai/'>Sunder Kimatrai</ContactLink>, <ContactLink href='https://www.linkedin.com/in/twana-daniel/'>Twana Daniel</ContactLink>, and <ContactLink href="www.linkedin.com/in/helendomina">Helen Domina</ContactLink> joined as co-founders. In the spring of 2022, <ContactLink href='https://www.linkedin.com/in/per-kristian-spone-a78977105/'>Per Kristian Spone</ContactLink> completed the management group as CFO and Head of Risk Control
               </ConferenceDiscription>
               <ConferenceDiscription>
               By now, SEEYOU has grown to a 30 pax tribe of 13 nationalities. All committed to being a force for good and providing a free global aggregator and communication platform in 48 languages, with two more to come
