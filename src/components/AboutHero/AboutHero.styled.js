@@ -33,10 +33,23 @@ export const SectionTitleSub = styled.h2`
 export const AboutUl = styled.ul`
   padding-bottom: 150px;
 `
+
 export const ConferenceDiscription = styled.p`
 font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 20px;
 line-height: 1,35;
+color: ${({ theme }) => theme.colors.primaryText};
+  margin-bottom: 20px;
+  ${({ theme }) => theme.device.desktop} {
+    margin-bottom: 30px;
+  }
+`;
+export const ContactLink = styled.a`
+font-family: ${({ theme }) => theme.fonts.descr.regular};
+font-size: 20px;
+line-height: 1,35;
+text-decoration-line: underline;
+
 color: ${({ theme }) => theme.colors.primaryText};
   margin-bottom: 20px;
   ${({ theme }) => theme.device.desktop} {

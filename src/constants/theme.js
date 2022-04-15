@@ -18,6 +18,8 @@ export const theme = Object.freeze({
     primary: '#7058FF',
     body_svg: '#f9f9f9',
     orange: '#FFAA00',
+    grey_off: '#C9CAD4',
+    grey_purple: '#A0A3BD',
   },
   size: {
     mobile: '375px',
