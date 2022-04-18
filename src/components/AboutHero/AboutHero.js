@@ -13,10 +13,10 @@ import Container from '../Container';
 import GlobalImage from '../GlobalImage';
 import GlobalBox from '../GlobalBox';
 import { Image } from '@chakra-ui/react';
-import Founders from 'image/about/founders.png';
-import CoFounders from 'image/about/Co-founders.png';
-import Share from 'image/about/Share.png';
-import Ukraine from 'image/about/Ukraine_seemoji.png';
+import Founders from 'image/about/founders.svg';
+import CoFounders from 'image/about/team.svg';
+import Share from 'image/about/shareholders.png';
+import Ukraine from 'image/about/locations.png';
 
 const AboutHero = () => {
   return (

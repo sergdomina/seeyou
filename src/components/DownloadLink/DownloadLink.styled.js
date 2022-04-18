@@ -9,7 +9,7 @@ import styled from 'styled-components';
 // `;
 // export default DownloadLink;
 
-const DownloadLink = styled.button`
+const DownloadLink = styled.a`
   font-family: ${({ theme }) => theme.fonts.descr.semiBold};
   padding: 15px 84px;
   border-radius: 4px;

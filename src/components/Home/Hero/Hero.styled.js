@@ -4,14 +4,16 @@ import bcg from 'image/hero/hero_bg.svg';
 // import DownloadLink from '../DownloadLink';
 
 export const HeroSection = styled.section`
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 250px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url(${bcg});
 `;
-
+export const HeroImg = styled.img`
+  margin-top: 80px;
+`
 export const HeroContainer = styled(Container)`
   ${({ theme }) => theme.device.desktop} {
     width: 1270px;
@@ -35,6 +37,7 @@ export const HeroThumb = styled.div`
     width: 746px;
     height: 465px;
     margin-right: -50px;
+    margin-top: 50px;
   }
 `;
 

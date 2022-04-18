@@ -11,6 +11,7 @@ import {
   Discriptionltd
 } from './Support.styled';
 
+
 import { Image } from '@chakra-ui/react';
 import AppleStore from 'image/support/AppStore.png';
 import GooglePlay from 'image/support/GooglePlay.png';
@@ -33,11 +34,15 @@ const Support = () => {
         <BoxIMG>
         <SupportUl>
         <SupportLi>
+        <a href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
         <Image src={AppleStore} htmlWidth="190px" alt="selfie in seeyou" />
+        </a>
         {/* <Play src={PlayImg} /> */}
         </SupportLi>
         <SupportLi>
+        <a href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
         <Image src={GooglePlay} htmlWidth="190px" alt="selfie in seeyou" />
+        </a>
         {/* <Play src={PlayImg} /> */}
         </SupportLi>
         </SupportUl>
