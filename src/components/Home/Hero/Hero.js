@@ -6,6 +6,7 @@ import {
   HeroBox,
   HeroLink,
   HeroThumb,
+  HeroImg,
 } from './Hero.styled';
 import MediaQuery from '../../MediaQuery';
 import HeroIllustration from 'image/hero/hero_illustration.png';
@@ -15,7 +16,7 @@ const Hero = () => {
     <HeroSection>
       <HeroContainer>
         <HeroThumb>
-          <img src={HeroIllustration} alt="hero illustration" />
+          <HeroImg src={HeroIllustration} alt="hero illustration" />
         </HeroThumb>
         <HeroBox>
           <HeroTitle>

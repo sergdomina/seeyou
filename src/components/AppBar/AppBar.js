@@ -87,7 +87,7 @@ const AppBar = () => {
         </MediaQuery>
         <DownHeadDiv>
           <MediaQuery device={'desktop'}>
-          <DownloadLink type="button" onClick={toggleModal}>
+          <DownloadLink href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
             Download
           </DownloadLink>
           </MediaQuery>

@@ -9,7 +9,7 @@ import {
 } from './Toolbar.styled';
 
 import seemoji from 'image/seemoji.svg';
-import toolbar from 'image/toolbar/toolbar.png';
+import toolbar from 'image/toolbar/toolbar.svg';
 
 const Toolbar = () => {
   return (
