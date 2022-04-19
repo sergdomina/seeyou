@@ -18,7 +18,9 @@ import { useOnClickOutside } from '../../hooks/OnClickOutside';
 import MediaQuery from '../MediaQuery';
 import DownloadLink from '../DownloadLink';
 import ModalForMail from '../ModalForMail';
+import PopupHeader from '../PopupHeader';
 import DownloadMobileFooter from '../DownloadMobileFooter';
+
 const AppBar = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
   const toggleMenu = () => {
@@ -30,6 +32,30 @@ const AppBar = () => {
 
   const [showModal, setShowModal] = useState(false);
   const toggleModal = () => setShowModal(!showModal);
+
+  // const [likeList, setLikeList] = useState('');
+
+  // const renderLikeList = () => {
+  //   return (
+  //     <LikesList>
+  //       <Link to="/terms" onClick={toggleMenu}>
+  //         Terms of service
+  //       </Link>
+  //       <Link to="/privacy" onClick={toggleMenu}>
+  //         Privacy Policy
+  //       </Link>
+  //     </LikesList>
+  //   );
+  // };
+
+  // const handleLeave = () => {
+  //   return setLikeList('');
+  // };
+  // const handleHover = () => {
+  //   // return setLikeList(renderLikeList());
+  //   return setLikeList('true');
+  //   // return this.setState({ likeList: this.renderLikeList() });
+  // };
 
   return (
     <Header ref={node}>
@@ -72,9 +98,7 @@ const AppBar = () => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/feature" onClick={toggleMenu}>
-                Terms & Conditions
-              </Link>
+              <PopupHeader />
             </NavItem>
           </NavList>
         </Nav>
@@ -87,9 +111,9 @@ const AppBar = () => {
         </MediaQuery>
         <DownHeadDiv>
           <MediaQuery device={'desktop'}>
-          <DownloadLink href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
-            Download
-          </DownloadLink>
+            <DownloadLink href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
+              Download
+            </DownloadLink>
           </MediaQuery>
         </DownHeadDiv>
       </HeaderContainer>
