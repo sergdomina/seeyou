@@ -1,5 +1,4 @@
 import { PopLink, PopButton, PopupBox } from './PopupHeader.styled';
-import './popup.css';
 import { Popup } from 'semantic-ui-react';
 const PopupHeader = () => (
   <Popup
