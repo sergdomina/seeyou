@@ -24,3 +24,13 @@ export const PopButton = styled.button`
     font-size: 18px;
   }
 `;
+export const PopupBox = styled.div`
+  width: 239px;
+  height: 84px;
+  background: #fff;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
