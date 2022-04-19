@@ -60,6 +60,7 @@ export const Link = styled(NavLink)`
   color: ${({ theme }) => theme.colors.dark};
   font-size: 14px;
   line-height: 1.5;
+
   &.active {
     font-family: ${({ theme }) => theme.fonts.descr.bold};
 
@@ -139,9 +140,9 @@ export const HeaderContainer = styled(ContainerHeader)`
     width: 1354px;
   }
 `;
-export const DownHeadDiv = styled.div `
+export const DownHeadDiv = styled.div`
   margin-left: 100px;
-`
+`;
 
 export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.mobileMax} {
