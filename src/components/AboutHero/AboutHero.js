@@ -7,15 +7,15 @@ import {
   ConferenceDiscriptionSub,
   AboutUl,
   ContactLink,
+  Image,
 } from './AboutHero.styled';
 import GlobalSection from '../Section';
 import Container from '../Container';
-import GlobalImage from '../GlobalImage';
+
 import GlobalBox from '../GlobalBox';
-import { Image } from '@chakra-ui/react';
 import Founders from 'image/about/founders.svg';
 import CoFounders from 'image/about/team.svg';
-import Share from 'image/about/shareholders.png';
+import Share from 'image/about/shareholders.svg';
 import Ukraine from 'image/about/locations.png';
 
 const AboutHero = () => {
@@ -37,7 +37,7 @@ const AboutHero = () => {
               Helped by input from our over 100 pax strong handpicked shareholder community, the three used ten months to scope out the first-ever video conference aggregator and end-to-end encrypted communication platform
               </ConferenceDiscription>
             </GlobalBox>
-            <Image src={Founders} htmlWidth="570px" alt="Founders" />
+            <Image src={Founders} htmlWidth="570px" alt="founders" />
 
           </ConferenceItem>
           <ConferenceItem>
@@ -50,7 +50,7 @@ const AboutHero = () => {
               By now, SEEYOU has grown to a 30 pax tribe of 13 nationalities. All committed to being a force for good and providing a free global aggregator and communication platform in 48 languages, with two more to come
               </ConferenceDiscription>
             </GlobalBox>
-            <Image src={CoFounders} htmlWidth="521px" alt="selfie in seeyou" />
+            <Image src={CoFounders} htmlWidth="521px" alt="co-founders" />
           </ConferenceItem>
           <ConferenceItem>
             <GlobalBox>
@@ -65,7 +65,7 @@ const AboutHero = () => {
               (*Final terms to be announced)
               </ConferenceDiscriptionSub>
             </GlobalBox>
-            <Image src={Share} htmlWidth="521px" alt="selfie in seeyou" />
+            <Image src={Share} htmlWidth="518px" alt="Founders" />
           </ConferenceItem>
           <ConferenceItem>
             <GlobalBox>
@@ -74,7 +74,7 @@ const AboutHero = () => {
               Final approval as an Irish PLC is under completion. SEEYOU is headquartered in Dublin, with subsidiaries in Dubai and Kyiv [temporarily all of the Ukrainian team and their families are safely evacuated to Ireland], and representation in Oslo and Sydney
               </ConferenceDiscription>
             </GlobalBox>
-            <Image src={Ukraine} htmlWidth="521px" alt="selfie in seeyou" />
+            <Image src={Ukraine} htmlWidth="465px" alt="Founders" />
           </ConferenceItem>
         </AboutUl>
       </Container>

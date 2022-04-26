@@ -4,10 +4,13 @@ export const GlobalStyle = createGlobalStyle`
   body{
     padding-bottom: 97px;
      ${({ theme }) => theme.device.tablet} {
-    padding-bottom: 0;
+      padding-bottom: 90px;
+  }
+     ${({ theme }) => theme.device.default} {
+      padding-bottom: 0px;
   }
    ${({ theme }) => theme.device.desktop} {
-   padding-top: 86px;
+      padding-bottom: 0px;
   }
   }
 

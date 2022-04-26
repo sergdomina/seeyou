@@ -6,6 +6,7 @@ const MediaQuery = ({ device, children }) => {
       queries={{
         mobile: `(min-width: ${size.mobile})and (max-width: 768px)`,
         tablet: `(min-width: ${size.tablet}) `,
+        default: `(min-width: ${size.default}) `,
         desktop: `(min-width: ${size.desktop})`,
       }}
     >
