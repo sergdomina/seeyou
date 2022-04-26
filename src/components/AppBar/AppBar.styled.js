@@ -2,6 +2,31 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import ContainerHeader from '../Container';
 
+export const Header = styled.header`
+  position: fixed;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
+  background: white;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+  ${({ theme }) => theme.device.default} {
+    
+  }
+  ${({ theme }) => theme.device.default} {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    top: 0;
+    width: 100%;
+    background: whites;
+  }
+  ${({ theme }) => theme.device.desktop} {
+
+  }
+`;
+
+
 export const Nav = styled.nav`
   font-family: 'Lato_Regular';
   font-size: 18px;
@@ -30,6 +55,8 @@ export const Nav = styled.nav`
     margin-right: auto;
   }
 `;
+
+
 export const NavList = styled.ul`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
@@ -55,6 +82,8 @@ export const NavList = styled.ul`
     }
   } */
 `;
+
+
 export const Link = styled(NavLink)`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
   color: ${({ theme }) => theme.colors.dark};
@@ -83,7 +112,7 @@ export const Link = styled(NavLink)`
       }
     }
   }
-  ${({ theme }) => theme.device.tablet} {
+  ${({ theme }) => theme.device.desktop} {
     font-size: 18px;
   }
 `;
@@ -106,42 +135,51 @@ export const NavItem = styled.li`
     }
   }
 `;
-export const Header = styled.header`
-  padding-top: 12px;
-  padding-bottom: 12px;
-  /* z-index: 1; */
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-  ${({ theme }) => theme.device.desktop} {
-    position: fixed;
-    width: 100%;
-    background: white;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: whites;
-  }
-`;
+
 
 export const LogoImg = styled.img`
   width: 99px;
   height: 20px;
+  ${({ theme }) => theme.device.tablet} {
+    width: 121px;
+    height: 34px;
+  }
+  ${({ theme }) => theme.device.default} {
+    width: 121px;
+    height: 34px;
+  }
   ${({ theme }) => theme.device.desktop} {
-    width: 171px;
-    height: 56px;
+    width: 167px;
+    height: 46px;
   }
 `;
 export const HeaderContainer = styled(ContainerHeader)`
   ${({ theme }) => theme.device.tablet} {
+    width: 768px;
+    display: flex;
+    align-items: center;
+    
+  }
+  ${({ theme }) => theme.device.default} {
+    width: 960px;
+    display: flex;
+    align-items: center;
+    
+  }
+  ${({ theme }) => theme.device.desktop} {
     width: 1400px;
     display: flex;
     align-items: center;
-    width: 1354px;
+    
   }
 `;
 export const DownHeadDiv = styled.div`
+  ${({ theme }) => theme.device.default} {
+  margin-left: 35px;
+  }
+  ${({ theme }) => theme.device.desktop} {
   margin-left: 100px;
+  }
 `;
 
 export const HeaderBox = styled.div`
@@ -149,6 +187,16 @@ export const HeaderBox = styled.div`
     display: flex;
   }
   ${({ theme }) => theme.device.tablet} {
+    display: flex;
+    align-items: center;
+    margin-right: 82px;
+  }
+  ${({ theme }) => theme.device.default} {
+    display: flex;
+    align-items: center;
+    margin-right: 79px;
+  }
+  ${({ theme }) => theme.device.desktop} {
     display: flex;
     align-items: center;
     margin-right: 126px;

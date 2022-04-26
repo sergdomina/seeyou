@@ -4,7 +4,7 @@ import bcg from 'image/hero/hero_bg.svg';
 // import DownloadLink from '../DownloadLink';
 
 export const HeroSection = styled.section`
-  margin-top:-75px;
+  margin-top: -75px;
   padding-top: 100px;
   padding-bottom: 250px;
   background-repeat: no-repeat;
@@ -16,6 +16,7 @@ export const HeroImg = styled.img`
   margin-top: 80px;
 `
 export const HeroContainer = styled(Container)`
+
   ${({ theme }) => theme.device.desktop} {
     width: 1270px;
     display: flex;
@@ -34,6 +35,7 @@ export const HeroBox = styled.div`
 `;
 
 export const HeroThumb = styled.div`
+  margin-top: 32px;
   ${({ theme }) => theme.device.desktop} {
     width: 746px;
     height: 465px;
@@ -44,17 +46,23 @@ export const HeroThumb = styled.div`
 
 export const HeroTitle = styled.h1`
   font-family: ${({ theme }) => theme.fonts.title.bold};
-  font-size: 45px;
+  font-size: 30px;
   line-height: 1.2;
   margin-bottom: 32px;
-  margin-top: 163px;
+  margin-top: 32px;
   color: ${({ theme }) => theme.colors.black_btn};
+  ${({ theme }) => theme.device.desktop} {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    margin-top: 163px;
+  }
 `;
 
 export const HeroDiscription = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 1.35;
   color: ${({ theme }) => theme.colors.primaryText};
 
   ${({ theme }) => theme.device.desktop} {
