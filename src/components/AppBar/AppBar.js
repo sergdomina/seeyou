@@ -9,7 +9,7 @@ import {
   HeaderBox,
   LogoLink,
   HeaderContainer,
-  DownHeadDiv,
+  // DownHeadDiv,
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
 import Burger from '../Burger';
@@ -109,13 +109,13 @@ const AppBar = () => {
             </DownloadLink>
           </DownloadMobileFooter>
         </MediaQuery>
-        <DownHeadDiv>
-          <MediaQuery device={'default'}>
-            <DownloadLink href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
-              Download
-            </DownloadLink>
-          </MediaQuery>
-        </DownHeadDiv>
+        {/* <DownHeadDiv> */}
+        <MediaQuery device={'default'}>
+          <DownloadLink href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
+            Download
+          </DownloadLink>
+        </MediaQuery>
+        {/* </DownHeadDiv> */}
       </HeaderContainer>
       {showModal && <ModalForMail toggleModal={toggleModal} />}
     </Header>

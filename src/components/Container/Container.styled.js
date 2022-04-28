@@ -22,7 +22,7 @@ const Container = styled.div`
     width: ${size.desktop};
   }
 `;
-const ContainerHeader = styled.div`{
+const ContainerHeader = styled.div`
   padding: 0px 24px;
   margin: 0 auto;
   width: 100%;
@@ -35,5 +35,5 @@ const ContainerHeader = styled.div`{
   ${device.desktop} {
     width: 1306px;
   }
-}`
+`;
 export default Container;

@@ -4,6 +4,7 @@ import ContainerHeader from '../Container';
 
 export const Header = styled.header`
   position: fixed;
+  top: 0;
   padding-top: 12px;
   padding-bottom: 12px;
   margin: 0 auto;
@@ -12,7 +13,6 @@ export const Header = styled.header`
   background: white;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   ${({ theme }) => theme.device.default} {
-    
   }
   ${({ theme }) => theme.device.default} {
     padding-top: 16px;
@@ -22,10 +22,8 @@ export const Header = styled.header`
     background: whites;
   }
   ${({ theme }) => theme.device.desktop} {
-
   }
 `;
-
 
 export const Nav = styled.nav`
   font-family: 'Lato_Regular';
@@ -56,7 +54,6 @@ export const Nav = styled.nav`
   }
 `;
 
-
 export const NavList = styled.ul`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
@@ -82,7 +79,6 @@ export const NavList = styled.ul`
     }
   } */
 `;
-
 
 export const Link = styled(NavLink)`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
@@ -131,11 +127,15 @@ export const NavItem = styled.li`
   }
   ${({ theme }) => theme.device.tablet} {
     &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+  ${({ theme }) => theme.device.desktop} {
+    &:not(:last-child) {
       margin-right: 55px;
     }
   }
 `;
-
 
 export const LogoImg = styled.img`
   width: 99px;
@@ -158,29 +158,26 @@ export const HeaderContainer = styled(ContainerHeader)`
     width: 768px;
     display: flex;
     align-items: center;
-    
   }
   ${({ theme }) => theme.device.default} {
     width: 960px;
     display: flex;
     align-items: center;
-    
   }
   ${({ theme }) => theme.device.desktop} {
     width: 1400px;
     display: flex;
     align-items: center;
-    
   }
 `;
-export const DownHeadDiv = styled.div`
-  ${({ theme }) => theme.device.default} {
-  margin-left: 35px;
-  }
-  ${({ theme }) => theme.device.desktop} {
-  margin-left: 100px;
-  }
-`;
+// export const DownHeadDiv = styled.div`
+//   ${({ theme }) => theme.device.default} {
+//     margin-left: 35px;
+//   }
+//   ${({ theme }) => theme.device.desktop} {
+//     margin-left: 100px;
+//   }
+// `;
 
 export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.mobileMax} {
@@ -189,13 +186,13 @@ export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
-    margin-right: 82px;
+    margin-right: 79px;
   }
-  ${({ theme }) => theme.device.default} {
+  /* ${({ theme }) => theme.device.default} {
     display: flex;
     align-items: center;
     margin-right: 79px;
-  }
+  } */
   ${({ theme }) => theme.device.desktop} {
     display: flex;
     align-items: center;
