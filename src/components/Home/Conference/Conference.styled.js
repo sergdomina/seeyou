@@ -75,7 +75,7 @@ export const DiscriptionList = styled.ul`
 `;
 
 export const BoxBeforEnd = styled.div`
-  width: 476px;
+  /* width: 476px; */
   margin: 0 auto;
   margin-bottom: 102px;
 `;

@@ -9,7 +9,7 @@ export const Header = styled.header`
   padding-bottom: 12px;
   margin: 0 auto;
   width: 100%;
-  z-index: 1;
+  /* z-index: 1; */
   background: white;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   ${({ theme }) => theme.device.default} {
@@ -39,7 +39,7 @@ export const Nav = styled.nav`
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
-    background-color: #d9f0f7;
+    background-color: ${({ theme }) => theme.colors.input_bg};
     transition: transform 0.3s ease-out, opacity 0.3s ease-out,
       visibility 0.3s ease-out;
     &.active {

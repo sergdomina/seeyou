@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+
 export const PopLink = styled.a`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
   color: ${({ theme }) => theme.colors.dark};
