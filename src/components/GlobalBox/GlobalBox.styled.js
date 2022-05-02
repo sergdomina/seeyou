@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 export const Box = styled.div`
   /* width: 343px; */
+
   text-align: center;
   ${({ theme }) => theme.device.tablet} {
     width: 618px;
