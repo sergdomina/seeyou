@@ -12,11 +12,12 @@ import {
 import GlobalSection from '../Section';
 import Container from '../Container';
 
+import GlobalImage from '../GlobalImage';
 import GlobalBox from '../GlobalBox';
 import Founders from 'image/about/founders.svg';
 import CoFounders from 'image/about/team.svg';
 import Share from 'image/about/shareholders.svg';
-import Ukraine from 'image/about/locations.png';
+import Ukraine from 'image/about/ukraine.svg';
 
 const AboutHero = () => {
   return (
@@ -37,8 +38,9 @@ const AboutHero = () => {
               Helped by input from our over 100 pax strong handpicked shareholder community, the three used ten months to scope out the first-ever video conference aggregator and end-to-end encrypted communication platform
               </ConferenceDiscription>
             </GlobalBox>
+            <GlobalImage>
             <Image src={Founders} htmlWidth="570px" alt="founders" />
-
+            </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
             <GlobalBox>
@@ -50,7 +52,9 @@ const AboutHero = () => {
               By now, SEEYOU has grown to a 30 pax tribe of 13 nationalities. All committed to being a force for good and providing a free global aggregator and communication platform in 48 languages, with two more to come
               </ConferenceDiscription>
             </GlobalBox>
+            <GlobalImage>
             <Image src={CoFounders} htmlWidth="521px" alt="co-founders" />
+            </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
             <GlobalBox>
@@ -65,7 +69,9 @@ const AboutHero = () => {
               (*Final terms to be announced)
               </ConferenceDiscriptionSub>
             </GlobalBox>
+            <GlobalImage>
             <Image src={Share} htmlWidth="518px" alt="Founders" />
+            </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
             <GlobalBox>
@@ -74,7 +80,9 @@ const AboutHero = () => {
               Final approval as an Irish PLC is under completion. SEEYOU is headquartered in Dublin, with subsidiaries in Dubai and Kyiv [temporarily all of the Ukrainian team and their families are safely evacuated to Ireland], and representation in Oslo and Sydney
               </ConferenceDiscription>
             </GlobalBox>
+            <GlobalImage>
             <Image src={Ukraine} htmlWidth="465px" alt="Founders" />
+            </GlobalImage>
           </ConferenceItem>
         </AboutUl>
       </Container>
