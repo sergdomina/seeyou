@@ -35,13 +35,19 @@ export const HeroBox = styled.div`
 `;
 
 export const HeroThumb = styled.div`
-  margin-top: 32px;
-  ${({ theme }) => theme.device.desktop} {
-    width: 746px;
-    height: 465px;
-    margin-right: -50px;
-    margin-top: 50px;
-  }
+    width: 343px;
+    text-align: center;
+    margin: 0 auto;
+    ${({ theme }) => theme.device.tablet} {
+    width: 618px;
+    text-align: center;
+    }
+    ${({ theme }) => theme.device.default} {
+    width: 600px;
+    }
+    ${({ theme }) => theme.device.desktop} {
+    width: 724px;
+    } ;
 `;
 
 export const HeroTitle = styled.h1`

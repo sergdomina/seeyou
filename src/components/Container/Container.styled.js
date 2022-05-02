@@ -7,19 +7,20 @@ const Container = styled.div`
   width: 100%;
 
   ${device.mobile} {
-    width: ${size.mobile};
+    width: 343px;
   }
 
   ${device.tablet} {
-    width: ${size.tablet};
+    width: 616px;
   }
 
   ${device.default} {
-    width: ${size.default};
+    width: 830px;
   }
 
   ${device.desktop} {
-    width: ${size.desktop};
+    width: 1140px;
+    
   }
 `;
 const ContainerHeader = styled.div`

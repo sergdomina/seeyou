@@ -8,17 +8,19 @@ import {
   HeroThumb,
   HeroImg,
 } from './Hero.styled';
+import GlobalImage from '../../GlobalImage';
+import GlobalBox from '../../GlobalBox';
 import MediaQuery from '../../MediaQuery';
-import HeroIllustration from 'image/hero/hero_illustration.png';
+import HeroIllustration from 'image/hero/hero.svg';
 
 const Hero = () => {
   return (
     <HeroSection>
       <HeroContainer>
-        <HeroThumb>
+        <HeroThumb >
           <HeroImg src={HeroIllustration} alt="hero illustration" />
-        </HeroThumb>
-        <HeroBox>
+        </HeroThumb >
+        <GlobalBox>
           <HeroTitle>
             The Video Conference
             <br />
@@ -30,7 +32,7 @@ const Hero = () => {
             also wholly free of charge. It’ll cost you nothing but will simplify
             life and enable truly cool stuff you never knew you were missing
           </HeroDiscription>
-        </HeroBox>
+        </GlobalBox>
       </HeroContainer>
     </HeroSection>
   );

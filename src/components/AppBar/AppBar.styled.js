@@ -19,7 +19,6 @@ export const Header = styled.header`
     padding-bottom: 16px;
     top: 0;
     width: 100%;
-    background: whites;
   }
   ${({ theme }) => theme.device.desktop} {
   }
@@ -39,7 +38,7 @@ export const Nav = styled.nav`
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
-    background-color: ${({ theme }) => theme.colors.input_bg};
+    background-color: ${({ theme }) => theme.colors.white};
     transition: transform 0.3s ease-out, opacity 0.3s ease-out,
       visibility 0.3s ease-out;
     &.active {
@@ -69,7 +68,7 @@ export const NavList = styled.ul`
     opacity: 0;
     z-index: -1;
     transform: translateX(-100%);
-    background-color: #d9f0f7;
+    background-color: ${({ theme }) => theme.colors.white};
     transition: transform 0.3s ease-out, opacity 0.3s ease-out,
       visibility 0.3s ease-out;
     &.active {
@@ -138,8 +137,8 @@ export const NavItem = styled.li`
 `;
 
 export const LogoImg = styled.img`
-  width: 99px;
-  height: 20px;
+  width: 82px;
+  height: 16px;
   ${({ theme }) => theme.device.tablet} {
     width: 121px;
     height: 34px;
@@ -165,7 +164,7 @@ export const HeaderContainer = styled(ContainerHeader)`
     align-items: center;
   }
   ${({ theme }) => theme.device.desktop} {
-    width: 1400px;
+    width: 1306px;
     display: flex;
     align-items: center;
   }

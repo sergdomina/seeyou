@@ -13,6 +13,7 @@ import {
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
 import Burger from '../Burger';
+import LogoSeeYouMobile from '../../image/SeeYou_mobile.svg';
 import LogoSeeYou from '../../image/seeyou_15_04.svg';
 import { useOnClickOutside } from '../../hooks/OnClickOutside';
 import MediaQuery from '../MediaQuery';
@@ -69,10 +70,16 @@ const AppBar = () => {
               type="button"
             />
           </MediaQuery>
-
-          <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-            <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
-          </LogoLink>
+          <MediaQuery device={'mobile'}>
+            <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
+              <LogoImg src={LogoSeeYouMobile} alt={'Logo SeeYou'} />
+            </LogoLink>
+          </MediaQuery>
+          <MediaQuery device={'tablet'}>
+            <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
+              <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
+            </LogoLink>
+          </MediaQuery>
         </HeaderBox>
         <Nav className={isOpenMobileMenu && 'active'}>
           <NavList>
@@ -103,6 +110,13 @@ const AppBar = () => {
           </NavList>
         </Nav>
         <MediaQuery device={'mobile'}>
+          <DownloadMobileFooter>
+            <DownloadLink type="button" onClick={toggleModal}>
+              Download
+            </DownloadLink>
+          </DownloadMobileFooter>
+        </MediaQuery>
+        <MediaQuery device={'tablet'}>
           <DownloadMobileFooter>
             <DownloadLink type="button" onClick={toggleModal}>
               Download

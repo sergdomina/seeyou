@@ -25,17 +25,20 @@ export const SectionTitle = styled.h2`
   font-size: 30px;
   line-height: 1,2;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 50px;
   margin-bottom: 8px;
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.device.tablet} {
     font-size: 35px;
+    margin-top: 80px;
   }
   ${({ theme }) => theme.device.default} {
     font-size: 35px;
+    margin-top: 100px;
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 45px;
+    margin-top: 132px;
   }
 `;
 export const SectionTitleSub = styled.h2`
@@ -60,15 +63,15 @@ export const SectionTitleSub = styled.h2`
   }
 `;
 export const AboutUl = styled.ul`
-  padding-bottom: 44px;
+  padding-bottom: 20px;
   ${({ theme }) => theme.device.tablet} {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
   ${({ theme }) => theme.device.default} {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding-bottom: 150px;
+    padding-bottom: 75px;
   }
 `
 
@@ -120,37 +123,39 @@ color: ${({ theme }) => theme.colors.primaryText};
 `;
 
 export const ConferenceItem = styled.li`
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     align-items: center;
-    
+    display: flex;
+    flex-direction: column-reverse;
     ${({ theme }) => theme.device.tablet} {
-      margin-bottom: 75px;
+      margin-bottom: 35px;
     }
     ${({ theme }) => theme.device.default} {
-      margin-bottom: 90px;
+      margin-bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-direction: row;
       &:nth-child(2n) {
       flex-direction: row-reverse;
-    }
+      }
     }
     ${({ theme }) => theme.device.desktop} {
-      margin-bottom: 120px;
+      margin-bottom: 70px;
       
     }
 `;
 
 export const Image = styled.img`
   margin: 0 auto;
-  transform: scale(60%);
+
   ${({ theme }) => theme.device.tablet} {
-    transform: scale(60%);
+
   }
   ${({ theme }) => theme.device.default} {
-    transform: scale(66%);
+
   }
   ${({ theme }) => theme.device.desktop} {
-    transform: scale(100%);
+
   }
 `
