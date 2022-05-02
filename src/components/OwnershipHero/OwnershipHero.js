@@ -6,12 +6,13 @@ import {
   SectionTitleSmall,
   ConferenceItem,
   ConferenceDiscriptionSub,
+  Image,
+  OwnerUl,
 } from './OwnershipHero.styled.js';
 import GlobalSection from '../Section';
 import Container from '../Container';
 import GlobalImage from '../GlobalImage';
 import GlobalBox from '../GlobalBox';
-import { Image } from '@chakra-ui/react';
 import Equit from 'image/co-owners/Equit.png';
 import Stock from 'image/co-owners/Stock.png';
 import Slice from 'image/co-owners/Slice.png';
@@ -27,9 +28,11 @@ const OwnerHero = () => {
           <SectionTitle>CO-OWNERSHIP</SectionTitle>
           <SectionTitleSub>SEEYOU will be partly user-owned. An equivalent of 10% of the original 2.5 million shares will be gifted to active* users and recruiters during the first 25 months after Open Release on August 1st, 2022</SectionTitleSub>
           <SectionTitleSmall>(*Final terms to be announced)</SectionTitleSmall>
-        <ul>
+        <OwnerUl>
           <ConferenceItem>
-            <Image src={Equit}  htmlWidth="355px" alt="equit" />
+            <GlobalImage>
+              <Image src={Equit}  alt="equit" />
+            </GlobalImage>
             <GlobalBox>
               <ConferenceTitle>Equitable Ownership</ConferenceTitle>
 
@@ -43,7 +46,9 @@ const OwnerHero = () => {
             
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Stock} htmlWidth="472px" alt="selfie in seeyou" />
+            <GlobalImage>
+              <Image src={Stock}  alt="selfie in seeyou" />
+            </GlobalImage>
             <GlobalBox>
               <ConferenceTitle>Stock- and Crypto Exchanges</ConferenceTitle>
 
@@ -54,7 +59,9 @@ const OwnerHero = () => {
             
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Slice} htmlWidth="313px" alt="selfie in seeyou" />
+            <GlobalImage>
+              <Image src={Slice}  alt="selfie in seeyou" />
+            </GlobalImage>
             <GlobalBox>
               <ConferenceTitle>Slices of the Monthly Pies</ConferenceTitle>
 
@@ -71,7 +78,9 @@ const OwnerHero = () => {
             
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Earn} htmlWidth="475px" alt="selfie in seeyou" />
+            <GlobalImage>
+              <Image src={Earn}  alt="selfie in seeyou" />
+            </GlobalImage>
             <GlobalBox>
               <ConferenceTitle>Earning Slices</ConferenceTitle>
 
@@ -86,7 +95,9 @@ const OwnerHero = () => {
             
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Create} htmlWidth="375px" alt="Creating a Global Community" />
+            <GlobalImage>
+              <Image src={Create} alt="Creating a Global Community" />
+            </GlobalImage>
             <GlobalBox>
               <ConferenceTitle>Creating a Global Community</ConferenceTitle>
 
@@ -101,7 +112,9 @@ const OwnerHero = () => {
             
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Invite} htmlWidth="375px" alt="Inviting Friends and Followers" />
+            <GlobalImage>
+              <Image src={Invite}  alt="Inviting Friends and Followers" />
+            </GlobalImage>
             <GlobalBox>
               <ConferenceTitle>Inviting Friends and Followers</ConferenceTitle>
 
@@ -116,7 +129,9 @@ const OwnerHero = () => {
             
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Ads} htmlWidth="355px" alt="Inviting Friends and Followers" />
+            <GlobalImage>
+              <Image src={Ads} alt="Inviting Friends and Followers" />
+            </GlobalImage>
             <GlobalBox>
               <ConferenceTitle>Ads Make SEEYOU Free of Charge</ConferenceTitle>
 
@@ -131,7 +146,7 @@ const OwnerHero = () => {
             
           </ConferenceItem>
         
-        </ul>
+        </OwnerUl>
       </Container>
     </GlobalSection>
   );
