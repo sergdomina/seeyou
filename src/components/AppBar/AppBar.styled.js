@@ -111,6 +111,9 @@ export const Link = styled(NavLink)`
     font-size: 18px;
   }
 `;
+export const LinkDown = styled(NavLink)`
+
+`;
 
 export const LogoLink = styled(NavLink)`
   ${({ theme }) => theme.device.mobileMax} {

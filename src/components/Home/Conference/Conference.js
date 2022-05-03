@@ -14,7 +14,7 @@ import { Image } from '@chakra-ui/react';
 
 import Container from '../../Container';
 import GlobalBox from '../../GlobalBox';
-
+import GlobalImage from '../../GlobalImage';
 import SelfieImg from 'image/conference/selfieLoopTm.png';
 import StickyImg from 'image/conference/stickyNote.png';
 import Library from 'image/conference/library.png';
@@ -30,8 +30,9 @@ const Conference = () => {
         <HiddenTitle>Conference </HiddenTitle>
         <ul>
           <ConferenceItem>
-            <Image src={SelfieImg} htmlWidth="521px" alt="selfie in seeyou" />
-
+            <GlobalImage>
+            <Image src={SelfieImg} alt="selfie in seeyou" />
+            </GlobalImage>
             <GlobalBox>
               <SubTitle>Selfie Loop ™</SubTitle>
 
@@ -43,7 +44,9 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={StickyImg} htmlWidth="468px" alt="selfie in seeyou" />
+            <GlobalImage>
+            <Image src={StickyImg}  alt="selfie in seeyou" />
+            </GlobalImage>
             <GlobalBox>
               <SubTitle>Linked Notes</SubTitle>
               <DiscriptionWithMargin>
@@ -60,8 +63,9 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Library} htmlWidth="521px" alt="Library" />
-
+            <GlobalImage>
+            <Image src={Library}  alt="Library" />
+            </GlobalImage>
             <GlobalBox>
               <SubTitle>
                 Free Conference <br /> Recordings Library
@@ -76,7 +80,9 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Rewind} htmlWidth="541px" alt="Rewind" />
+          <GlobalImage>
+            <Image src={Rewind}  alt="Rewind" />
+            </GlobalImage>
             <GlobalBox>
               <SubTitle>Real-Time Rewind</SubTitle>
               <Discription>
@@ -87,7 +93,9 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={Calls} htmlWidth="568px" alt="Calls" />
+          <GlobalImage>
+            <Image src={Calls}  alt="Calls" />
+            </GlobalImage>
             <GlobalBox>
               <SubTitle>
                 Truly Private <br /> Communication
@@ -108,7 +116,9 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={HomeScreen} htmlWidth="331px" />
+            <GlobalImage>
+              <Image src={HomeScreen}  alt="HomeScreen" />
+            </GlobalImage>
             <div>
               <BoxBeforEnd>
                 <SubTitle>One-Stop-Shop Homepage</SubTitle>
@@ -129,11 +139,13 @@ const Conference = () => {
                   </li>
                 </DiscriptionList>
               </BoxBeforEnd>
-              <Image src={BrandsLogo} htmlWidth="570px" />
+              <Image src={BrandsLogo} alt="BrandsLogo" />
             </div>
           </ConferenceItem>
           <ConferenceItem>
-            <Image src={coOwnership} htmlWidth="331px" />
+            <GlobalImage>
+              <Image src={coOwnership} alt="coOwnership"/>
+            </GlobalImage>
             <GlobalBox>
               <SubTitle>
                 Free Co-Ownership

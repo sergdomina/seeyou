@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device, size } from '../../constants/mediaSize';
 
 const Container = styled.div`
-  padding: 0px 24px;
+  padding: 0 15px;
   margin: 0 auto;
   width: 100%;
 
@@ -11,13 +11,13 @@ const Container = styled.div`
   }
 
   ${device.tablet} {
-    width: 616px;
+    width: 618px;
   }
 
   ${device.default} {
+    padding: 0 24px;
     width: 830px;
   }
-
   ${device.desktop} {
     width: 1140px;
     

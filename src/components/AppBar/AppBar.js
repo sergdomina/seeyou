@@ -9,6 +9,7 @@ import {
   HeaderBox,
   LogoLink,
   HeaderContainer,
+  LinkDown,
   // DownHeadDiv,
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
@@ -80,6 +81,11 @@ const AppBar = () => {
               <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
             </LogoLink>
           </MediaQuery>
+          <MediaQuery device={'default'}>
+            <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
+              <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
+            </LogoLink>
+          </MediaQuery>
         </HeaderBox>
         <Nav className={isOpenMobileMenu && 'active'}>
           <NavList>
@@ -111,23 +117,29 @@ const AppBar = () => {
         </Nav>
         <MediaQuery device={'mobile'}>
           <DownloadMobileFooter>
-            <DownloadLink type="button" onClick={toggleModal}>
-              Download
-            </DownloadLink>
+            <LinkDown to="/downloads" onClick={toggleMenu}>
+              <DownloadLink >
+               Download
+              </DownloadLink>
+            </LinkDown>
           </DownloadMobileFooter>
         </MediaQuery>
         <MediaQuery device={'tablet'}>
           <DownloadMobileFooter>
-            <DownloadLink type="button" onClick={toggleModal}>
-              Download
-            </DownloadLink>
+              <LinkDown to="/downloads" onClick={toggleMenu}>
+                <DownloadLink >
+                Download
+                </DownloadLink>
+              </LinkDown>
           </DownloadMobileFooter>
         </MediaQuery>
         {/* <DownHeadDiv> */}
         <MediaQuery device={'default'}>
-          <DownloadLink href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
-            Download
-          </DownloadLink>
+           <LinkDown to="/downloads" onClick={toggleMenu}>
+              <DownloadLink >
+               Download
+              </DownloadLink>
+            </LinkDown>
         </MediaQuery>
         {/* </DownHeadDiv> */}
       </HeaderContainer>
