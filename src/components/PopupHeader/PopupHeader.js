@@ -9,8 +9,6 @@ const PopupHeader = () => (
         <PopLink href={termsOfService} target="_blank">
           Terms of service
         </PopLink>
-        {/* <PopLink to="/terms">Terms of service</PopLink> */}
-
         <PopLink href={privacyStatement} target="_blank">
           Privacy Policy
         </PopLink>
@@ -20,6 +18,7 @@ const PopupHeader = () => (
     position="bottom left"
     pinned
     hoverable
+    style={{ zIndex: '2' }}
     trigger={<PopButton>Terms & Conditions</PopButton>}
   />
 );
