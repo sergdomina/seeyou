@@ -9,7 +9,7 @@ export const Header = styled.header`
   padding-bottom: 12px;
   margin: 0 auto;
   width: 100%;
-  /* z-index: 1; */
+  z-index: 1;
   background: white;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   ${({ theme }) => theme.device.default} {
