@@ -3,15 +3,11 @@ import {
   HeroTitle,
   HeroDiscription,
   HeroContainer,
-  HeroBox,
-  HeroLink,
   HeroThumb,
   HeroImg,
   GlobalBox,
 } from './Hero.styled';
-import GlobalImage from '../../GlobalImage';
 
-import MediaQuery from '../../MediaQuery';
 import HeroIllustration from 'image/hero/hero.svg';
 
 const Hero = () => {
