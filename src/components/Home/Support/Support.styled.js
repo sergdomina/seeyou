@@ -13,10 +13,13 @@ export const SupportSection = styled.section`
 
 export const Title = styled.h2`
   font-family: ${({ theme }) => theme.fonts.title.semiBold};
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.43;
   margin-bottom: 16px;
   color: ${({ theme }) => theme.colors.white};
+  ${({ theme }) => theme.device.tablet} {
+    font-size: 30px;
+  }
 `;
 
 export const SupportContainer = styled(Container)`
@@ -32,15 +35,17 @@ export const Box = styled.div`
   margin-bottom: 30px;
   text-align: left;
   ${({ theme }) => theme.device.tablet} {
-    margin-bottom: 0 px;
+    margin-bottom: 0px;
+    padding-right: 15px;
     width: 450px;
   }
   ${({ theme }) => theme.device.default} {
     width: 612px;
+    padding-right: 15px;
   }
   ${({ theme }) => theme.device.desktop} {
     width: 759px;
-    
+    padding-right: 20px;
   }
 `;
 export const SupportUl =styled.ul`
@@ -78,10 +83,19 @@ export const BoxIMG = styled.div`
 
 export const Discription = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.35;
   margin-bottom: 20px;
   color: ${({ theme }) => theme.colors.privacy_bg};
+  ${({ theme }) => theme.device.tablet} {
+    font-size: 16px;
+  }
+  ${({ theme }) => theme.device.default} {
+    font-size: 16px;
+  }
+  ${({ theme }) => theme.device.desktop} {
+    font-size: 20px;
+  }
 `;
 export const Discriptionltd = styled.p`
   padding-top: 46px;

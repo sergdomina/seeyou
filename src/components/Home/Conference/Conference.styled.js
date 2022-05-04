@@ -1,7 +1,16 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding: 80px 0px 100px;
+padding: 30px 0px 40px;
+  ${({ theme }) => theme.device.tablet} {
+    padding: 40px 0px 60px;
+  }
+  ${({ theme }) => theme.device.default} {
+    padding: 50px 0px 70px;
+  }
+  ${({ theme }) => theme.device.desktop} {
+    padding: 60px 0px 100px;
+  }
 `;
 
 export const HiddenTitle = styled.h2`
@@ -27,22 +36,44 @@ export const DiscriptionSub = styled.h3`
   color: ${({ theme }) => theme.colors.black_btn};
 `;
 export const SubTitle = styled.h3`
-  font-family: ${({ theme }) => theme.fonts.title.semiBold};
-  font-size: 45px;
-  line-height: 1.22;
-
-  margin-bottom: 16px;
+  font-family: ${({ theme }) => theme.fonts.title.bold};
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  text-align: center;
   color: ${({ theme }) => theme.colors.black_btn};
+  ${({ theme }) => theme.device.tablet} {
+    font-size: 35px;
+  }
+  ${({ theme }) => theme.device.default} {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 32px;
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+    font-size: 45px;
+    margin-bottom: 32px;
+  }
 `;
 
 export const Discription = styled.p`
-  font-family: ${({ theme }) => theme.fonts.descr.regular};
+font-family: ${({ theme }) => theme.fonts.descr.regular};
+font-size: 14px;
+line-height: 1.35;
+color: ${({ theme }) => theme.colors.primaryText};
+margin-bottom: 32px;
+${({ theme }) => theme.device.tablet} {
+  font-size: 16px;
+}
+${({ theme }) => theme.device.default} {
+  font-size: 16px;
+}
+${({ theme }) => theme.device.desktop} {
   font-size: 20px;
-  line-height: 1.35;
-  color: ${({ theme }) => theme.colors.black_btn};
-
-  ${({ theme }) => theme.device.desktop} {
-  }
+  
+}
 `;
 
 export const DiscriptionWithMargin = styled(Discription)`
@@ -52,20 +83,18 @@ export const DiscriptionWithMargin = styled(Discription)`
 export const ConferenceItem = styled.li`
   &:not(:last-child) {
     margin-bottom: 30px;
-    ${({ theme }) => theme.device.desktop} {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 208px;
-    }
   }
-  ${({ theme }) => theme.device.desktop} {
+  ${({ theme }) => theme.device.default} {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
     &:nth-child(2n + 1) {
       flex-direction: row-reverse;
     }
+  }
+  ${({ theme }) => theme.device.desktop} {
+
   }
 `;
 
@@ -75,7 +104,7 @@ export const DiscriptionList = styled.ul`
 `;
 
 export const BoxBeforEnd = styled.div`
-  /* width: 476px; */
+
   margin: 0 auto;
   margin-bottom: 102px;
 `;

@@ -7,9 +7,10 @@ import {
   HeroLink,
   HeroThumb,
   HeroImg,
+  GlobalBox,
 } from './Hero.styled';
 import GlobalImage from '../../GlobalImage';
-import GlobalBox from '../../GlobalBox';
+
 import MediaQuery from '../../MediaQuery';
 import HeroIllustration from 'image/hero/hero.svg';
 

@@ -1,5 +1,6 @@
 import DownloadHero from 'components/DownloadHero';
 import Footer from 'components/Footer';
+import Support from 'components/Home/Support';
 
 const Download = () => {
   return (
@@ -7,7 +8,7 @@ const Download = () => {
       <main>
         <DownloadHero />
       </main>
-      <Footer />
+      <Support />
     </>
   );
 };
