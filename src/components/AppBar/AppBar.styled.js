@@ -15,8 +15,8 @@ export const Header = styled.header`
   ${({ theme }) => theme.device.default} {
   }
   ${({ theme }) => theme.device.default} {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     top: 0;
     width: 100%;
   }
@@ -111,9 +111,7 @@ export const Link = styled(NavLink)`
     font-size: 18px;
   }
 `;
-export const LinkDown = styled(NavLink)`
-
-`;
+export const LinkDown = styled(NavLink)``;
 
 export const LogoLink = styled(NavLink)`
   ${({ theme }) => theme.device.mobileMax} {

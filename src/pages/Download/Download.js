@@ -1,5 +1,4 @@
 import DownloadHero from 'components/DownloadHero';
-import Footer from 'components/Footer';
 import Support from 'components/Home/Support';
 
 const Download = () => {

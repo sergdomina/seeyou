@@ -5,7 +5,6 @@ export const useOnClickOutside = (ref, handler, isOpen) => {
     // console.log('!isOpen', !isOpen);
     if (!isOpen) return;
     const listener = event => {
-      console.log('isOpen', isOpen);
       if (!ref.current || ref.current.contains(event.target)) {
         return;
       }
