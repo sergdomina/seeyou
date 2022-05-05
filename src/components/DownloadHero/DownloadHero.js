@@ -20,6 +20,8 @@ import HeroIllustration from 'image/hero/hero.svg';
 import DownloadMobiles from 'image/downloads/downloadsMobile.svg';
 import DownloadAppStoreBtn from 'image/downloads/downloadAppStoreBtn.svg';
 import DownloadPlayMarketBtn from 'image/downloads/downloadPlayMarketBtn.svg';
+import DownloadMac from '../DownloadMac';
+import DownloadWin from '../DownloadWin';
 //Androin//Windows
 const DownloadHero = () => {
   return (
@@ -36,14 +38,10 @@ const DownloadHero = () => {
           </HeroDiscription>
           <DownloadList>
             <DownloadItem>
-              <Link href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
-                SEEYOU for Mac
-              </Link>
+              <DownloadMac />
             </DownloadItem>
             <DownloadItem>
-              <Link href='mailto:hello@seeyou.eu?subject=Please add me to the SEEYOU pre-launch version 1.0.1 priority list" target="_self"'>
-                SEEYOU for Windows
-              </Link>
+              <DownloadWin />
             </DownloadItem>
           </DownloadList>
         </GlobalBox>
