@@ -4,7 +4,7 @@ import Toolbar from 'components/Home/Toolbar';
 // import FeaturesTabs from '../../components/FeatherTabs';
 import Conference from 'components/Home/Conference';
 import Support from 'components/Home/Support';
-import Footer from 'components/Footer';
+
 // import MediaQuery from '../../components/MediaQuery';
 // import DownloadMobileFooter from '../../components/DownloadMobileFooter';
 const Home = () => {
@@ -27,7 +27,6 @@ const Home = () => {
           <DownloadMobileFooter />
         </MediaQuery> */}
       </main>
-
     </>
   );
 };

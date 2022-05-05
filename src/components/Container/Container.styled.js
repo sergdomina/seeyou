@@ -7,7 +7,8 @@ const Container = styled.div`
   width: 100%;
 
   ${device.mobile} {
-    width: 343px;
+    /* width: 343px; */
+    width: 373px;
   }
 
   ${device.tablet} {
@@ -36,4 +37,5 @@ const ContainerHeader = styled.div`
     width: 1306px;
   }
 `;
+
 export default Container;

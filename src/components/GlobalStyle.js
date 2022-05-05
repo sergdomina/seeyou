@@ -2,9 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    padding-bottom: 97px;
+    /* padding-bottom: 97px; */
+    padding-bottom: ${({ isDownloadPage }) => (isDownloadPage ? 0 : '97px')};
      ${({ theme }) => theme.device.tablet} {
-      padding-bottom: 90px;
+      /* padding-bottom: 90px; */
+       padding-bottom: ${({ isDownloadPage }) => (isDownloadPage ? 0 : '90px')};
   }
      ${({ theme }) => theme.device.default} {
       padding-bottom: 0px;
@@ -12,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
    ${({ theme }) => theme.device.desktop} {
       padding-bottom: 0px;
   }
+
   }
 
   img {

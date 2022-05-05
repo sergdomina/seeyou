@@ -1,4 +1,6 @@
 import { useState, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import { GlobalStyle } from '../GlobalStyle';
 import {
   Nav,
   Link,
@@ -22,6 +24,7 @@ import DownloadLink from '../DownloadLink';
 import ModalForMail from '../ModalForMail';
 import PopupHeader from '../PopupHeader';
 import DownloadMobileFooter from '../DownloadMobileFooter';
+// import styles from './style.modules.css';
 
 const AppBar = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
@@ -34,117 +37,97 @@ const AppBar = () => {
 
   const [showModal, setShowModal] = useState(false);
   const toggleModal = () => setShowModal(!showModal);
-
-  // const [likeList, setLikeList] = useState('');
-
-  // const renderLikeList = () => {
-  //   return (
-  //     <LikesList>
-  //       <Link to="/terms" onClick={toggleMenu}>
-  //         Terms of service
-  //       </Link>
-  //       <Link to="/privacy" onClick={toggleMenu}>
-  //         Privacy Policy
-  //       </Link>
-  //     </LikesList>
-  //   );
-  // };
-
-  // const handleLeave = () => {
-  //   return setLikeList('');
-  // };
-  // const handleHover = () => {
-  //   // return setLikeList(renderLikeList());
-  //   return setLikeList('true');
-  //   // return this.setState({ likeList: this.renderLikeList() });
-  // };
-
+  const { pathname } = useLocation();
+  const isDownloadPage = pathname !== '/downloads';
   return (
-    <Header ref={node}>
-      <HeaderContainer>
-        <HeaderBox>
-          <MediaQuery device={'mobile'}>
-            <Burger
-              open={isOpenMobileMenu}
-              setOpen={toggleMenu}
-              aria-expanded={isOpenMobileMenu}
-              type="button"
-            />
-          </MediaQuery>
-          <MediaQuery device={'mobile'}>
-            <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-              <LogoImg src={LogoSeeYouMobile} alt={'Logo SeeYou'} />
-            </LogoLink>
-          </MediaQuery>
-          <MediaQuery device={'tablet'}>
-            <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-              <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
-            </LogoLink>
-          </MediaQuery>
-          <MediaQuery device={'default'}>
-            <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-              <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
-            </LogoLink>
-          </MediaQuery>
-        </HeaderBox>
-        <Nav className={isOpenMobileMenu && 'active'}>
-          <NavList>
-            <NavItem>
-              <Link to="/" onClick={toggleMenu}>
-                Home
-              </Link>
-            </NavItem>
+    <>
+      <GlobalStyle isDownloadPage={!isDownloadPage} />
+      <Header ref={node}>
+        <HeaderContainer>
+          <HeaderBox>
+            <MediaQuery device={'mobile'}>
+              <Burger
+                open={isOpenMobileMenu}
+                setOpen={toggleMenu}
+                aria-expanded={isOpenMobileMenu}
+                type="button"
+              />
+            </MediaQuery>
+            <MediaQuery device={'mobile'}>
+              <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
+                <LogoImg src={LogoSeeYouMobile} alt={'Logo SeeYou'} />
+              </LogoLink>
+            </MediaQuery>
+            <MediaQuery device={'tablet'}>
+              <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
+                <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
+              </LogoLink>
+            </MediaQuery>
+            <MediaQuery device={'default'}>
+              <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
+                <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
+              </LogoLink>
+            </MediaQuery>
+          </HeaderBox>
+          <Nav className={isOpenMobileMenu && 'active'}>
+            <NavList>
+              <NavItem>
+                <Link to="/" onClick={toggleMenu}>
+                  Home
+                </Link>
+              </NavItem>
 
-            <NavItem>
-              <Link to="/about" onClick={toggleMenu}>
-                About
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/co-ownership" onClick={toggleMenu}>
-                Co-Ownership
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/faq" onClick={toggleMenu}>
-                FAQ
-              </Link>
-            </NavItem>
-            <NavItem>
-              <PopupHeader />
-            </NavItem>
-          </NavList>
-        </Nav>
-        <MediaQuery device={'mobile'}>
-          <DownloadMobileFooter>
+              <NavItem>
+                <Link to="/about" onClick={toggleMenu}>
+                  About
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/co-ownership" onClick={toggleMenu}>
+                  Co-Ownership
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/faq" onClick={toggleMenu}>
+                  FAQ
+                </Link>
+              </NavItem>
+              <NavItem>
+                <PopupHeader />
+              </NavItem>
+            </NavList>
+          </Nav>
+
+          {isDownloadPage && (
+            <MediaQuery device={'mobile'}>
+              <DownloadMobileFooter>
+                <LinkDown to="/downloads" onClick={toggleMenu}>
+                  <DownloadLink>Download</DownloadLink>
+                </LinkDown>
+              </DownloadMobileFooter>
+            </MediaQuery>
+          )}
+          {isDownloadPage && (
+            <MediaQuery device={'tablet'}>
+              <DownloadMobileFooter>
+                <LinkDown to="/downloads" onClick={toggleMenu}>
+                  <DownloadLink>Download</DownloadLink>
+                </LinkDown>
+              </DownloadMobileFooter>
+            </MediaQuery>
+          )}
+
+          {/* <DownHeadDiv> */}
+          <MediaQuery device={'default'}>
             <LinkDown to="/downloads" onClick={toggleMenu}>
-              <DownloadLink >
-               Download
-              </DownloadLink>
+              <DownloadLink>Download</DownloadLink>
             </LinkDown>
-          </DownloadMobileFooter>
-        </MediaQuery>
-        <MediaQuery device={'tablet'}>
-          <DownloadMobileFooter>
-              <LinkDown to="/downloads" onClick={toggleMenu}>
-                <DownloadLink >
-                Download
-                </DownloadLink>
-              </LinkDown>
-          </DownloadMobileFooter>
-        </MediaQuery>
-        {/* <DownHeadDiv> */}
-        <MediaQuery device={'default'}>
-           <LinkDown to="/downloads" onClick={toggleMenu}>
-              <DownloadLink >
-               Download
-              </DownloadLink>
-            </LinkDown>
-        </MediaQuery>
-        {/* </DownHeadDiv> */}
-      </HeaderContainer>
-      {showModal && <ModalForMail toggleModal={toggleModal} />}
-    </Header>
+          </MediaQuery>
+          {/* </DownHeadDiv> */}
+        </HeaderContainer>
+        {showModal && <ModalForMail toggleModal={toggleModal} />}
+      </Header>
+    </>
   );
 };
 export default AppBar;
