@@ -11,7 +11,7 @@ import {
   Discriptionltd
 } from './Support.styled';
 
-
+import Container from '../../Container'
 import { Image } from '@chakra-ui/react';
 import AppleStore from 'image/support/AppStore.png';
 import GooglePlay from 'image/support/GooglePlay.png';
@@ -48,9 +48,11 @@ const Support = () => {
         </SupportUl>
         </BoxIMG>
       </SupportContainer>
+      <Container>
           <Discriptionltd>
           SEEYOU LLC, The CHQ Building, Custom House Quay, Dublin 1, D01 Y6H7 Ireland
           </Discriptionltd>
+      </Container>
     </SupportSection>
   );
 };

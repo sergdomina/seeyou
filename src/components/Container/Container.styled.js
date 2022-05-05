@@ -23,5 +23,19 @@ const Container = styled.div`
     width: 1140px;
   }
 `;
+const ContainerHeader = styled.div`
+  padding: 0px 24px;
+  margin: 0 auto;
+  width: 100%;
+  ${device.tablet} {
+    width: 688px;
+  }
+  ${device.default} {
+    width: 880px;
+  }
+  ${device.desktop} {
+    width: 1306px;
+  }
+`;
 
 export default Container;

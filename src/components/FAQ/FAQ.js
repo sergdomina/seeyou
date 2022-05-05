@@ -13,8 +13,9 @@ import {
      PartnersDiv,
      PartnersUl,
      PartnersLi,
+     ContainerFAQ,
      } from './FAQ.styled';
-import Container from '../Container';
+
 import GoogleMeet from '../../image/FAQ/googlemeet.png';
 import Microsoft from '../../image/FAQ/microsoft.png';
 import Webex from '../../image/FAQ/webex.png';
@@ -31,10 +32,10 @@ import { Image } from '@chakra-ui/react';
 const FAQ = () => {
   return (
     <FAQSection>
-      <Container>
+      <ContainerFAQ>
           <SectionTitle>FAQ</SectionTitle>
           <SectionTitleSub>These are some of the most common questions we get</SectionTitleSub>
-          <FAQdiv>
+          <div>
             <FAQul>
               <FAQli>
                 <Questions>Is SEEYOU entirely free?</Questions>
@@ -61,8 +62,8 @@ const FAQ = () => {
                     <PartnersLi>
                     <Image src={Zoom} htmlWidth="79px" alt="Zoom" />
                     </PartnersLi>
-                    </PartnersUl>
-                    <PartnersUl>
+                  </PartnersUl>
+                  <PartnersUl>
                     <PartnersLi>
                     <Image src={Avaya} htmlWidth="62px" alt="Avaya" />
                     </PartnersLi>
@@ -167,8 +168,8 @@ const FAQ = () => {
                 <Answer>Below is the strategy and value statement governing pretty much everything we do</Answer>
               </FAQli>
           </FAQul>
-          </FAQdiv>
-      </Container>
+          </div>
+      </ContainerFAQ>
     </FAQSection>
   );
 };

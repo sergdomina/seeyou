@@ -23,11 +23,17 @@ export const Title = styled.h2`
 `;
 
 export const SupportContainer = styled(Container)`
+  margin: 0 auto;
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+  }
+  ${({ theme }) => theme.device.default} {
+    margin: 0 auto;
+  }
+  ${({ theme }) => theme.device.desktop} {
+
   }
 `;
 
@@ -103,9 +109,17 @@ export const Discriptionltd = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.35px;
-
+  line-height: 1.35;
   color: ${({ theme }) => theme.colors.privacy_bg};
+  ${({ theme }) => theme.device.tablet} {
+    
+  }
+  ${({ theme }) => theme.device.default} {
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+
+  }
 `;
 
 export const DiscriptionWithMargin = styled(Discription)`
