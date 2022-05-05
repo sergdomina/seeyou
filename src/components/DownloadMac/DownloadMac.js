@@ -13,7 +13,7 @@ const DownloadMac = () => (
         </PopLink>
       </PopupBox>
     }
-    on={['focus', 'hover']}
+    on={['click']}
     position="bottom left"
     pinned
     hoverable

@@ -25,14 +25,14 @@ export const theme = Object.freeze({
     mobile: '375px',
     tablet: '768px',
     default: '960px',
-    desktop: '1188px',
+    desktop: '1306px',
   },
   device: {
     mobile: `@media screen and (min-width:375px)`,
     mobileMax: `@media screen and (max-width:767px)`,
     tablet: `@media screen and (min-width: 768px)`,
     default: `@media screen and (min-width: 960px)`,
-    desktop: `@media screen and (min-width: 1400px)`,
+    desktop: `@media screen and (min-width: 1306px)`,
   },
   fonts: {
     title: {

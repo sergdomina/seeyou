@@ -13,8 +13,6 @@ export const Header = styled.header`
   background: white;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   ${({ theme }) => theme.device.default} {
-  }
-  ${({ theme }) => theme.device.default} {
     padding-top: 25px;
     padding-bottom: 25px;
     top: 0;

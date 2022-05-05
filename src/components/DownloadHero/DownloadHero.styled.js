@@ -28,6 +28,7 @@ export const Title = styled.h2`
     width: 160px;
   }
   ${({ theme }) => theme.device.desktop} {
+    margin-top: 30px;
     font-size: 45px;
     line-height: 1.2;
     width: 240px;

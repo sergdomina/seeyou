@@ -20,7 +20,7 @@ export const PopButton = styled.button`
   color: ${({ theme }) => theme.colors.dark};
   font-size: 14px;
   line-height: 1.5;
-  ${({ theme }) => theme.device.tablet} {
+  ${({ theme }) => theme.device.desktop} {
     font-size: 18px;
   }
 `;
