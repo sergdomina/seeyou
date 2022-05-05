@@ -147,12 +147,12 @@ export const ConferenceItem = styled.li`
 
 export const Image = styled.img`
   margin: 0 auto;
-
+   margin-bottom: 15px;
   ${({ theme }) => theme.device.tablet} {
-
+    margin-bottom: 30px;
   }
   ${({ theme }) => theme.device.default} {
-
+    margin-bottom: 0px;
   }
   ${({ theme }) => theme.device.desktop} {
 
