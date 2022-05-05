@@ -20,7 +20,6 @@ const Container = styled.div`
   }
   ${device.desktop} {
     width: 1140px;
-    
   }
 `;
 const ContainerHeader = styled.div`
