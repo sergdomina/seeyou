@@ -5,7 +5,6 @@ import AppBar from '../AppBar';
 const Layout = () => {
   return (
     <>
-      {/* <GlobalStyle /> */}
       <AppBar />
       <Outlet />
     </>

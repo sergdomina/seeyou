@@ -1,7 +1,9 @@
 import DownloadHero from 'components/DownloadHero';
 import Support from 'components/Home/Support';
+import { ScrollToTop } from 'hooks/ScrollToTop';
 
 const Download = () => {
+  ScrollToTop();
   return (
     <>
       <main>

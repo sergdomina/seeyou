@@ -1,9 +1,10 @@
 import Support from 'components/Home/Support/Support';
 import FAQ from 'components/FAQ/FAQ';
 import OurLeadership from 'components/OurLeadership';
-// import DownloadMobileFooter from '../../components/DownloadMobileFooter';
-// import MediaQuery from '../../components/MediaQuery';
+import { ScrollToTop } from 'hooks/ScrollToTop';
+
 const Help = () => {
+  ScrollToTop();
   return (
     <>
       <main>

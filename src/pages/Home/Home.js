@@ -1,13 +1,11 @@
 import Hero from 'components/Home/Hero';
 import Toolbar from 'components/Home/Toolbar';
-// import FeaturesAccordion from 'components/FeaturesAccordion';
-// import FeaturesTabs from '../../components/FeatherTabs';
 import Conference from 'components/Home/Conference';
 import Support from 'components/Home/Support';
+import { ScrollToTop } from 'hooks/ScrollToTop';
 
-// import MediaQuery from '../../components/MediaQuery';
-// import DownloadMobileFooter from '../../components/DownloadMobileFooter';
 const Home = () => {
+  ScrollToTop();
   return (
     <>
       <main>
