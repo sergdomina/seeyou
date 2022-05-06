@@ -5,7 +5,7 @@ export const PopLink = styled.a`
   color: ${({ theme }) => theme.colors.dark};
   font-size: 14px;
   line-height: 1.5;
-
+  margin-left: 15px;
   &.active {
     font-family: ${({ theme }) => theme.fonts.descr.bold};
   }

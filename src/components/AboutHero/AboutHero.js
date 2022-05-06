@@ -8,6 +8,7 @@ import {
   AboutUl,
   ContactLink,
   Image,
+  DivImg,
 } from './AboutHero.styled';
 import GlobalSection from '../Section';
 import Container from '../Container';
@@ -39,7 +40,7 @@ const AboutHero = () => {
               </ConferenceDiscription>
             </GlobalBox>
             <GlobalImage>
-            <Image src={Founders} htmlWidth="570px" alt="founders" />
+            <Image src={Founders}  alt="founders" />
             </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
@@ -53,7 +54,7 @@ const AboutHero = () => {
               </ConferenceDiscription>
             </GlobalBox>
             <GlobalImage>
-            <Image src={CoFounders} htmlWidth="521px" alt="co-founders" />
+            <Image src={CoFounders}  alt="co-founders" />
             </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
@@ -70,7 +71,7 @@ const AboutHero = () => {
               </ConferenceDiscriptionSub>
             </GlobalBox>
             <GlobalImage>
-            <Image src={Share} htmlWidth="518px" alt="Founders" />
+            <Image src={Share}  alt="Founders" />
             </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
@@ -81,7 +82,9 @@ const AboutHero = () => {
               </ConferenceDiscription>
             </GlobalBox>
             <GlobalImage>
-            <Image src={Ukraine} htmlWidth="465px" alt="Founders" />
+              <DivImg>
+                <Image src={Ukraine} alt="Founders" />
+              </DivImg>
             </GlobalImage>
           </ConferenceItem>
         </AboutUl>

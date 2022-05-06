@@ -8,6 +8,7 @@ import {
   ConferenceDiscriptionSub,
   Image,
   OwnerUl,
+  DivImg,
 } from './OwnershipHero.styled.js';
 import GlobalSection from '../Section';
 import Container from '../Container';
@@ -60,7 +61,9 @@ const OwnerHero = () => {
           </ConferenceItem>
           <ConferenceItem>
             <GlobalImage>
-              <Image src={Slice}  alt="selfie in seeyou" />
+              <DivImg>
+              <Image src={Slice}  alt="Slices of the Monthly Pies" />
+              </DivImg>
             </GlobalImage>
             <GlobalBox>
               <ConferenceTitle>Slices of the Monthly Pies</ConferenceTitle>

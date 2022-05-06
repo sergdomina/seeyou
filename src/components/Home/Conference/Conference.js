@@ -8,6 +8,7 @@ import {
   DiscriptionList,
   BoxBeforEnd,
   DiscriptionSub,
+  BrandsLogos,
 } from './Conference.styled';
 
 import { Image } from '@chakra-ui/react';
@@ -19,10 +20,12 @@ import SelfieImg from 'image/conference/selfieLoopTm.png';
 import StickyImg from 'image/conference/stickyNote.png';
 import Library from 'image/conference/library.png';
 import Rewind from 'image/conference/rewind.png';
-import Calls from 'image/conference/calls.png';
+import Calls from 'image/conference/Truly.png';
 import HomeScreen from 'image/conference/homeScreen.png';
 import BrandsLogo from 'image/conference/brandsLogo.png';
+import BrandsLogoMobile from 'image/conference/BrandsLogoMobile.png';
 import coOwnership from 'image/conference/coOwnership.png';
+import MediaQuery from '../../MediaQuery';
 const Conference = () => {
   return (
     <Section>
@@ -138,8 +141,18 @@ const Conference = () => {
                     </Discription>
                   </li>
                 </DiscriptionList>
+                <MediaQuery device={'mobile'}>
+                  <Image src={BrandsLogoMobile} alt="BrandsLogo" />
+                </MediaQuery>
+                <MediaQuery device={'tablet'}>
+                  <BrandsLogos src={BrandsLogo} alt="BrandsLogo" />
+                </MediaQuery>
+                <MediaQuery device={'default'}>
+                  <BrandsLogos src={BrandsLogo} alt="BrandsLogo" />
+                </MediaQuery>
+                
               </BoxBeforEnd>
-              <Image src={BrandsLogo} alt="BrandsLogo" />
+              
             </div>
           </ConferenceItem>
           <ConferenceItem>

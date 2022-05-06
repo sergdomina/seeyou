@@ -66,7 +66,7 @@ export const HeroThumb = styled.div`
     width: 618px;
     }
     ${({ theme }) => theme.device.default} {
-    width: 402px;
+    width: 500px;
     }
     ${({ theme }) => theme.device.desktop} {
     width: 724px;
@@ -106,6 +106,7 @@ export const HeroDiscription = styled.p`
   }
   ${({ theme }) => theme.device.default} {
     font-size: 16px;
+    margin-bottom: 70px;
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 20px;

@@ -1,5 +1,6 @@
 import { PopLink, PopButton, PopupBox } from './DownloadWin.styled';
 import { Popup } from 'semantic-ui-react';
+import { click } from '@testing-library/user-event/dist/click';
 
 const DownloadWin = () => (
   <Popup
@@ -13,7 +14,7 @@ const DownloadWin = () => (
         </PopLink>
       </PopupBox>
     }
-    on={['focus', 'hover']}
+    on={['click']}
     position="bottom left"
     pinned
     hoverable

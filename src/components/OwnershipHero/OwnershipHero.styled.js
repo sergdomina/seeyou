@@ -158,3 +158,16 @@ export const Image = styled.img`
     
   }
 `
+export const DivImg = styled.div`
+    margin: 0 auto;
+
+  ${({ theme }) => theme.device.tablet} {
+    padding: 15px 15px;
+  }
+  ${({ theme }) => theme.device.default} {
+    padding: 20px 20px;
+  }
+  ${({ theme }) => theme.device.desktop} {
+    padding: 40px 40px;
+  }
+`

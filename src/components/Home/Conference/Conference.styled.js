@@ -63,7 +63,7 @@ font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 14px;
 line-height: 1.35;
 color: ${({ theme }) => theme.colors.primaryText};
-margin-bottom: 32px;
+margin-bottom: 24px;
 ${({ theme }) => theme.device.tablet} {
   font-size: 16px;
 }
@@ -81,26 +81,57 @@ export const DiscriptionWithMargin = styled(Discription)`
 `;
 
 export const ConferenceItem = styled.li`
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
+
   ${({ theme }) => theme.device.default} {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+
     &:nth-child(2n + 1) {
       flex-direction: row-reverse;
     }
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
   ${({ theme }) => theme.device.desktop} {
-
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
   }
 `;
+export const BrandsLogos = styled.img`
 
+  ${({ theme }) => theme.device.tablet} {
+    width: 402px;
+}
+  ${({ theme }) => theme.device.default} {
+    width: 402px;
+}
+  ${({ theme }) => theme.device.desktop} {
+    width: 570px;
+}
+`
 export const DiscriptionList = styled.ul`
   list-style-type: disc;
   padding-left: 27px;
+  margin-bottom: 24px;
+  ${({ theme }) => theme.device.tablet} {
+    margin-bottom: 32px;
+}
+  ${({ theme }) => theme.device.default} {
+    margin-bottom: 50px;
+}
+  ${({ theme }) => theme.device.desktop} {
+    margin-bottom: 70px;
+}
 `;
 
 export const BoxBeforEnd = styled.div`

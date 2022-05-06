@@ -6,17 +6,21 @@ import {
   Img,
   Discription,
   ToolbarThumb,
+  DivImage,
 } from './Toolbar.styled';
 
 import seemoji from 'image/seemoji.svg';
 import toolbar from 'image/toolbar/toolbar.png';
 import Container from '../../Container/Container.styled'
 
+
 const Toolbar = () => {
   return (
     <Section>
         <ToolbarContainer>
-          <Img src={seemoji} alt={seemoji} />
+          <DivImage>
+            <Img src={seemoji} alt={seemoji} />
+          </DivImage>
           <Box>
             <Title>One Toolbar to Rule Them All</Title>
             <Discription>
