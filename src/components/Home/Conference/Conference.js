@@ -67,7 +67,7 @@ const Conference = () => {
           </ConferenceItem>
           <ConferenceItem>
             <GlobalImage>
-            <Image src={Library}  alt="Library" />
+              <Image src={Library}  alt="Library" />
             </GlobalImage>
             <GlobalBox>
               <SubTitle>
