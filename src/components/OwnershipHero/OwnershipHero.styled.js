@@ -69,7 +69,7 @@ export const SectionTitleSmall = styled.h2`
   font-size: 12px;
   line-height: 1,3;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 60px;
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 40px;
@@ -125,7 +125,7 @@ export const OwnerUl = styled.ul`
   }
 `
 export const ConferenceItem = styled.li`
-  margin-bottom: 15px;
+  margin-bottom: 100px;
   align-items: center;
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 85px;
