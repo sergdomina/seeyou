@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const ImageThumb = styled.div`
 width: 343px;
-text-align: center;
-margin: 0 auto;
 
+margin: 0 auto;
+margin-bottom: 32px;
 ${({ theme }) => theme.device.tablet} {
-width: 380px;
-text-align: center;
+width: 300px;
+
 }
 ${({ theme }) => theme.device.default} {
 width: 416px;

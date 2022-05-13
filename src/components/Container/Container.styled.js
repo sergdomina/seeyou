@@ -29,12 +29,15 @@ const ContainerHeader = styled.div`
   width: 100%;
   ${device.tablet} {
     width: 688px;
+    padding: 0px 12px;
   }
   ${device.default} {
     width: 880px;
+    padding: 0px 24px;
   }
   ${device.desktop} {
     width: 1306px;
+    
   }
 `;
 

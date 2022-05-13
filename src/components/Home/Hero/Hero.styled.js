@@ -20,12 +20,16 @@ export const HeroImg = styled.img`
 `
 export const HeroContainer = styled(Container)`
 
-  ${({ theme }) => theme.device.default} {
-    width: 806px;
+  ${({ theme }) => theme.device.tablet} {
+    width: 618px;
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
     flex-direction: row-reverse;
+  }
+  ${({ theme }) => theme.device.default} {
+    width: 806px;
+    
   }
   ${({ theme }) => theme.device.desktop} {
     width: 1140px;
@@ -40,36 +44,41 @@ export const HeroBox = styled.div`
   }
 `;
 export const GlobalBox = styled.div`
-
-  text-align: center;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-align: left;
   ${({ theme }) => theme.device.tablet} {
-    width: 618px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 309px;
     margin: 0 auto;
-    text-align: center;
+    
   }
   ${({ theme }) => theme.device.default} {
     width: 416px;
     text-align: left;
-    padding-right: 5px;
+    padding-right: 10px;
   }
   ${({ theme }) => theme.device.desktop} {
     width: 570px;
     text-align: left;
-    padding-right: 10px;
+    padding-right: 15px;
   } ;
+
+
 `;
 export const HeroThumb = styled.div`
     width: auto;
     margin: 0 auto;
     margin-bottom: 32px;
     ${({ theme }) => theme.device.tablet} {
-    width: 618px;
+    width: 309px;
     }
     ${({ theme }) => theme.device.default} {
     width: 500px;
     }
     ${({ theme }) => theme.device.desktop} {
-    width: 724px;
+    width: 654px;
     } ;
 `;
 
@@ -81,7 +90,7 @@ export const HeroTitle = styled.h1`
   margin-top: 32px;
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
-    font-size: 35px;
+    font-size: 26px;
   }
   ${({ theme }) => theme.device.default} {
     font-size: 30px;
@@ -102,7 +111,7 @@ export const HeroDiscription = styled.p`
   color: ${({ theme }) => theme.colors.primaryText};
   margin-bottom: 32px;
   ${({ theme }) => theme.device.tablet} {
-    font-size: 16px;
+    font-size: 14px;
   }
   ${({ theme }) => theme.device.default} {
     font-size: 16px;

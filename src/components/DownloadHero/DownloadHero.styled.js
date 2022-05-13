@@ -23,9 +23,15 @@ export const Title = styled.h2`
   font-size: 30px;
   line-height: 1.5;
   margin-bottom: 16px;
+  text-align: left;
   color: ${({ theme }) => theme.colors.black_btn};
+  ${({ theme }) => theme.device.tablet} {
+    margin-bottom: 16px;
+    text-align: center;
+  }
   ${({ theme }) => theme.device.default} {
     width: 160px;
+    text-align: left;
   }
   ${({ theme }) => theme.device.desktop} {
     margin-top: 30px;
@@ -41,14 +47,16 @@ export const DownloadMobileTitle = styled.h2`
   line-height: 1.5;
   margin-bottom: 32px;
   color: ${({ theme }) => theme.colors.black_btn};
-
+  text-align: left;
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 16px;
+    text-align: center;
   }
 
   ${({ theme }) => theme.device.desktop} {
     font-size: 45px;
     line-height: 1.2;
+    text-align: left;
   }
 `;
 
@@ -85,15 +93,19 @@ export const HeroDiscription = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
   font-size: 14px;
   line-height: 1.3;
-
+  text-align: left;
   color: ${({ theme }) => theme.colors.black_btn};
 
   margin-bottom: 16px;
+  ${({ theme }) => theme.device.tablet} {
 
+    text-align: center;
+  }
   ${({ theme }) => theme.device.default} {
     width: 344px;
     font-size: 16px;
     line-height: 1.3;
+    text-align: left;
   }
 
   ${({ theme }) => theme.device.desktop} {
@@ -103,13 +115,16 @@ export const HeroDiscription = styled.p`
 
 export const DownloadMobileDiscription = styled(HeroDiscription)`
   margin-bottom: 32px;
+  text-align: left;
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 16px;
+    text-align: center;
   }
 
   ${({ theme }) => theme.device.default} {
     margin-bottom: 32px;
     width: 405px;
+    text-align: left;
   }
 
   ${({ theme }) => theme.device.desktop} {
@@ -241,6 +256,8 @@ export const DownloadMobileLink = styled.a`
 
 export const GlobalBox = styled.div`
   text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
   ${({ theme }) => theme.device.tablet} {
     /* width: 618px; */
     margin: 0 auto;

@@ -1,5 +1,19 @@
 import styled from 'styled-components';
 
+export const Box = styled.div`
+  padding-right: 8px;
+  padding-left: 8px;
+${({ theme }) => theme.device.tablet} {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+${({ theme }) => theme.device.default} {
+
+}
+${({ theme }) => theme.device.desktop} {
+
+}
+`
 export const SectionTitle = styled.h2`
 font-family: ${({ theme }) => theme.fonts.title.bold};
   font-weight: 600;

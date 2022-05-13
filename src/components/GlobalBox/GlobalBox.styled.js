@@ -2,10 +2,15 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
   width: auto;
-  text-align: center;
+  text-align: left;
+  padding-right: 8px;
+  padding-left: 8px;
+  
   ${({ theme }) => theme.device.tablet} {
     margin: 0 auto;
-    text-align: center;
+    width: 310px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   ${({ theme }) => theme.device.default} {
     width: 416px;

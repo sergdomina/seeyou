@@ -47,7 +47,7 @@ export const SectionTitleSub = styled.h2`
   font-size: 14px;
   line-height: 1,4;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.device.tablet} {
     font-size: 25px;
@@ -123,12 +123,12 @@ color: ${({ theme }) => theme.colors.primaryText};
 `;
 
 export const ConferenceItem = styled.li`
-    margin-bottom: 15px;
+    margin-bottom: 80px;
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
     ${({ theme }) => theme.device.tablet} {
-      margin-bottom: 35px;
+      
     }
     ${({ theme }) => theme.device.default} {
       margin-bottom: 80px;

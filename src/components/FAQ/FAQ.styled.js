@@ -16,7 +16,7 @@ export const FAQSection = styled.section`
 export const ContainerFAQ = styled.div`
   margin: 0 auto;
   width: 343px;
-
+  
   ${({ theme }) => theme.device.tablet} {
     width: 618px;
   }
