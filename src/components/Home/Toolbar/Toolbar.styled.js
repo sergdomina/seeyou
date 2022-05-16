@@ -15,13 +15,15 @@ export const Section = styled.section`
 `;
 
 export const ToolbarContainer = styled(Container)`
+
   ${({ theme }) => theme.device.tablet} {
-    width: 608px;
-  }
-  ${({ theme }) => theme.device.default} {
     display: flex;
     align-items: start;
     justify-content: space-between;
+    width: 608px;
+  }
+  ${({ theme }) => theme.device.default} {
+   
     width: 805px;
     align-items: top;
   }
@@ -32,9 +34,14 @@ export const ToolbarContainer = styled(Container)`
 
 export const DivImage = styled.div`
   margin: 0 auto;
-  width: 271px;
-  height: 238px;
-
+  width: 185px;
+  height: 146px;
+  
+  ${({ theme }) => theme.device.tablet} {
+    width: 200px;
+    height: 178px;
+    margin-left: 0;
+  }
   ${({ theme }) => theme.device.default} {
     width: 270px;
     height: 233px;
@@ -44,8 +51,12 @@ export const DivImage = styled.div`
 `;
 export const Img = styled.img`
   margin: 0 auto;
-  width: 271px;
-  height: 238px;
+  width: 185px;
+  height: 146px;
+
+  ${({ theme }) => theme.device.tablet} {
+    margin-left: 0;
+  }
 
   ${({ theme }) => theme.device.default} {
     width: 200px;
@@ -58,6 +69,13 @@ export const Img = styled.img`
 `;
 
 export const Box = styled.div`
+  padding-right: 8px;
+  padding-left: 8px;
+  ${({ theme }) => theme.device.tablet} {
+    width: 369px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
   ${({ theme }) => theme.device.default} {
     width: 538px;
     margin-top: 0;
@@ -73,10 +91,11 @@ export const Title = styled.h2`
   line-height: 1.2;
   margin-bottom: 32px;
   margin-top: 32px;
-  text-align: center;
+  text-align: left;
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
-    font-size: 35px;
+    font-size: 26px;
+
   }
   ${({ theme }) => theme.device.default} {
     text-align: left;
@@ -94,9 +113,10 @@ export const Discription = styled.p`
   line-height: 1.35;
   color: ${({ theme }) => theme.colors.primaryText};
   margin-bottom: 32px;
-  text-align: center;
+  text-align: left;
   ${({ theme }) => theme.device.tablet} {
-    font-size: 16px;
+    font-size: 14px;
+
   }
   ${({ theme }) => theme.device.default} {
     font-size: 16px;
@@ -121,8 +141,9 @@ export const ToolbarThumb = styled.div`
       max-width: 578px;
     }
   }
-  ${({ theme }) => theme.device.default} {
-    width: 618px;
+  ${({ theme }) => theme.device.tablet} {
+    margin-top: 0px;
+    width: 600px;
   }
   ${({ theme }) => theme.device.default} {
     width: 723px;

@@ -41,13 +41,14 @@ export const SubTitle = styled.h3`
   line-height: 1.2;
   margin-bottom: 32px;
   margin-top: 32px;
-  text-align: center;
+  text-align: left;
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
-    font-size: 35px;
+    font-size: 25px;
+    
   }
   ${({ theme }) => theme.device.default} {
-    text-align: left;
+   
     font-size: 30px;
     margin-bottom: 32px;
 
@@ -65,7 +66,7 @@ line-height: 1.35;
 color: ${({ theme }) => theme.colors.primaryText};
 margin-bottom: 24px;
 ${({ theme }) => theme.device.tablet} {
-  font-size: 16px;
+  font-size: 14px;
 }
 ${({ theme }) => theme.device.default} {
   font-size: 16px;
@@ -81,14 +82,11 @@ export const DiscriptionWithMargin = styled(Discription)`
 `;
 
 export const ConferenceItem = styled.li`
-  display: flex;
   align-items: center;
-  flex-direction: column-reverse;
   &:not(:last-child) {
-    margin-bottom: 45px;
+    margin-bottom: 80px;
   }
-
-  ${({ theme }) => theme.device.default} {
+  ${({ theme }) => theme.device.tablet} {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,16 +99,20 @@ export const ConferenceItem = styled.li`
       margin-bottom: 60px;
     }
   }
+  ${({ theme }) => theme.device.default} {
+
+  }
   ${({ theme }) => theme.device.desktop} {
     &:not(:last-child) {
       margin-bottom: 70px;
     }
   }
 `;
+
 export const BrandsLogos = styled.img`
 
   ${({ theme }) => theme.device.tablet} {
-    width: 402px;
+    width: 310px;
 }
   ${({ theme }) => theme.device.default} {
     width: 402px;

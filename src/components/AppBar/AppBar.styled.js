@@ -153,8 +153,9 @@ export const LogoImg = styled.img`
   }
 `;
 export const HeaderContainer = styled(ContainerHeader)`
+
   ${({ theme }) => theme.device.tablet} {
-    width: 768px;
+    width: 688px;
     display: flex;
     align-items: center;
   }
@@ -185,7 +186,7 @@ export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
-    margin-right: 79px;
+    margin-right: 64px;
   }
   /* ${({ theme }) => theme.device.default} {
     display: flex;

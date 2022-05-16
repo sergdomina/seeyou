@@ -31,7 +31,7 @@ const DownloadHero = () => {
           <img src={HeroIllustration} alt="hero illustration" />
         </HeroThumb>
         <GlobalBox>
-          <Title>SEEYOU for Desktop</Title>
+          <Title>SEEYOU<br/>for Desktop</Title>
           <HeroDiscription>
             The Selfie Loop, hyper-linked Sticky Notes, saving of recordings in
             your Library, and in-conference rewind are all desktop features.
