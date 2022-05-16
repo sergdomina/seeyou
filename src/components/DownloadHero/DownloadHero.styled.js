@@ -5,7 +5,7 @@ export const Section = styled.section`
   padding-top: 76px;
   padding-bottom: 80px;
   ${({ theme }) => theme.device.tablet} {
-    padding-top: 183px;
+    padding-top: 120px;
     padding-bottom: 100px;
   }
   ${({ theme }) => theme.device.default} {
@@ -27,7 +27,7 @@ export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 16px;
-    text-align: center;
+    text-align: left;
   }
   ${({ theme }) => theme.device.default} {
     width: 160px;
@@ -50,7 +50,7 @@ export const DownloadMobileTitle = styled.h2`
   text-align: left;
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 16px;
-    text-align: center;
+    text-align: left;
   }
 
   ${({ theme }) => theme.device.desktop} {
@@ -63,9 +63,9 @@ export const DownloadMobileTitle = styled.h2`
 export const HeroThumb = styled.div`
   margin-bottom: 16px;
   ${({ theme }) => theme.device.tablet} {
-    width: 438px;
+    width: 300px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-top: 32px;
   }
   ${({ theme }) => theme.device.default} {
     width: 724px;
@@ -75,9 +75,9 @@ export const HeroThumb = styled.div`
 
 export const HeroThumbMobile = styled(HeroThumb)`
   ${({ theme }) => theme.device.tablet} {
-    width: 383px;
+    width: 275px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    
   }
 
   ${({ theme }) => theme.device.default} {
@@ -99,7 +99,7 @@ export const HeroDiscription = styled.p`
   margin-bottom: 16px;
   ${({ theme }) => theme.device.tablet} {
 
-    text-align: center;
+    text-align: left;
   }
   ${({ theme }) => theme.device.default} {
     width: 344px;
@@ -117,8 +117,8 @@ export const DownloadMobileDiscription = styled(HeroDiscription)`
   margin-bottom: 32px;
   text-align: left;
   ${({ theme }) => theme.device.tablet} {
-    margin-bottom: 16px;
-    text-align: center;
+    margin-bottom: 32px;
+    text-align: left;
   }
 
   ${({ theme }) => theme.device.default} {
@@ -138,11 +138,6 @@ export const HeroContainer = styled(Container)`
     margin-bottom: 60px;
   }
   ${({ theme }) => theme.device.tablet} {
-    &:not(:last-child) {
-      margin-bottom: 70px;
-    }
-  }
-  ${({ theme }) => theme.device.default} {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,6 +148,9 @@ export const HeroContainer = styled(Container)`
       align-items: stretch;
     }
   }
+  ${({ theme }) => theme.device.default} {
+    
+  }
   ${({ theme }) => theme.device.desktop} {
     &:not(:last-child) {
       margin-bottom: 206px;
@@ -161,35 +159,29 @@ export const HeroContainer = styled(Container)`
 `;
 
 export const DownloadList = styled.ul`
+  
+  justify-content: center;
   ${({ theme }) => theme.device.tablet} {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
   ${({ theme }) => theme.device.default} {
-    display: block;
+    
   }
 `;
 
 export const DownloadMobileList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
   ${({ theme }) => theme.device.tablet} {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 `;
 
 export const DownloadItem = styled.li`
   &:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 16px;  
   }
   ${({ theme }) => theme.device.tablet} {
-    &:not(:last-child) {
-      margin-bottom: 0px;
-      margin-right: 16px;
-    }
+   
   }
   ${({ theme }) => theme.device.default} {
     &:not(:last-child) {
@@ -200,6 +192,7 @@ export const DownloadItem = styled.li`
 `;
 
 export const DownloadMobileItem = styled.li`
+
   &:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -216,14 +209,7 @@ export const DownloadMobileItem = styled.li`
     }
   }
 `;
-export const HeroBox = styled.div`
-  text-align: center;
 
-  ${({ theme }) => theme.device.desktop} {
-    width: 376px;
-    text-align: left;
-  }
-`;
 export const Link = styled.a`
   display: inline-block;
   width: 245px;
@@ -244,13 +230,13 @@ export const Link = styled.a`
 export const DownloadMobileLink = styled.a`
   display: block;
   width: 190px;
-
+  margin: 0 auto;
   ${({ theme }) => theme.device.tablet} {
-    width: 180px;
+    width: 140px;
   }
 
   ${({ theme }) => theme.device.desktop} {
-    width: 190px;
+    
   }
 `;
 
@@ -259,17 +245,18 @@ export const GlobalBox = styled.div`
   padding-left: 8px;
   padding-right: 8px;
   ${({ theme }) => theme.device.tablet} {
-    /* width: 618px; */
-    margin: 0 auto;
-    text-align: center;
+    width: 310px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
   }
   ${({ theme }) => theme.device.default} {
-    /* width: 416px; */
+    width: 416px;
     text-align: left;
     /* padding-right: 5px; */
   }
   ${({ theme }) => theme.device.desktop} {
-    /* width: 570px; */
+    width: 500px;
     text-align: left;
     /* padding-right: 10px; */
   } ;

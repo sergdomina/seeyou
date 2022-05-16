@@ -12,7 +12,8 @@ const Container = styled.div`
   }
 
   ${device.tablet} {
-    width: 618px;
+    padding: 0 0px;
+    width: 622px;
   }
 
   ${device.default} {
@@ -29,7 +30,7 @@ const ContainerHeader = styled.div`
   width: 100%;
   ${device.tablet} {
     width: 688px;
-    padding: 0px 12px;
+    padding: 0px 10px;
   }
   ${device.default} {
     width: 880px;

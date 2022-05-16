@@ -11,6 +11,7 @@ import Release from '../../pages/Release';
 // import Terms from '../../pages/Terms';
 import Report from '../../pages/Report';
 import Suggest from '../../pages/Suggest';
+import Zoom from '../../pages/Zoom';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         {/* <Route path="terms" element={<Terms />} /> */}
         <Route path="problem" element={<Report />} />
         <Route path="feature" element={<Suggest />} />
+        <Route path="providers-zoom" element={<Zoom />} />
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
     </Routes>

@@ -186,7 +186,7 @@ export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
-    margin-right: 65px;
+    margin-right: 64px;
   }
   /* ${({ theme }) => theme.device.default} {
     display: flex;

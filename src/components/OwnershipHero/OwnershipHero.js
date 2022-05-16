@@ -62,7 +62,7 @@ const OwnerHero = () => {
           <ConferenceItem>
             <GlobalImage>
               <DivImg>
-              <Image src={Slice}  alt="Slices of the Monthly Pies" />
+                <Image src={Slice}  alt="Slices of the Monthly Pies" />
               </DivImg>
             </GlobalImage>
             <GlobalBox>
