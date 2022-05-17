@@ -1,14 +1,14 @@
 import Support from '../../components/Home/Support'
-import ZoomHero from '../../components/Zoom'
+import ProblemHero from '../../components/Problem'
 
-const Zoom = () => {
+const Problem = () => {
     return (
         <>
         <main>
-            <ZoomHero />
+            <ProblemHero />
             <Support />
         </main>
         </>
     );
 };
-export default Zoom;
+export default Problem;

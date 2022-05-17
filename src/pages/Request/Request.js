@@ -1,14 +1,14 @@
 import Support from '../../components/Home/Support'
-import ZoomHero from '../../components/Zoom'
+import RequestHero from '../../components/Request'
 
-const Zoom = () => {
+const Request = () => {
     return (
         <>
         <main>
-            <ZoomHero />
+            <RequestHero />
             <Support />
         </main>
         </>
     );
 };
-export default Zoom;
+export default Request;

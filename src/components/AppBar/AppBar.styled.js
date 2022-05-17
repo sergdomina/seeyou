@@ -186,16 +186,16 @@ export const HeaderBox = styled.div`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
-    margin-right: 64px;
+    margin-right: 120px;
   }
   /* ${({ theme }) => theme.device.default} {
     display: flex;
     align-items: center;
-    margin-right: 79px;
+    margin-right: 160px;
   } */
   ${({ theme }) => theme.device.desktop} {
     display: flex;
     align-items: center;
-    margin-right: 126px;
+    margin-right: 230px;
   }
 `;

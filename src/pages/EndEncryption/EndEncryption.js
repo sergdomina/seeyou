@@ -1,14 +1,14 @@
 import Support from '../../components/Home/Support'
-import ZoomHero from '../../components/Zoom'
+import EndHero from '../../components/EndEncryption'
 
-const Zoom = () => {
+const End = () => {
     return (
         <>
         <main>
-            <ZoomHero />
+            <EndHero />
             <Support />
         </main>
         </>
     );
 };
-export default Zoom;
+export default End;
