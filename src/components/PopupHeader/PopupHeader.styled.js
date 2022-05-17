@@ -41,7 +41,7 @@ export const PopButton = styled.button`
 `;
 export const PopupBox = styled.div`
   width: 239px;
-  height: 168px;
+  height: 420px;
   background: #fff;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
   border-radius: 8px;

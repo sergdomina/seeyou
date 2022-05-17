@@ -79,27 +79,7 @@ const Toolbar = () => {
         </ToolbarThumb>
       </ToolbarContainer>
       </MediaQuery>
-      <MediaQuery device={'desktop'}>
-      <ToolbarContainer>
-        <DivImage>
-          <Img src={seemoji} alt={seemoji} />
-        </DivImage>
-        <Box>
-          <Title>One Toolbar to Rule Them All</Title>
-          <Discription>
-            You get an extra video conference toolbar providing a uniform set of
-            tools for video conference providers. Meaning you can quickly master
-            most platforms while still benefitting from their native
-            functionality
-          </Discription>
-        </Box>
-      </ToolbarContainer>
-      <ToolbarContainer>
-        <ToolbarThumb>
-          <img src={toolbar} alt="toolbar" />
-        </ToolbarThumb>
-      </ToolbarContainer>
-      </MediaQuery>
+      
     </Section>
   );
 };

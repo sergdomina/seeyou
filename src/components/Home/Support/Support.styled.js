@@ -5,6 +5,7 @@ export const SupportSection = styled.section`
   padding-top: 20px;
   padding-bottom: 29px;
   background: ${({ theme }) => theme.colors.placeholder};
+  
   ${({ theme }) => theme.device.default} {
     padding-top: 45px;
     padding-bottom: 45px;

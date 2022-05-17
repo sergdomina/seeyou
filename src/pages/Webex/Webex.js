@@ -1,14 +1,14 @@
 import Support from '../../components/Home/Support'
-import ZoomHero from '../../components/Zoom'
+import WebexHero from '../../components/Webex'
 
-const Zoom = () => {
+const Webex = () => {
     return (
         <>
         <main>
-            <ZoomHero />
+            <WebexHero />
             <Support />
         </main>
         </>
     );
 };
-export default Zoom;
+export default Webex;

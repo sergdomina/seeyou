@@ -12,6 +12,11 @@ import Release from '../../pages/Release';
 import Report from '../../pages/Report';
 import Suggest from '../../pages/Suggest';
 import Zoom from '../../pages/Zoom';
+import Webex from '../../pages/Webex';
+import Request from '../../pages/Request';
+import Delete from '../../pages/DeleteAccount';
+import End from '../../pages/EndEncryption';
+import Problem from '../../pages/Problem';
 
 function App() {
   return (
@@ -29,6 +34,11 @@ function App() {
         <Route path="problem" element={<Report />} />
         <Route path="feature" element={<Suggest />} />
         <Route path="providers-zoom" element={<Zoom />} />
+        <Route path="providers" element={<Webex />} />
+        <Route path="request-access" element={<Request />} />
+        <Route path="delete-account" element={<Delete />} />
+        <Route path="end-to-end-encryption" element={<End />} />
+        <Route path="problem2" element={<Problem />} />
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
     </Routes>

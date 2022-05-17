@@ -1,14 +1,14 @@
 import Support from '../../components/Home/Support'
-import ZoomHero from '../../components/Zoom'
+import DeleteHero from '../../components/DeleteAccount'
 
-const Zoom = () => {
+const Delete = () => {
     return (
         <>
         <main>
-            <ZoomHero />
+            <DeleteHero />
             <Support />
         </main>
         </>
     );
 };
-export default Zoom;
+export default Delete;
