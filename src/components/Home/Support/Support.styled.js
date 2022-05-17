@@ -9,6 +9,7 @@ export const SupportSection = styled.section`
   ${({ theme }) => theme.device.default} {
     padding-top: 45px;
     padding-bottom: 45px;
+    bottom: 0px;
   }
 `;
 

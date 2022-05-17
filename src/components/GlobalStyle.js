@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body{
+    height: 100%;
     /* padding-bottom: 97px; */
     padding-bottom: ${({ isDownloadPage }) => (isDownloadPage ? 0 : '97px')};
      ${({ theme }) => theme.device.tablet} {
@@ -15,6 +16,12 @@ export const GlobalStyle = createGlobalStyle`
       padding-bottom: 0px;
   }
 
+  }
+
+  main{
+    min-height: 100%;
+    display: flex;
+    flex-derection: column;
   }
 
   img {

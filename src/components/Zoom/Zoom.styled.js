@@ -4,6 +4,7 @@ export const Section = styled.section`
 padding: 50px 0px 60px;
   ${({ theme }) => theme.device.tablet} {
     padding: 80px 0px 60px;
+    
   }
   ${({ theme }) => theme.device.default} {
     padding: 80px 0px 70px;
@@ -76,9 +77,9 @@ export const Link = styled.a`
 `;
 export const ButDiv=styled.div`
 width: 100%;
-
+  text-align: center;
 ${({ theme }) => theme.device.tablet} {
-  align-items: left;
+  text-align: left;
 
 }
 ${({ theme }) => theme.device.default} {
@@ -92,19 +93,20 @@ ${({ theme }) => theme.device.desktop} {
 
 export const GlobalBox = styled.div`
   width: auto;
-  text-align: left;
+  
   padding-right: 8px;
   padding-left: 8px;
   
   ${({ theme }) => theme.device.tablet} {
     margin: 0 auto;
     width: 412px;
+    text-align: left;
     padding-right: 10px;
     padding-left: 10px;
   }
   ${({ theme }) => theme.device.default} {
     width: 554px;
-    text-align: left;
+    
     padding-right: 20px;
   }
   ${({ theme }) => theme.device.desktop} {
