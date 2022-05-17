@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    height: 100%;
+    height: 100vh;
     /* padding-bottom: 97px; */
     padding-bottom: ${({ isDownloadPage }) => (isDownloadPage ? 0 : '97px')};
      ${({ theme }) => theme.device.tablet} {
@@ -18,10 +18,14 @@ export const GlobalStyle = createGlobalStyle`
 
   }
 
-  main{
+  #root{
     min-height: 100%;
     display: flex;
-    flex-derection: column;
+    flex-direction: column;
+  }
+
+  main{
+    flex: 1 1 auto;
   }
 
   img {

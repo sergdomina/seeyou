@@ -1,14 +1,12 @@
-import Support from '../../components/Home/Support'
-import RequestHero from '../../components/Request'
+import Support from '../../components/Home/Support';
+import RequestHero from '../../components/Request';
 
 const Request = () => {
-    return (
-        <>
-        <main>
-            <RequestHero />
-            <Support />
-        </main>
-        </>
-    );
+  return (
+    <>
+      <RequestHero />
+      <Support />
+    </>
+  );
 };
 export default Request;

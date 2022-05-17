@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import Container from '../../Container';
 
-export const SupportSection = styled.section`
+export const SupportSection = styled.footer`
   padding-top: 20px;
   padding-bottom: 29px;
   background: ${({ theme }) => theme.colors.placeholder};
-  
+
   ${({ theme }) => theme.device.default} {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -35,7 +35,6 @@ export const SupportContainer = styled(Container)`
     margin: 0 auto;
   }
   ${({ theme }) => theme.device.desktop} {
-
   }
 `;
 
@@ -56,22 +55,22 @@ export const Box = styled.div`
     padding-right: 20px;
   }
 `;
-export const SupportUl =styled.ul`
+export const SupportUl = styled.ul`
   margin: 0 auto;
-`
+`;
 export const SupportLi = styled.li`
   margin-top: 20px;
   margin-bottom: 20px;
-${({ theme }) => theme.device.tablet} {
-  margin-bottom: 20px;
-}
-${({ theme }) => theme.device.default} {
-  margin-bottom: 20px;
-}
-${({ theme }) => theme.device.desktop} {
-  margin-bottom: 20px;
-}
-`
+  ${({ theme }) => theme.device.tablet} {
+    margin-bottom: 20px;
+  }
+  ${({ theme }) => theme.device.default} {
+    margin-bottom: 20px;
+  }
+  ${({ theme }) => theme.device.desktop} {
+    margin-bottom: 20px;
+  }
+`;
 export const BoxIMG = styled.div`
   align-items: center;
   width: 200px;
@@ -79,13 +78,10 @@ export const BoxIMG = styled.div`
   ${({ theme }) => theme.device.tablet} {
     align-items: right;
     margin: 0;
-    
   }
   ${({ theme }) => theme.device.default} {
-    
   }
   ${({ theme }) => theme.device.desktop} {
-    
   }
 `;
 
@@ -114,13 +110,10 @@ export const Discriptionltd = styled.p`
   line-height: 1.35;
   color: ${({ theme }) => theme.colors.privacy_bg};
   ${({ theme }) => theme.device.tablet} {
-    
   }
   ${({ theme }) => theme.device.default} {
-
   }
   ${({ theme }) => theme.device.desktop} {
-
   }
 `;
 
