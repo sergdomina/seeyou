@@ -1,14 +1,12 @@
-import Support from '../../components/Home/Support'
-import ZoomHero from '../../components/Zoom'
+import Support from '../../components/Home/Support';
+import ZoomHero from '../../components/Zoom';
 
 const Zoom = () => {
-    return (
-        <>
-        <main>
-            <ZoomHero />
-            <Support />
-        </main>
-        </>
-    );
+  return (
+    <>
+      <ZoomHero />
+      <Support />
+    </>
+  );
 };
 export default Zoom;

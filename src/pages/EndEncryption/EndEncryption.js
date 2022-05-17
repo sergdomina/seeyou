@@ -1,14 +1,12 @@
-import Support from '../../components/Home/Support'
-import EndHero from '../../components/EndEncryption'
+import Support from '../../components/Home/Support';
+import EndHero from '../../components/EndEncryption';
 
 const End = () => {
-    return (
-        <>
-        <main>
-            <EndHero />
-            <Support />
-        </main>
-        </>
-    );
+  return (
+    <>
+      <EndHero />
+      <Support />
+    </>
+  );
 };
 export default End;

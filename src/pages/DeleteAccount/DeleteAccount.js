@@ -1,14 +1,12 @@
-import Support from '../../components/Home/Support'
-import DeleteHero from '../../components/DeleteAccount'
+import Support from '../../components/Home/Support';
+import DeleteHero from '../../components/DeleteAccount';
 
 const Delete = () => {
-    return (
-        <>
-        <main>
-            <DeleteHero />
-            <Support />
-        </main>
-        </>
-    );
+  return (
+    <>
+      <DeleteHero />
+      <Support />
+    </>
+  );
 };
 export default Delete;

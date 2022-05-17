@@ -1,12 +1,11 @@
 import ReportForm from '../../components/Report/ReportForm';
-
+import Support from 'components/Home/Support/Support';
 const Report = () => {
-    return (
-        <>
-        <main>
-            <ReportForm />
-        </main>
-        </>
-    );
+  return (
+    <>
+      <ReportForm />
+      <Support />
+    </>
+  );
 };
 export default Report;

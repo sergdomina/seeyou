@@ -9,7 +9,7 @@ const Ownership = () => {
     <>
       <main>
         <OwnershipHero />
-        <Support />
+
         {/*<HowItWorks />
         <MoreDetails />
         <FAQ />*/}
@@ -17,6 +17,7 @@ const Ownership = () => {
           <DownloadMobileFooter />
         </MediaQuery> */}
       </main>
+      <Support />
     </>
   );
 };

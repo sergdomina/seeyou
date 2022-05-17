@@ -4,7 +4,9 @@ import RequestHero from '../../components/Request';
 const Request = () => {
   return (
     <>
-      <RequestHero />
+      <main>
+        <RequestHero />
+      </main>
       <Support />
     </>
   );

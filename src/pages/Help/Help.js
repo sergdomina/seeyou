@@ -10,13 +10,13 @@ const Help = () => {
       <main>
         <FAQ />
         <OurLeadership />
-        <Support />
+
         {/*<HelpCenter />
          <MediaQuery device={'mobile'}>
           <DownloadMobileFooter />
         </MediaQuery> */}
       </main>
-
+      <Support />
       {/*<Footer */}
     </>
   );

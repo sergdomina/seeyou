@@ -1,14 +1,12 @@
-import Support from '../../components/Home/Support'
-import WebexHero from '../../components/Webex'
+import Support from '../../components/Home/Support';
+import WebexHero from '../../components/Webex';
 
 const Webex = () => {
-    return (
-        <>
-        <main>
-            <WebexHero />
-            <Support />
-        </main>
-        </>
-    );
+  return (
+    <>
+      <WebexHero />
+      <Support />
+    </>
+  );
 };
 export default Webex;
