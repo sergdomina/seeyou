@@ -88,6 +88,11 @@ const AppBar = () => {
                 </Link>
               </NavItem>
               <NavItem>
+                <Link to="/co-ownership" onClick={toggleMenu}>
+                  Conference Providers
+                </Link>
+              </NavItem>
+              <NavItem>
                 <Link to="/faq" onClick={toggleMenu}>
                   FAQ
                 </Link>
@@ -98,7 +103,7 @@ const AppBar = () => {
             </NavList>
           </Nav>
 
-          {isDownloadPage && (
+          {/* {isDownloadPage && (
             <MediaQuery device={'mobile'}>
               <DownloadMobileFooter>
                 <LinkDown to="/downloads" onClick={toggleMenu}>
@@ -115,17 +120,18 @@ const AppBar = () => {
                 </LinkDown>
               </DownloadMobileFooter>
             </MediaQuery>
-          )}
+          )} */}
 
           {/* <DownHeadDiv> */}
-          <MediaQuery device={'default'}>
+           {/*<MediaQuery device={'default'}>
             <LinkDown to="/downloads" onClick={toggleMenu}>
               <DownloadLink>Download</DownloadLink>
             </LinkDown>
-          </MediaQuery>
+          </MediaQuery>*/}
           {/* </DownHeadDiv> */}
+        
         </HeaderContainer>
-        {showModal && <ModalForMail toggleModal={toggleModal} />}
+        {/*{showModal && <ModalForMail toggleModal={toggleModal} />}*/}
       </Header>
     </>
   );

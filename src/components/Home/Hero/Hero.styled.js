@@ -12,7 +12,7 @@ export const HeroSection = styled.section`
   background-image: url(${bcg});
   ${({ theme }) => theme.device.desktop} {
     padding-top: 100px;
-    padding-bottom: 250px;
+    padding-bottom: 180px;
   }
 `;
 export const HeroImg = styled.img`

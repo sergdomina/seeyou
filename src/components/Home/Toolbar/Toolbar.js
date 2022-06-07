@@ -7,10 +7,11 @@ import {
   Discription,
   ToolbarThumb,
   DivImage,
+  Tool
 } from './Toolbar.styled';
 import MediaQuery from '../../MediaQuery';
 import seemoji from 'image/seemoji.svg';
-import toolbar from 'image/toolbar/toolbar.svg';
+import toolbar from 'image/toolbar/toolbar1.svg';
 
 const Toolbar = () => {
   return (
@@ -20,11 +21,9 @@ const Toolbar = () => {
         <DivImage>
           <Img src={seemoji} alt={seemoji} />
         </DivImage>
-        
         <ToolbarThumb>
-          <img src={toolbar} alt="toolbar" />
+          <Tool src={toolbar} alt="toolbar" />
         </ToolbarThumb>
-      
         <Box>
           <Title>One Toolbar to Rule Them All</Title>
           <Discription>
@@ -54,7 +53,7 @@ const Toolbar = () => {
       </ToolbarContainer>
       <ToolbarContainer>
         <ToolbarThumb>
-          <img src={toolbar} alt="toolbar" />
+          <Tool src={toolbar} alt="toolbar" />
         </ToolbarThumb>
       </ToolbarContainer>
       </MediaQuery>
