@@ -19,12 +19,12 @@ const Home = () => {
         </MediaQuery> */}
 
         <Conference />
-        <Support />
 
         {/* <MediaQuery device={'mobile'}>
           <DownloadMobileFooter />
         </MediaQuery> */}
       </main>
+      <Support />
     </>
   );
 };

@@ -11,7 +11,6 @@ import {
   HeaderBox,
   LogoLink,
   HeaderContainer,
-  LinkDown,
   // DownHeadDiv,
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
@@ -20,10 +19,10 @@ import LogoSeeYouMobile from '../../image/SeeYou_mobile.svg';
 import LogoSeeYou from '../../image/seeyou_15_04.svg';
 import { useOnClickOutside } from '../../hooks/OnClickOutside';
 import MediaQuery from '../MediaQuery';
-import DownloadLink from '../DownloadLink';
-import ModalForMail from '../ModalForMail';
+// import DownloadLink from '../DownloadLink';
+// import ModalForMail from '../ModalForMail';
 import PopupHeader from '../PopupHeader';
-import DownloadMobileFooter from '../DownloadMobileFooter';
+// import DownloadMobileFooter from '../DownloadMobileFooter';
 // import styles from './style.modules.css';
 
 const AppBar = () => {
@@ -35,8 +34,8 @@ const AppBar = () => {
 
   useOnClickOutside(node, () => toggleMenu(false), isOpenMobileMenu);
 
-  const [showModal, setShowModal] = useState(false);
-  const toggleModal = () => setShowModal(!showModal);
+  // const [showModal, setShowModal] = useState(false);
+  // const toggleModal = () => setShowModal(!showModal);
   const { pathname } = useLocation();
   const isDownloadPage = pathname !== '/downloads';
   return (
@@ -123,13 +122,12 @@ const AppBar = () => {
           )} */}
 
           {/* <DownHeadDiv> */}
-           {/*<MediaQuery device={'default'}>
+          {/*<MediaQuery device={'default'}>
             <LinkDown to="/downloads" onClick={toggleMenu}>
               <DownloadLink>Download</DownloadLink>
             </LinkDown>
           </MediaQuery>*/}
           {/* </DownHeadDiv> */}
-        
         </HeaderContainer>
         {/*{showModal && <ModalForMail toggleModal={toggleModal} />}*/}
       </Header>

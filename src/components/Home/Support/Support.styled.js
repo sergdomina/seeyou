@@ -1,27 +1,26 @@
 import styled from 'styled-components';
-import Container from '../../Container';
 
 export const SupportSection = styled.footer`
   position: fixed;
+  bottom: 0;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
   background: rgba(197, 209, 241, 0.5);
   backdrop-filter: blur(25px);
 
-  ${({ theme }) => theme.device.tablet} {
-
+  /* ${({ theme }) => theme.device.tablet} {
     bottom: 0px;
-  }
+  } */
   ${({ theme }) => theme.device.default} {
     padding-top: 25px;
     padding-bottom: 25px;
-    bottom: 0px;
+    /* bottom: 0px; */
   }
   ${({ theme }) => theme.device.desktop} {
     padding-top: 30px;
     padding-bottom: 30px;
-    bottom: 0px;
+    /* bottom: 0px; */
   }
 `;
 
@@ -55,14 +54,13 @@ export const SupportContainer = styled.div`
   }
   ${({ theme }) => theme.device.desktop} {
     width: 1088px;
-
   }
 `;
 
 export const Box = styled.div`
   margin-bottom: 30px;
   text-align: left;
-  
+
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
     padding-right: 15px;
@@ -82,24 +80,20 @@ export const SupportUl = styled.ul`
   margin: 0 auto;
 `;
 export const SupportLi = styled.li`
-
   &:not(:last-child) {
     margin-right: 17px;
   }
   ${({ theme }) => theme.device.tablet} {
- 
     &:not(:last-child) {
       margin-right: 24px;
     }
   }
   ${({ theme }) => theme.device.default} {
-
     &:not(:last-child) {
       margin-right: 24px;
     }
   }
   ${({ theme }) => theme.device.desktop} {
-
   }
 `;
 export const BoxIMG = styled.div`
