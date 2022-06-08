@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { device, size } from '../../constants/mediaSize';
 
+<<<<<<< HEAD
 const Container = styled.div`
   padding: 0 15px;
+=======
+export const Container = styled.div`
+  padding: 0px 24px;
+>>>>>>> 347eb394f405f5912342f75456038f9d7a2a5f42
   margin: 0 auto;
   width: 100%;
 
@@ -12,6 +17,7 @@ const Container = styled.div`
   }
 
   ${device.tablet} {
+<<<<<<< HEAD
     padding: 0 0px;
     width: 622px;
   }
@@ -23,6 +29,16 @@ const Container = styled.div`
   ${device.desktop} {
     width: 1140px;
   }
+=======
+    width: ${size.tablet};
+  }
+
+  ${device.desktop}{
+    width: ${size.desktop};
+  }
+
+  background: ${({ theme }) => theme.colors.body_bg};
+>>>>>>> 347eb394f405f5912342f75456038f9d7a2a5f42
 `;
 const ContainerHeader = styled.div`
   padding: 0px 24px;
