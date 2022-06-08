@@ -2,78 +2,108 @@ import styled from 'styled-components';
 import Container from '../../Container';
 
 export const SupportSection = styled.footer`
-  padding-top: 20px;
-  padding-bottom: 29px;
-  background: ${({ theme }) => theme.colors.placeholder};
+  position: fixed;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  background: rgba(197, 209, 241, 0.5);
+  backdrop-filter: blur(25px);
 
+  ${({ theme }) => theme.device.tablet} {
+
+    bottom: 0px;
+  }
   ${({ theme }) => theme.device.default} {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    bottom: 0px;
+  }
+  ${({ theme }) => theme.device.desktop} {
+    padding-top: 30px;
+    padding-bottom: 30px;
     bottom: 0px;
   }
 `;
 
 export const Title = styled.h2`
   font-family: ${({ theme }) => theme.fonts.title.semiBold};
-  font-size: 25px;
   line-height: 1.43;
-  margin-bottom: 16px;
   color: ${({ theme }) => theme.colors.white};
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   ${({ theme }) => theme.device.tablet} {
-    font-size: 30px;
+    font-size: 16px;
+  }
+  ${({ theme }) => theme.device.default} {
+    font-size: 18px;
+  }
+  ${({ theme }) => theme.device.desktop} {
+    font-size: 26px;
   }
 `;
 
-export const SupportContainer = styled(Container)`
+export const SupportContainer = styled.div`
   margin: 0 auto;
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 670px;
   }
   ${({ theme }) => theme.device.default} {
     margin: 0 auto;
+    width: 863px;
   }
   ${({ theme }) => theme.device.desktop} {
+    width: 1088px;
+
   }
 `;
 
 export const Box = styled.div`
   margin-bottom: 30px;
   text-align: left;
+  
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
     padding-right: 15px;
-    width: 450px;
+    width: 170px;
   }
   ${({ theme }) => theme.device.default} {
-    width: 612px;
+    width: 170px;
     padding-right: 15px;
   }
   ${({ theme }) => theme.device.desktop} {
-    width: 759px;
+    width: 390px;
     padding-right: 20px;
   }
 `;
 export const SupportUl = styled.ul`
+  display: flex;
   margin: 0 auto;
 `;
 export const SupportLi = styled.li`
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  &:not(:last-child) {
+    margin-right: 17px;
+  }
   ${({ theme }) => theme.device.tablet} {
-    margin-bottom: 20px;
+ 
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
   }
   ${({ theme }) => theme.device.default} {
-    margin-bottom: 20px;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
   }
   ${({ theme }) => theme.device.desktop} {
-    margin-bottom: 20px;
+
   }
 `;
 export const BoxIMG = styled.div`
   align-items: center;
-  width: 200px;
   margin: 0 auto;
   ${({ theme }) => theme.device.tablet} {
     align-items: right;

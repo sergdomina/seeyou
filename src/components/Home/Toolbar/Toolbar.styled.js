@@ -31,6 +31,19 @@ export const ToolbarContainer = styled(Container)`
     width: 1140px;
   }
 `;
+export const Tool = styled.img`
+
+  ${({ theme }) => theme.device.tablet} {
+
+  }
+  ${({ theme }) => theme.device.default} {
+   
+   
+  }
+  ${({ theme }) => theme.device.desktop} {
+    
+  }
+`;
 
 export const DivImage = styled.div`
   margin: 0 auto;
@@ -131,19 +144,24 @@ export const ToolbarThumb = styled.div`
   margin: 0 auto;
   margin-top: 63px;
   width: auto;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
   ${({ theme }) => theme.device.mobileMax} {
     /* width: 618px; */
     /* max-width: 578px; */
     overflow-x: scroll;
 
-    & img {
+    & Tool {
       /* overflow-x: scroll; */
       max-width: 578px;
     }
   }
+  
   ${({ theme }) => theme.device.tablet} {
     margin-top: 0px;
     width: 600px;
+    box-shadow: 0px 30px 37px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
   }
   ${({ theme }) => theme.device.default} {
     width: 723px;
