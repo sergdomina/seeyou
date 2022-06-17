@@ -1,5 +1,6 @@
 export const theme = Object.freeze({
   colors: {
+<<<<<<< HEAD
     white: '#ffffff',
     black: '#333333',
     dark: '#000000',
@@ -20,6 +21,16 @@ export const theme = Object.freeze({
     orange: '#FFAA00',
     grey_off: '#C9CAD4',
     grey_purple: '#A0A3BD',
+=======
+    white: "#ffffff",
+    black: "#333333",
+    green: "#4caf50",
+    red: "#f44336",
+    blue: "#D9DBE9",
+    primaryText: "#404040",
+    secondaryText: "#757575",
+    body_bg: "#FAFAFA",
+>>>>>>> 347eb394f405f5912342f75456038f9d7a2a5f42
   },
   size: {
     mobile: '375px',
