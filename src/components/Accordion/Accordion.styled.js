@@ -15,9 +15,9 @@ export const Questions = styled.p`
     padding-bottom: 32px;
     padding-left: 20px;
     font-size: 16px;
-    &:hover {
+    /* &:hover {
       padding-bottom: 2px;
-    }
+    } */
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 20px;
