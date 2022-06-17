@@ -5,18 +5,18 @@ export const Questions = styled.p`
   font-size: 14px;
   line-height: 1.35;
   text-align: left;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.device.tablet} {
     font-size: 16px;
   }
   ${({ theme }) => theme.device.default} {
-    padding-top:32px;
+    padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 20px;
     font-size: 16px;
-    &:hover{
-        padding-bottom: 2px;
+    &:hover {
+      padding-bottom: 2px;
     }
   }
   ${({ theme }) => theme.device.desktop} {
@@ -33,7 +33,7 @@ export const Answer = styled.p`
     font-size: 16px;
   }
   ${({ theme }) => theme.device.default} {
-    padding-top:2px;
+    padding-top: 2px;
     padding-bottom: 32px;
     padding-left: 20px;
     font-size: 16px;
