@@ -97,6 +97,7 @@ export const SupportLi = styled.li`
   }
 `;
 export const BoxIMG = styled.div`
+  display: flex;
   align-items: center;
   margin: 0 auto;
   ${({ theme }) => theme.device.tablet} {

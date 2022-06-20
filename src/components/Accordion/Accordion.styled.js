@@ -1,10 +1,24 @@
 import styled from 'styled-components';
 
+export const Section = styled.section`
+  margin-bottom: 40px;
+
+  ${({ theme }) => theme.device.tablet} {
+    margin-bottom: 60px;
+  }
+  ${({ theme }) => theme.device.default} {
+    margin-bottom: 80px;
+  }
+  ${({ theme }) => theme.device.desktop} {
+  }
+`;
 export const Questions = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.bold};
   font-size: 14px;
   line-height: 1.35;
   text-align: left;
+  padding-top: 16px;
+  padding-bottom: 16px;
   /* margin-bottom: 16px; */
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.device.tablet} {
@@ -13,11 +27,14 @@ export const Questions = styled.p`
   ${({ theme }) => theme.device.default} {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 20px;
+    padding-left: 30px;
     font-size: 16px;
+<<<<<<< Updated upstream
     /* &:hover {
       padding-bottom: 2px;
     } */
+=======
+>>>>>>> Stashed changes
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 20px;
@@ -35,10 +52,51 @@ export const Answer = styled.p`
   ${({ theme }) => theme.device.default} {
     padding-top: 2px;
     padding-bottom: 32px;
-    padding-left: 20px;
+    padding-left: 30px;
     font-size: 16px;
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 20px;
+  }
+`;
+export const PartnersDiv = styled.div`
+  padding-top: 20px;
+  width: 333px;
+  ${({ theme }) => theme.device.tablet} {
+    width: 700px;
+    margin-left: 20px;
+  }
+  ${({ theme }) => theme.device.default} {
+  }
+  ${({ theme }) => theme.device.desktop} {
+  }
+`;
+export const PartnersUl = styled.ul`
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  ${({ theme }) => theme.device.tablet} {
+  }
+  ${({ theme }) => theme.device.default} {
+  }
+  ${({ theme }) => theme.device.desktop} {
+  }
+`;
+export const PartnersLi = styled.li`
+  padding: 0;
+  margin-bottom: 24px;
+  margin-right: 12px;
+  
+  transform: scale(80%);
+  ${({ theme }) => theme.device.tablet} {
+    transform: scale(100%);
+    margin-bottom: 32px;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+  ${({ theme }) => theme.device.default} {
+  }
+  ${({ theme }) => theme.device.desktop} {
   }
 `;

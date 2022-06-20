@@ -11,7 +11,6 @@ const Home = () => {
     <>
       <main>
         <Hero />
-        <Accordion />
         <Toolbar />
         {/* <MediaQuery device={'mobile'}>
           <FeaturesAccordion />

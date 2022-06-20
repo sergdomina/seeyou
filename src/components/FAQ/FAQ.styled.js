@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const FAQSection = styled.section`
-  padding-top: 120px;
-  padding-bottom: 56px;
-  ${({ theme }) => theme.device.desktop} {
-  }
+  padding-top: 80px;
+  padding-bottom: 30px;
   ${({ theme }) => theme.device.tablet} {
+    padding-bottom: 40px;
   }
   ${({ theme }) => theme.device.default} {
   }
@@ -57,19 +56,19 @@ export const SectionTitleSub = styled.h2`
   font-size: 14px;
   line-height: 1, 4;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.device.tablet} {
     font-size: 16px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
   ${({ theme }) => theme.device.default} {
     font-size: 16px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 20px;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
   }
 `;
 
@@ -101,78 +100,6 @@ export const FAQli = styled.li`
   }
 `;
 
-export const Questions = styled.p`
-  font-family: ${({ theme }) => theme.fonts.descr.bold};
-  font-size: 14px;
-  line-height: 1.35;
-  text-align: center;
-  margin-bottom: 16px;
-  color: ${({ theme }) => theme.colors.black};
-  ${({ theme }) => theme.device.tablet} {
-    font-size: 16px;
-  }
-  ${({ theme }) => theme.device.default} {
-    font-size: 16px;
-  }
-  ${({ theme }) => theme.device.desktop} {
-    font-size: 20px;
-  }
-`;
-export const Answer = styled.p`
-  font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-size: 14px;
-  line-height: 27px;
-  text-align: center;
-  color: ${({ theme }) => theme.colors.placeholder};
-  ${({ theme }) => theme.device.tablet} {
-    font-size: 16px;
-  }
-  ${({ theme }) => theme.device.default} {
-    font-size: 16px;
-  }
-  ${({ theme }) => theme.device.desktop} {
-    font-size: 20px;
-  }
-`;
-export const PartnersDiv = styled.div`
-  margin: 0 auto;
-  padding-top: 40px;
-  width: 343px;
-  ${({ theme }) => theme.device.tablet} {
-    width: 611px;
-  }
-  ${({ theme }) => theme.device.default} {
-  }
-  ${({ theme }) => theme.device.desktop} {
-  }
-`;
-export const PartnersUl = styled.ul`
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: auto;
-  ${({ theme }) => theme.device.tablet} {
-    width: auto;
-  }
-  ${({ theme }) => theme.device.default} {
-  }
-  ${({ theme }) => theme.device.desktop} {
-  }
-`;
-export const PartnersLi = styled.li`
-  padding: 0;
-  margin-bottom: 24px;
-  margin-right: 12px;
-  margin-left: 12px;
-  ${({ theme }) => theme.device.tablet} {
-    margin-bottom: 32px;
-    &:not(:last-child) {
-      margin-right: 24px;
-    }
-  }
-  ${({ theme }) => theme.device.default} {
-  }
-  ${({ theme }) => theme.device.desktop} {
-  }
-`;
+
+
+

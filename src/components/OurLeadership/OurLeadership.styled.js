@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Box = styled.div`
   padding-right: 8px;
   padding-left: 8px;
+  padding-bottom: 70px;
+
 ${({ theme }) => theme.device.tablet} {
   padding-right: 0px;
   padding-left: 0px;
