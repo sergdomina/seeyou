@@ -29,12 +29,9 @@ export const Questions = styled.p`
     padding-bottom: 32px;
     padding-left: 30px;
     font-size: 16px;
-<<<<<<< Updated upstream
     /* &:hover {
       padding-bottom: 2px;
     } */
-=======
->>>>>>> Stashed changes
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 20px;
