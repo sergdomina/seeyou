@@ -8,7 +8,7 @@ import {
   GlobalBox,
 } from './Hero.styled';
 
-import HeroIllustration from 'image/hero/hero.svg';
+import HeroIllustration from 'image/hero/hero_illustration.png';
 
 const Hero = () => {
   return (

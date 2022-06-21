@@ -10,9 +10,9 @@ export const HeroSection = styled.section`
   background-position: center;
   background-size: cover;
   background-image: url(${bcg});
-  ${({ theme }) => theme.device.desktop} {
-    padding-top: 100px;
-    padding-bottom: 180px;
+  ${({ theme }) => theme.device.default} {
+    padding-top: 180px;
+    padding-bottom: 120px;
   }
 `;
 export const HeroImg = styled.img`
@@ -95,12 +95,11 @@ export const HeroTitle = styled.h1`
   ${({ theme }) => theme.device.default} {
     font-size: 30px;
     margin-bottom: 32px;
-    margin-top: 133px;
+    margin-top: 30px;
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 45px;
     margin-bottom: 32px;
-    margin-top: 163px;
   }
 `;
 
