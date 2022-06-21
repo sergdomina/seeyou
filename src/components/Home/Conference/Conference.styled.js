@@ -6,10 +6,10 @@ padding: 30px 0px 40px;
     padding: 40px 0px 60px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 50px 0px 70px;
+    padding: 50px 0px 101px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 60px 0px 100px;
+    padding: 60px 0px 103px;
   }
 `;
 
@@ -33,6 +33,14 @@ export const DiscriptionSub = styled.h3`
   line-height: 1.22;
 
   margin-bottom: 16px;
+  color: ${({ theme }) => theme.colors.black_btn};
+`;
+export const LLC = styled.h3`
+  margin: 0 auto;
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
+  font-size: 12px;
+  line-height: 1.22;
+  margin-bottom: 60px;
   color: ${({ theme }) => theme.colors.black_btn};
 `;
 export const SubTitle = styled.h3`
@@ -82,6 +90,7 @@ export const DiscriptionWithMargin = styled(Discription)`
 `;
 
 export const ConferenceItem = styled.li`
+  
   align-items: center;
   &:not(:last-child) {
     margin-bottom: 80px;

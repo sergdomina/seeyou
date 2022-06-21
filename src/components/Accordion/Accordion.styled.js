@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 
   ${({ theme }) => theme.device.tablet} {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   ${({ theme }) => theme.device.default} {
-    margin-bottom: 80px;
+    margin-bottom: 180px;
   }
   ${({ theme }) => theme.device.desktop} {
   }
@@ -28,6 +28,7 @@ export const Questions = styled.p`
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 30px;
+    padding-right: 40px;
     font-size: 16px;
     /* &:hover {
       padding-bottom: 2px;
@@ -50,6 +51,7 @@ export const Answer = styled.p`
     padding-top: 2px;
     padding-bottom: 32px;
     padding-left: 30px;
+    padding-right: 40px;
     font-size: 16px;
   }
   ${({ theme }) => theme.device.desktop} {

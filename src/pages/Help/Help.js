@@ -1,6 +1,5 @@
 import Support from 'components/Home/Support/Support';
 import FAQ from 'components/FAQ/FAQ';
-import OurLeadership from 'components/OurLeadership';
 import { ScrollToTop } from 'hooks/ScrollToTop';
 import Acord from 'components/Accordion'
 
@@ -11,7 +10,6 @@ const Help = () => {
       <main>
         <FAQ />
         <Acord />
-        <OurLeadership />
 
         {/*<HelpCenter />
          <MediaQuery device={'mobile'}>

@@ -707,36 +707,6 @@ function Acord() {
             </AccordionItem>
           </Accordion>
 
-          <Accordion allowMultiple paddingBottom="16px">
-            <AccordionItem border={'none'}
-              borderRadius="12px"
-              backgroundColor="#ECF1FE">
-              {({ isExpanded }) => (
-                <>
-                  <h2>
-                    <AccordionButton
-                      _hover={{ backgroundColor: 'transparent',boxShadow: 'none' }}
-                    >
-                      <Box flex="1" textAlign="left">
-                        <Questions>What are SEEYOU's strategy and values?</Questions>
-                      </Box>
-                      {isExpanded ? (
-                        <MinusIcon fontSize="12px" />
-                      ) : (
-                        <AddIcon fontSize="12px" />
-                      )}
-                    </AccordionButton>
-                  </h2>
-                  <AccordionPanel pb={4}>
-                    <Answer>
-                    Below is the strategy and value statement governing pretty much everything we do
-                    </Answer>
-                  </AccordionPanel>
-                </>
-              )}
-            </AccordionItem>
-          </Accordion>
-
 
         </Box>
       </ChakraProvider>

@@ -26,6 +26,7 @@ export const ToolbarContainer = styled(Container)`
    
     width: 805px;
     align-items: top;
+    margin-bottom: 40px
   }
   ${({ theme }) => theme.device.desktop} {
     width: 1140px;
@@ -60,6 +61,8 @@ export const DivImage = styled.div`
     height: 233px;
   }
   ${({ theme }) => theme.device.desktop} {
+    width: 311px;
+
   }
 `;
 export const Img = styled.img`
@@ -72,12 +75,12 @@ export const Img = styled.img`
   }
 
   ${({ theme }) => theme.device.default} {
-    width: 200px;
-    height: 178px;
+    width: 208px;
+    height: 136px;
   }
   ${({ theme }) => theme.device.desktop} {
-    width: 233px;
-    height: 207px;
+    width: 311px;
+    height: 204px;
   }
 `;
 
@@ -144,7 +147,7 @@ export const ToolbarThumb = styled.div`
   margin: 0 auto;
   margin-top: 63px;
   width: auto;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 15px 20px rgba(112, 88, 255, 0.16);
   border-radius: 6px;
   ${({ theme }) => theme.device.mobileMax} {
     /* width: 618px; */
@@ -160,13 +163,13 @@ export const ToolbarThumb = styled.div`
   ${({ theme }) => theme.device.tablet} {
     margin-top: 0px;
     width: 600px;
-    box-shadow: 0px 30px 37px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 30px 37px rgba(112, 88, 255, 0.16);
     border-radius: 12px;
   }
   ${({ theme }) => theme.device.default} {
-    width: 723px;
+    width: 634px;
   }
   ${({ theme }) => theme.device.desktop} {
-    width: 742px;
+    width: 778px;
   }
 `;

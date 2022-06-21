@@ -1,4 +1,4 @@
-import Support from '../../components/Home/Support';
+import Support from '../../components/Home/Support/Support';
 import WebexHero from '../../components/Webex';
 
 const Webex = () => {

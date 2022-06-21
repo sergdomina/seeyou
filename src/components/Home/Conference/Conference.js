@@ -9,6 +9,7 @@ import {
   BoxBeforEnd,
   DiscriptionSub,
   BrandsLogos,
+  LLC,
 } from './Conference.styled';
 
 import { Image } from '@chakra-ui/react';
@@ -172,6 +173,9 @@ const Conference = () => {
               </DiscriptionWithMargin>
               <DiscriptionSub>(*Terms to be announced)</DiscriptionSub>
             </GlobalBox>
+          </ConferenceItem>
+          <ConferenceItem>
+              <LLC>SEEYOU LLC, The CHQ Building, Custom House Quay, Dublin 1, D01 Y6H7 Ireland</LLC>
           </ConferenceItem>
         </ul>
       </Container>
